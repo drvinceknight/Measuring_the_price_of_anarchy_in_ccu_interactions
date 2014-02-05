@@ -32,7 +32,7 @@ def pickleforgivendemand(x):
 filename = "%s-%s-%s-%s-%s-%s.p" % (m, n, mu1, mu2, baselmbda1, baselmbda2)
 
 d = {}
-parameters = srange(-.9,2,.05)
+parameters = srange(-.9,2,.005)
 
 r = pickleforgivendemand(parameters)
 for result in r:
