@@ -130,7 +130,7 @@ V.~A. Knight and P.~R. Harper.
   October 2013.
 
 \bibitem{knight2012ambulance}
-VA~Knight, PR~Harper, and L~Smith.
+V.~A. Knight, P.~R. Harper, and L.~Smith.
 \newblock Ambulance allocation for maximal survival with heterogeneous outcome
   measures.
 \newblock {\em Omega}, 40(6):918--926, 2012.
@@ -174,6 +174,11 @@ I.~Mitchell and M.~Grounds.
 \newblock {Intensive care in the ailing UK health care system.}
 \newblock {\em Lancet}, pages 1970--1970, 1995.
 
+\bibitem{naor1969regulation}
+P.~Naor.
+\newblock The regulation of queue size by levying tolls.
+\newblock {\em Econometrica}, 37(1):15--24, 1969.
+
 \bibitem{Nash1950}
 J.~F. Nash.
 \newblock {Equilibrium Points in N-Person Games}.
@@ -195,6 +200,13 @@ A.~K. Shahani, S.~A. Ridley, and M.~S. Nielsen.
 \newblock {Modelling patient flows as an aid to decision making for critical
   care capacities and organisation.}
 \newblock {\em Anaesthesia}, 63(10):1074--80, October 2008.
+
+\bibitem{shone2013comparisons}
+R.~Shone, V.~A. Knight, and J.~E. Williams.
+\newblock Comparisons between observable and unobservable ${M}/{M}/1$ queues
+  with respect to optimal customer behavior.
+\newblock {\em European Journal of Operational Research}, 227(1):133--141,
+  2013.
 
 \bibitem{Smith1995}
 G.~B. Smith, B.~L. Taylor, P.~J. McQuillan, and E.~Nials.
