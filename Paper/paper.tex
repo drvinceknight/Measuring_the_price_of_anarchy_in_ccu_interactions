@@ -19,7 +19,7 @@
 \usepackage{float}
 \usepackage{multibib}
 \usepackage{makecell}
-\usepackage{tabularx}
+\usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{ragged2e}
 \usepackage{setspace}
@@ -115,24 +115,18 @@ The parameters obtained from the data used in this work are shown in Table \ref{
 
 \begin{table}[!htbp]
 \begin{center}
-\begin{tabular}{|c|l|c|}
-\hline
-\textbf{Parameter}&\textbf{Parameter description}&\textbf{Parameter value}\\
-\hline
+\begin{tabular}{c|lc}
+\toprule
+Parameter&Parameter description&Parameter value\\
+\midrule
 $c_{\NH}$&the bed capacity at NH&8\\
-\hline
 $c_{\RG}$&the bed capacity at RG&16\\
-\hline
 $\lambda_{\NH}$&the arrival rate at NH (per day)&1.50 \\
-\hline
 $\lambda_{\RG}$&the arrival rate at RG (per day)&2.24\\
-\hline
 $\mu_{\NH}$&the service rate at NH (days)&0.262\\
-\hline
 $\mu_{\RG}$&the service rate at RG (days)&0.198\\
-\hline
 $t$& bed utilisation target & 0.8\\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 \caption{Parameter values used in the model}\label{parameter_values_model_1}
@@ -763,7 +757,7 @@ Importantly, a PoA of 1 is not guaranteed for this problem.
 For example in Figure \ref{Fig:best_responses_model1}b similar best response behaviour is shown for $t=0.6$ for which the $\text{PoA}=1.18$ (the optimal throughput is again at $(8,16)$).
 
 Whilst removing central control, a certain influence can be exerted by a choice of $t$.
-Figure \ref{Fig:target_demand_model1} shows the effect of $t$ and overall demand (note: the non linear scale).
+Figure \ref{Fig:target_demand_model1} (note: the non linear scale) and Table \ref{tabletargetdemandm1} show the effect of $t$ and overall demand.
 We modify the demand rate from Table \ref{parameter_values_model_1} by taking $\lambda_h \leftarrow \lambda_h(1+x)$ for $-0.9\leq x\leq2$.
 
 \begin{figure}[!htbp]
@@ -772,6 +766,29 @@ We modify the demand rate from Table \ref{parameter_values_model_1} by taking $\
 \end{center}
 \caption{PoA for different target and demand rates}\label{Fig:target_demand_model1}
 \end{figure}
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{tabular}{c|ccccccccc}
+\toprule
+$x$&$t=0.15$&$t=0.27$&$t=0.4$&$t=0.52$&$t=0.64$&$t=0.76$&$t=0.88$&$t=1$\\
+\midrule
+-0.9&1.0&1.0&1.0&1.0&1.0&1.0&1.0&1.0\\
+-0.61&1.64&1.04&1.0&1.0&1.0&1.0&1.0&1.0\\
+-0.33&3.27&1.66&1.22&1.0&1.0&1.0&1.0&1.0\\
+-0.03&4.43&2.55&1.64&1.34&1.06&1.0&1.0&1.0\\
+0.26&5.23&2.99&2.1&1.51&1.28&1.09&1.0&1.0\\
+0.55&7.34&3.21&2.25&1.74&1.34&1.16&1.0&1.0\\
+0.84&7.6&3.81&2.32&1.79&1.46&1.17&1.03&1.0\\
+1.13&7.73&3.88&2.36&1.82&1.48&1.25&1.04&1.0\\
+1.41&7.81&3.91&2.61&1.97&1.58&1.26&1.09&1.0\\
+1.7&7.86&3.94&2.63&1.98&1.58&1.32&1.14&1.0\\
+1.99&7.89&3.95&2.64&1.98&1.59&1.33&1.14&1.0\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{Numerical values of PoA for different target and demand rates}\label{tabletargetdemandm1}
+\end{table}
 
 We see that an extremely large PoA is obtained for $t<0.2$.
 For values of $t>0.5$ the PoA is still high: a PoA of 2 corresponds to 100\% less throughput of patients.
@@ -827,7 +844,7 @@ q_{ij}=\begin{cases} u_i\mu_{NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
 \end{equation}
 
 
-As before, Figure \ref{Fig:target_demand_model2} presents the PoA for different target values and demand rate changes.
+As before, Figure \ref{Fig:target_demand_model2} and Table \ref{tabletargetdemandm2} present the PoA for different target values and demand rate changes.
 
 \begin{figure}[!htbp]
 \begin{center}
@@ -835,6 +852,30 @@ As before, Figure \ref{Fig:target_demand_model2} presents the PoA for different 
 \caption{PoA for different target and demand rates for soft diversion} \label{Fig:target_demand_model2}
 \end{center}
 \end{figure}
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{tabular}{c|ccccccccc}
+\toprule
+$x$&$t=0.15$&$t=0.27$&$t=0.4$&$t=0.52$&$t=0.64$&$t=0.76$&$t=0.88$&$t=1$\\
+\midrule
+-0.9&1.0&1.0&1.0&1.0&1.0&1.0&1.0&1.0\\
+-0.61&1.0&1.0&1.0&1.0&1.0&1.0&1.0&1.0\\
+-0.32&1.01&1.01&1.01&1.01&1.0&1.0&1.0&1.0\\
+-0.03&1.05&1.05&1.05&1.05&1.05&1.05&1.0&1.0\\
+0.26&1.06&1.06&1.06&1.06&1.06&1.06&1.06&1.0\\
+0.55&1.06&1.06&1.06&1.06&1.06&1.06&1.06&1.01\\
+0.84&1.05&1.05&1.05&1.05&1.05&1.05&1.05&1.04\\
+1.13&1.05&1.05&1.05&1.05&1.05&1.05&1.05&1.04\\
+1.42&1.04&1.04&1.04&1.04&1.04&1.04&1.04&1.04\\
+1.71&1.03&1.03&1.03&1.03&1.03&1.03&1.03&1.03\\
+1.99&1.03&1.03&1.03&1.03&1.03&1.03&1.03&1.03\\
+\bottomrule
+\end{tabular}
+\end{center}
+\caption{Numerical values of PoA for different target and demand rates}\label{tabletargetdemandm2}
+\end{table}
+
 
 We immediately note that the underlying cooperation that is now being forced on our players (divert only if the other player can accommodate the patients) has reduced the PoA.
 Note that PoA$=1.02$ still implies a reduced throughput of 2\% which has very large cost implications for a national health service.
@@ -851,18 +892,19 @@ Table \ref{table_model2_target_demand} presents results for $t=0.8$ and a demand
 
  \begin{table}[!htbp]
 \begin{center}
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline
-\textbf{Demand}&\textbf{Nash}&\multirow{2}{*}{\textbf{$\widetilde T$}}&\textbf{Nash NH}&\textbf{Nash RG}&\multirow{2}{*}{\textbf{$T^*$}}&\multirow{2}{*}{\textbf{PoA}}\\
-\textbf{change, $x$}&\textbf{equilibrium}&\textbf{ }&\textbf{throughput}&\textbf{throughput}&\textbf{}&\textbf{}\\
-\hline
+\begin{tabular}{ccccccc}
+\toprule
+%\textbf{Demand}&\textbf{Nash}&\multirow{2}{*}{\textbf{$\widetilde T$}}&\textbf{Nash NH}&\textbf{Nash RG}&\multirow{2}{*}{\textbf{$T^*$}}&\multirow{2}{*}{\textbf{PoA}}\\
+%\textbf{change, $x$}&\textbf{equilibrium}&\textbf{ }&\textbf{throughput}&\textbf{throughput}&\textbf{}&\textbf{}\\
+$x$&Nash Equilibrium&$\tilde T$&Nash $T_{NH}$& Nash $T_{RG}$& $T^*$& PoA\\
+\midrule
 0.1&(8,16)&3.92&1.50&2.42&3.92&1\\
 0.2&(8,16)&3.92&1.50&2.42&3.92&1\\
 0.3&(6,12)&4.19&1.65&2.54&4.33&1.03\\
 0.4&(4,0)&4.22&1.65&2.57&4.48&1.06\\
 0.5&(4,0)&4.22&1.65&2.57&4.48&1.06\\
 0.6&(0,0)&4.42&1.69&2.72&4.68&1.06\\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 \caption{Soft diversion results for $t=0.8$}\label{table_model2_target_demand}
