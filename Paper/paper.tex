@@ -47,7 +47,7 @@
 Hospital throughput is often studied and optimised in isolation, ignoring the interactions between hospitals.
 In this paper Critical Care Unit (CCU) interaction is placed within a game theoretic framework.
 The methodology involves the use of a normal form game underpinned by a two dimensional continuous Markov chain.
-A theoretical result is given that ensures the existence of a Nash equilibrium.
+A theoretical result is given that ensures the existence of a Nash Equilibrium.
 
 The effect of target policies is investigated justifying the use of these to align the interests of individual hospitals and social welfare.
 In particular, we identify the lowest value of a utilisation target that aligns these.
@@ -134,7 +134,7 @@ $t$& bed utilisation target & 0.8\\
 
 The paper is organised as follows:
 \begin{itemize}
-    \item Section \ref{queueingandgamemodels} presents the general methodology as well as a theoretical existence condition for Nash equilibrium;
+    \item Section \ref{queueingandgamemodels} presents the general methodology as well as a theoretical existence condition for Nash Equilibrium;
     \item Section \ref{results} presents the findings from two models;
     \item Conclusions and further ideas for progression are given in Section \ref{conclusions}.
 \end{itemize}
@@ -598,14 +598,14 @@ $$\left(U_{h}-t\right)^2$$
 This game is equivalent to a bi matrix game with restriction to pure strategies where both players aim to get their utilisation as close as possible to a certain target.
 As such a Nash Equilibrium is not guaranteed by traditional game theoretical results \cite{Nash1950}, but based on discussions with ABUHB, long term threshold policies are a realistic consideration.
 
-The following result is a sufficient condition for the existence of a equilibrium:\\
+The following result is a sufficient condition for the existence of an equilibrium:\\
 
 
 \textbf{Theorem.}
 
 Let $f_{h}(k):[1,c_{\bar h}]\to[1,c_h]$ be the best response of player $h\in\{\NH, \RG\}$ to the diversion threshold of $\bar h\ne h$ ($\bar h\in\{\NH, \RG\}$).
 
-If $f_{h}(k)$ is a non-decreasing function in $k$ then the game of Figure \ref{model1} has at least one Nash equilibrium.
+If $f_{h}(k)$ is a non-decreasing function in $k$ then the game of Figure \ref{model1} has at least one Nash Equilibrium.
 
 
 \begin{proof}
@@ -623,7 +623,7 @@ $$\begin{array}{cc}
 \caption{Plots of $f_{\NH}(K_{\RG})$ and $f_{\RG}(K_{\NH})$}\label{exampleforproof}
 \end{figure}
 
-This point of intersection corresponds to a Nash equilibrium of Figure \ref{model1}.
+This point of intersection corresponds to a Nash Equilibrium of Figure \ref{model1}.
 
 \end{proof}
 
@@ -686,8 +686,8 @@ The aim of the work presented is to measure the inefficiency created by the remo
 
 We let $\widetilde T$ denote the sum of throughputs at the Nash Equilibrium obtained by solving the game of Figure \ref{model1} (in case of multiple equilibria we take $\widetilde T$ to be the lowest throughput) and let $T^*=\max_{K_{NH}, K_{RG}}\left(T_{NH}+T_{RG}\right)$.
 
-The measure used to quantify inefficiency is the Price of Anarchy (PoA) \cite{Koutsoupias1999,TimRoughgarden}, which is the ratio of the social optimum welfare to the welfare of the worst Nash equilibrium.
-That is, the ratio of the largest social welfare, $T^*$ to the smallest social welfare, $\widetilde{T}$, achieved at any Nash equilibrium. Thus:
+The measure used to quantify inefficiency is the Price of Anarchy (PoA) \cite{Koutsoupias1999,TimRoughgarden}, which is the ratio of the social optimum welfare to the welfare of the worst Nash Equilibrium.
+That is, the ratio of the largest social welfare, $T^*$ to the smallest social welfare, $\widetilde{T}$, achieved at any Nash Equilibrium. Thus:
 
 $$\text{PoA}={{T^*}\over{\widetilde{T}}}$$
 
@@ -739,7 +739,7 @@ q_{ij}=\begin{cases} u_i\mu_{NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
 For the parameters of Table \ref{parameter_values_model_1} the best responses are shown in Figure \ref{Fig:best_responses_model1}.
 For example, in Figure \ref{Fig:best_responses_model1}a if RG chooses $K_{\RG}=6$, NH has best response $K_{\NH}=8$ .
 Similarly, if $K_{\NH}=2$, RG has best response $K_{\RG}=15$.
-A Nash equilibrium for our game is a pair of points that intersect.
+A Nash Equilibrium for our game is a pair of points that intersect.
 
 \begin{figure}[!htbp]
 $$
@@ -752,7 +752,7 @@ $$
 \caption{Best responses for each hospital (a: $t=0.8$; b: $t=0.6$). The point of intersection is circled.} \label{Fig:best_responses_model1}
 \end{figure}
 
-For this model the Nash equilibrium is at $(8,16)$, which gives $\widetilde T=3.65$ and we obtain $T^*=3.65$.
+For this model the Nash Equilibrium is at $(8,16)$, which gives $\widetilde T=3.65$ and we obtain $T^*=3.65$.
 Importantly, a PoA of 1 is not guaranteed for this problem.
 For example in Figure \ref{Fig:best_responses_model1}b similar best response behaviour is shown for $t=0.6$ for which the $\text{PoA}=1.18$ (the optimal throughput is again at $(8,16)$).
 
@@ -912,11 +912,11 @@ $x$&Nash Equilibrium&$\tilde T$&Nash $T_{NH}$& Nash $T_{RG}$& $T^*$& PoA\\
 \end{table}
 
 
-Clearly, as the demand change increases, the Nash equilibrium thresholds decrease.
+Clearly, as the demand change increases, the Nash Equilibrium thresholds decrease.
 This is due to the fact that both CCUs are attempting to divert their patients in less busy states as these states become rarer.
 If one CCU diverts early, the other will follow suit (both CCUs incrementally reacting to each other.
-As a result the Nash equilibrium for $x=0.6$ is at $(0,0)$, meaning that each CCU takes care of their own patients.
-As the demand increases even further the Nash equilibrium remains at $(0,0)$ and the PoA decreases.
+As a result the Nash Equilibrium for $x=0.6$ is at $(0,0)$, meaning that each CCU takes care of their own patients.
+As the demand increases even further the Nash Equilibrium remains at $(0,0)$ and the PoA decreases.
 
 Figure \ref{mintargetvdemandmodel2} shows the lowest values of $t$ which gives a PoA of 1.
 We see that as demand increases this value also increases.
@@ -936,7 +936,7 @@ In this work a generic game theoretical model has been presented that accounts f
 This game theoretic model is underpinned by a queueing model that takes into account the stochastic nature of queueing systems.
 This work extends the application of game theoretic models already present in the literature to healthcare \cite{li2002cooperative, xie2006note}.
 
-A result is proved that allows for the assertion of existence of a Nash equilibrium. This result is then applied to two particular models that are influenced by discussions with a local health board:
+A result is proved that allows for the assertion of existence of a Nash Equilibrium. This result is then applied to two particular models that are influenced by discussions with a local health board:
 
 \begin{itemize}
 \item Strict diversion: patients can be lost to the system if both CCUs declare being in diversion.
