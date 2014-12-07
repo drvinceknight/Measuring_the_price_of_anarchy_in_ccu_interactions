@@ -35,7 +35,7 @@ Re read and fix all this.*
 >
 > It is not necessary to use the word "selfish" to describe hospitals behavior, as "rational" is a more precise descriptor that does not carry as much negative baggage (p3line6). Further, if the goal is "throughput", as listed on p5line21, then one could make the argument that the hospital is merely striving to serve the greatest number of patients.
 
-Change word selfish to rational throughout.*
+Have changed selfish to rational (#76a905f).
 
 >
 > Figure one looks as if patients enter, but never leave; exit arrows would be an improvement. Also, the oddly shaped lines are distracting (there is no reason to insist on the boxes on the same horizontal line).
