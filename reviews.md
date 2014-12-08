@@ -40,7 +40,7 @@ Have changed selfish to rational (#76a905f).
 >
 > Figure one looks as if patients enter, but never leave; exit arrows would be an improvement. Also, the oddly shaped lines are distracting (there is no reason to insist on the boxes on the same horizontal line).
 
-Add exit arrows.*
+Have added exit arrow to diagram (#b07c476).
 
 >
 > Figure 3 seems to suggest that the service rate is constant no matter how many patients are present. But elsewhere (p5lines6&7) the service rates are proportional to the stock of patients. This can be fixed by changing the scripts on the appropriate arrows in Figure 3.
