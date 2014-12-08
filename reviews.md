@@ -25,7 +25,7 @@
 >
 > Abstract - "A theoretical result is given that ensures the existence of a Nash Equilibrium". If it is a condition that ensures NE, please say so. If it is a theorem that proves a NE exists for all these games, then use the word theorem, as it is more precise. The sentence as it stands is ambiguous.
 
-Fix this: use word theorem (am proving that a NE exists for all these games)*
+Have re worded this (#3fd71a0).
 
 >
 > Editorial comments - the paper needs to be tightened up. The intro repeats itself (e.g. "shortage of beds" in paragraph one, then "beds are very expensive and a limited resource" in paragraph two).  However, a single good effort in cleaning up the prose should suffice. Some of the paragraphs are so high-level they can safely be excised; e.g. the 5th paragraph of the introduction on game theory.
