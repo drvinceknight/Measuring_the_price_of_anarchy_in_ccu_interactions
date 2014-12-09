@@ -65,7 +65,7 @@ Explain where this come from.*
 >
 > The use of a, b, c, and d in Figure 2 is not intuitive; using e.g. (l,l) or (h,h) for "low and low" or "high and high" utilizations would be much more clear.
 
-I agree: change these as suggested.*
+This has been changed throughout (#a237de7).
 
 >
 > Substantive comments:
