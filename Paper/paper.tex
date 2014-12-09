@@ -205,22 +205,22 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \node(az) [state] at ($(ellipsisa2) + (3,0)$) {$(0,c_{\RG})$};
         % Transitions -----------------------------------
         % On Row:
-        \draw (aa) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (ab);
+        \draw (aa) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ab);
         \draw (aa) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$\mu_{\RG}$} (ab);
 
-        \draw (ab) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (ac);
+        \draw (ab) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ac);
         \draw (ab) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (ac);
 
-        \draw (ac) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (ellipsisa1);
+        \draw (ac) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ellipsisa1);
         \draw (ac) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$3\mu_{\RG}$} (ellipsisa1);
 
-        \draw (ellipsisa1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (ak);
+        \draw (ellipsisa1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ak);
         \draw (ellipsisa1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (ak);
 
-        \draw (ak) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(b)}$} (ellipsisa2);
+        \draw (ak) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,h)}$} (ellipsisa2);
         \draw (ak) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$(K_{\RG}+1)\mu_{\RG}$} (ellipsisa2);
 
-        \draw (ellipsisa2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(b)}$} (az);
+        \draw (ellipsisa2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,h)}$} (az);
         \draw (ellipsisa2) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$c_{\RG}\mu_{\RG}$} (az);
         % -----------------------------------------------
         % Second row--------------------------------------
@@ -234,43 +234,43 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \node(bz) [state] at ($(ellipsisb2) + (3,0)$) {$(1,c_{\RG})$};
         % Transitions -----------------------------------
         % On Row:
-        \draw (ba) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (bb);
+        \draw (ba) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (bb);
         \draw (ba) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$\mu_{\RG}$} (bb);
 
-        \draw (bb) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (bc);
+        \draw (bb) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (bc);
         \draw (bb) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (bc);
 
-        \draw (bc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (ellipsisb1);
+        \draw (bc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ellipsisb1);
         \draw (bc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsisb1);
 
-        \draw (ellipsisb1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (bk);
+        \draw (ellipsisb1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (bk);
         \draw (ellipsisb1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (bk);
 
-        \draw (bk) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(b)}$} (ellipsisb2);
+        \draw (bk) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,h)}$} (ellipsisb2);
         \draw (bk) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$(K_{\RG} + 1)\mu_{\RG}$} (ellipsisb2);
 
-        \draw (ellipsisb2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(b)}$} (bz);
+        \draw (ellipsisb2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,h)}$} (bz);
         \draw (ellipsisb2) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$c_{\RG}\mu_{\RG}$} (bz);
         % With previous row:
-        \draw (aa) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (ba);
+        \draw (aa) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (ba);
         \draw (aa) edge[out=-55,in=55,<-,thick] node [right] {\tiny$\mu_{\NH}$} (ba);
 
-        \draw (ab) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (bb);
+        \draw (ab) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (bb);
         \draw (ab) edge[out=-55,in=55,<-,thick] node [right] {\tiny$\mu_{\NH}$} (bb);
 
-        \draw (ac) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (bc);
+        \draw (ac) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (bc);
         \draw (ac) edge[out=-55,in=55,<-,thick] node [right] {\tiny$\mu_{\NH}$} (bc);
 
-        \draw (ellipsisa1) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (ellipsisb1);
+        \draw (ellipsisa1) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (ellipsisb1);
         \draw (ellipsisa1) edge[out=-55,in=55,<-,thick] node [right] {\tiny$\mu_{\NH}$} (ellipsisb1);
 
-        \draw (ak) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (bk);
+        \draw (ak) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (bk);
         \draw (ak) edge[out=-55,in=55,<-,thick] node [right] {\tiny$\mu_{\NH}$} (bk);
 
-        \draw (ellipsisa2) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (ellipsisb2);
+        \draw (ellipsisa2) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (ellipsisb2);
         \draw (ellipsisa2) edge[out=-55,in=55,<-,thick] node [right] {\tiny$\mu_{\NH}$} (ellipsisb2);
 
-        \draw (az) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (bz);
+        \draw (az) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (bz);
         \draw (az) edge[out=-55,in=55,<-,thick] node [right] {\tiny$\mu_{\NH}$} (bz);
         % -----------------------------------------------
         % Third row--------------------------------------
@@ -284,43 +284,43 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \node(cz) [state] at ($(ellipsisc2) + (3,0)$) {$(2,c_{\RG})$};
         % Transitions -----------------------------------
         % On Row:
-        \draw (ca) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (cb);
+        \draw (ca) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (cb);
         \draw (ca) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$\mu_{\RG}$} (cb);
 
-        \draw (cb) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (cc);
+        \draw (cb) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (cc);
         \draw (cb) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (cc);
 
-        \draw (cc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (ellipsisc1);
+        \draw (cc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ellipsisc1);
         \draw (cc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsisc1);
 
-        \draw (ellipsisc1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (ck);
+        \draw (ellipsisc1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ck);
         \draw (ellipsisc1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (ck);
 
-        \draw (ck) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(b)}$} (ellipsisc2);
+        \draw (ck) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,h)}$} (ellipsisc2);
         \draw (ck) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$(K_{\RG} + 1)\mu_{\RG}$} (ellipsisc2);
 
-        \draw (ellipsisc2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(b)}$} (cz);
+        \draw (ellipsisc2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,h)}$} (cz);
         \draw (ellipsisc2) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$c_{\RG}\mu_{\RG}$} (cz);
         % With previous row:
-        \draw (ba) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (ca);
+        \draw (ba) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (ca);
         \draw (ba) edge[out=-55,in=55,<-,thick] node [right] {\tiny$2\mu_{\NH}$} (ca);
 
-        \draw (bb) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (cb);
+        \draw (bb) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (cb);
         \draw (bb) edge[out=-55,in=55,<-,thick] node [right] {\tiny$2\mu_{\NH}$} (cb);
 
-        \draw (bc) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (cc);
+        \draw (bc) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (cc);
         \draw (bc) edge[out=-55,in=55,<-,thick] node [right] {\tiny$2\mu_{\NH}$} (cc);
 
-        \draw (ellipsisb1) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (ellipsisc1);
+        \draw (ellipsisb1) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (ellipsisc1);
         \draw (ellipsisb1) edge[out=-55,in=55,<-,thick] node [right] {\tiny$2\mu_{\NH}$} (ellipsisc1);
 
-        \draw (bk) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (ck);
+        \draw (bk) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (ck);
         \draw (bk) edge[out=-55,in=55,<-,thick] node [right] {\tiny$2\mu_{\NH}$} (ck);
 
-        \draw (ellipsisb2) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (ellipsisc2);
+        \draw (ellipsisb2) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (ellipsisc2);
         \draw (ellipsisb2) edge[out=-55,in=55,<-,thick] node [right] {\tiny$2\mu_{\NH}$} (ellipsisc2);
 
-        \draw (bz) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (cz);
+        \draw (bz) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (cz);
         \draw (bz) edge[out=-55,in=55,<-,thick] node [right] {\tiny$\mu_{\NH}$} (cz);
         % -----------------------------------------------
         % Fourth row--------------------------------------
@@ -334,43 +334,43 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \node(dz) at ($(ellipsisd2) + (3,0)$) {$\vdots$};
         % Transitions -----------------------------------
         % On Row:
-        \draw (da) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (db);
+        \draw (da) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (db);
         \draw (da) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$\mu_{\RG}$} (db);
 
-        \draw (db) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (dc);
+        \draw (db) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (dc);
         \draw (db) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (dc);
 
-        \draw (dc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (ellipsisd1);
+        \draw (dc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ellipsisd1);
         \draw (dc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsisd1);
 
-        \draw (ellipsisd1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(a)}$} (dk);
+        \draw (ellipsisd1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (dk);
         \draw (ellipsisd1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (dk);
 
-        \draw (dk) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(b)}$} (ellipsisd2);
+        \draw (dk) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,h)}$} (ellipsisd2);
         \draw (dk) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$(K_{\RG} + 1)\mu_{\RG}$} (ellipsisd2);
 
-        \draw (ellipsisd2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(b)}$} (dz);
+        \draw (ellipsisd2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,h)}$} (dz);
         \draw (ellipsisd2) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$c_{\RG}\mu_{\RG}$} (dz);
         % With previous row:
-        \draw (ca) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (da);
+        \draw (ca) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (da);
         \draw (ca) edge[out=-55,in=55,<-,thick] node [right] {\tiny$3\mu_{\NH}$} (da);
 
-        \draw (cb) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (db);
+        \draw (cb) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (db);
         \draw (cb) edge[out=-55,in=55,<-,thick] node [right] {\tiny$3\mu_{\NH}$} (db);
 
-        \draw (cc) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (dc);
+        \draw (cc) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (dc);
         \draw (cc) edge[out=-55,in=55,<-,thick] node [right] {\tiny$3\mu_{\NH}$} (dc);
 
-        \draw (ellipsisc1) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (ellipsisd1);
+        \draw (ellipsisc1) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (ellipsisd1);
         \draw (ellipsisc1) edge[out=-55,in=55,<-,thick] node [right] {\tiny$3\mu_{\NH}$} (ellipsisd1);
 
-        \draw (ck) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (dk);
+        \draw (ck) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (dk);
         \draw (ck) edge[out=-55,in=55,<-,thick] node [right] {\tiny$3\mu_{\NH}$} (dk);
 
-        \draw (ellipsisc2) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (ellipsisd2);
+        \draw (ellipsisc2) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (ellipsisd2);
         \draw (ellipsisc2) edge[out=-55,in=55,<-,thick] node [right] {\tiny$3\mu_{\NH}$} (ellipsisd2);
 
-        \draw (cz) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (dz);
+        \draw (cz) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (dz);
         \draw (cz) edge[out=-55,in=55,<-,thick] node [right] {\tiny$\mu_{\NH}$} (dz);
         % -----------------------------------------------
         % Fifth row--------------------------------------
@@ -384,43 +384,43 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \node(ez) [state] at ($(ellipsise2) + (3,0)$) {$(K_{\NH},c_{\RG})$};
         % Transitions -----------------------------------
         % On Row:
-        \draw (ea) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(c)}$} (eb);
+        \draw (ea) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (eb);
         \draw (ea) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$\mu_{\RG}$} (eb);
 
-        \draw (eb) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(c)}$} (ec);
+        \draw (eb) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (ec);
         \draw (eb) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (ec);
 
-        \draw (ec) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(c)}$} (ellipsise1);
+        \draw (ec) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (ellipsise1);
         \draw (ec) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsise1);
 
-        \draw (ellipsise1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(c)}$} (ek);
+        \draw (ellipsise1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (ek);
         \draw (ellipsise1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (ek);
 
-        \draw (ek) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(d)}$} (ellipsise2);
+        \draw (ek) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (ellipsise2);
         \draw (ek) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$(K_{\RG} + 1)\mu_{\RG}$} (ellipsise2);
 
-        \draw (ellipsise2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(d)}$} (ez);
+        \draw (ellipsise2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (ez);
         \draw (ellipsise2) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$c_{\RG}\mu_{\RG}$} (ez);
         % With previous row:
-        \draw (da) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (ea);
+        \draw (da) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (ea);
         \draw (da) edge[out=-55,in=55,<-,thick] node [right] {\tiny$K_{\NH}\mu_{\NH}$} (ea);
 
-        \draw (db) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (eb);
+        \draw (db) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (eb);
         \draw (db) edge[out=-55,in=55,<-,thick] node [right] {\tiny$K_{\NH}\mu_{\NH}$} (eb);
 
-        \draw (dc) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (ec);
+        \draw (dc) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (ec);
         \draw (dc) edge[out=-55,in=55,<-,thick] node [right] {\tiny$K_{\NH}\mu_{\NH}$} (ec);
 
-        \draw (ellipsisd1) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(a)}$} (ellipsise1);
+        \draw (ellipsisd1) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,l)}$} (ellipsise1);
         \draw (ellipsisd1) edge[out=-55,in=55,<-,thick] node [right] {\tiny$K_{\NH}\mu_{\NH}$} (ellipsise1);
 
-        \draw (dk) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (ek);
+        \draw (dk) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (ek);
         \draw (dk) edge[out=-55,in=55,<-,thick] node [right] {\tiny$K_{\NH}\mu_{\NH}$} (ek);
 
-        \draw (ellipsisd2) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (ellipsise2);
+        \draw (ellipsisd2) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (ellipsise2);
         \draw (ellipsisd2) edge[out=-55,in=55,<-,thick] node [right] {\tiny$K_{\NH}\mu_{\NH}$} (ellipsise2);
 
-        \draw (dz) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(b)}$} (ez);
+        \draw (dz) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(l,h)}$} (ez);
         \draw (dz) edge[out=-55,in=55,<-,thick] node [right] {\tiny$K_{\NH}\mu_{\NH}$} (ez);
         % Sixth row--------------------------------------
         \node (fa) at (0,-15) {$\vdots$};
@@ -432,43 +432,43 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \node(fz) at ($(ellipsisf2) + (3,0)$) {$\vdots$};
         % Transitions -----------------------------------
         % On Row:
-        \draw (fa) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(c)}$} (fb);
+        \draw (fa) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (fb);
         \draw (fa) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$\mu_{\RG}$} (fb);
 
-        \draw (fb) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(c)}$} (fc);
+        \draw (fb) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (fc);
         \draw (fb) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (fc);
 
-        \draw (fc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(c)}$} (ellipsisf1);
+        \draw (fc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (ellipsisf1);
         \draw (fc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsisf1);
 
-        \draw (ellipsisf1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(c)}$} (fk);
+        \draw (ellipsisf1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (fk);
         \draw (ellipsisf1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (fk);
 
-        \draw (fk) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(d)}$} (ellipsisf2);
+        \draw (fk) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (ellipsisf2);
         \draw (fk) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$(K_{\RG} + 1)\mu_{\RG}$} (ellipsisf2);
 
-        \draw (ellipsisf2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(d)}$} (fz);
+        \draw (ellipsisf2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (fz);
         \draw (ellipsisf2) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$c_{\RG}\mu_{\RG}$} (fz);
         % With previous row:
-        \draw (ea) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(c)}$} (fa);
+        \draw (ea) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(h,l)}$} (fa);
         \draw (ea) edge[out=-55,in=55,<-,thick] node [right] {\tiny$(K_{\NH}+1)\mu_{\NH}$} (fa);
 
-        \draw (eb) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(c)}$} (fb);
+        \draw (eb) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(h,l)}$} (fb);
         \draw (eb) edge[out=-55,in=55,<-,thick] node [right] {\tiny$(K_{\NH} + 1)\mu_{\NH}$} (fb);
 
-        \draw (ec) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(c)}$} (fc);
+        \draw (ec) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(h,l)}$} (fc);
         \draw (ec) edge[out=-55,in=55,<-,thick] node [right] {\tiny$(K_{\NH} + 1)\mu_{\NH}$} (fc);
 
-        \draw (ellipsise1) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(c)}$} (ellipsisf1);
+        \draw (ellipsise1) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(h,l)}$} (ellipsisf1);
         \draw (ellipsise1) edge[out=-55,in=55,<-,thick] node [right] {\tiny$(K_{\NH} + 1)\mu_{\NH}$} (ellipsisf1);
 
-        \draw (ek) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(d)}$} (fk);
+        \draw (ek) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(h,h)}$} (fk);
         \draw (ek) edge[out=-55,in=55,<-,thick] node [right] {\tiny$(K_{\NH} + 1)\mu_{\NH}$} (fk);
 
-        \draw (ellipsise2) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(d)}$} (ellipsisf2);
+        \draw (ellipsise2) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(h,h)}$} (ellipsisf2);
         \draw (ellipsise2) edge[out=-55,in=55,<-,thick] node [right] {\tiny$(K_{\NH} + 1)\mu_{\NH}$} (ellipsisf2);
 
-        \draw (ez) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(d)}$} (fz);
+        \draw (ez) edge[out=-125,in=125,->,thick] node [right] {\tiny$\lambda_{\NH}^{(h,h)}$} (fz);
         \draw (ez) edge[out=-55,in=55,<-,thick] node [right] {\tiny$(K_{\NH}+1)\mu_{\NH}$} (fz);
         % Final row--------------------------------------
         \node (za) [state] at (0,-18) {$(c_{\NH},0)$};
@@ -480,43 +480,43 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \node(zz) [state] at ($(ellipsisz2) + (3,0)$) {$(c_{\NH},c_{\RG})$};
         % Transitions -----------------------------------
         % On Row:
-        \draw (za) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(d)}$} (zb);
+        \draw (za) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (zb);
         \draw (za) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$\mu_{\RG}$} (zb);
 
-        \draw (zb) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(d)}$} (zc);
+        \draw (zb) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (zc);
         \draw (zb) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (zc);
 
-        \draw (zc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(d)}$} (ellipsisz1);
+        \draw (zc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (ellipsisz1);
         \draw (zc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsisz1);
 
-        \draw (ellipsisz1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(d)}$} (zk);
+        \draw (ellipsisz1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (zk);
         \draw (ellipsisz1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (zk);
 
-        \draw (zk) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(d)}$} (ellipsisz2);
+        \draw (zk) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (ellipsisz2);
         \draw (zk) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$(K_{\RG} + 1)\mu_{\RG}$} (ellipsisz2);
 
-        \draw (ellipsisz2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(d)}$} (zz);
+        \draw (ellipsisz2) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (zz);
         \draw (ellipsisz2) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$c_{\RG}\mu_{\RG}$} (zz);
         % With previous row:
-        \draw (fa) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(c)}$} (za);
+        \draw (fa) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(h,l)}$} (za);
         \draw (fa) edge[out=-55,in=55,<-,thick] node [right] {\tiny$c_{\NH}\mu_{\NH}$} (za);
 
-        \draw (fb) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(c)}$} (zb);
+        \draw (fb) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(h,l)}$} (zb);
         \draw (fb) edge[out=-55,in=55,<-,thick] node [right] {\tiny$c_{\NH}\mu_{\NH}$} (zb);
 
-        \draw (fc) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(c)}$} (zc);
+        \draw (fc) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(h,l)}$} (zc);
         \draw (fc) edge[out=-55,in=55,<-,thick] node [right] {\tiny$c_{\NH}\mu_{\NH}$} (zc);
 
-        \draw (ellipsisf1) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(c)}$} (ellipsisz1);
+        \draw (ellipsisf1) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(h,l)}$} (ellipsisz1);
         \draw (ellipsisf1) edge[out=-55,in=55,<-,thick] node [right] {\tiny$c_{\NH}\mu_{\NH}$} (ellipsisz1);
 
-        \draw (fk) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(d)}$} (zk);
+        \draw (fk) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(h,h)}$} (zk);
         \draw (fk) edge[out=-55,in=55,<-,thick] node [right] {\tiny$c_{\NH}\mu_{\NH}$} (zk);
 
-        \draw (ellipsisf2) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(d)}$} (ellipsisz2);
+        \draw (ellipsisf2) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(h,h)}$} (ellipsisz2);
         \draw (ellipsisf2) edge[out=-55,in=55,<-,thick] node [right] {\tiny$c_{\NH}\mu_{\NH}$} (ellipsisz2);
 
-        \draw (fz) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(d)}$} (zz);
+        \draw (fz) edge[out=-125,in=125,->,thick] node [left] {\tiny$\lambda_{\NH}^{(h,h)}$} (zz);
         \draw (fz) edge[out=-55,in=55,<-,thick] node [right] {\tiny$c_{\NH}\mu_{\NH}$} (zz);
 
     \end{tikzpicture}
