@@ -45,7 +45,7 @@ Have added exit arrow to diagram (#b07c476).
 >
 > Figure 3 seems to suggest that the service rate is constant no matter how many patients are present. But elsewhere (p5lines6&7) the service rates are proportional to the stock of patients. This can be fixed by changing the scripts on the appropriate arrows in Figure 3.
 
-Fix arrows in Figure 3.*
+Have addressed this in all the arrows (#d3f772b).
 
 >
 > Equation 2, the definition of qij on page 5 lines 6-18, could be improved with a bit more explanation.
