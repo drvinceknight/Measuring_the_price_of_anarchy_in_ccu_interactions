@@ -193,7 +193,7 @@ I disagree.*
 >
 > 4.      Page 5, line 53. The sentence that begins with "As such a Nash Equilibrium…" seems to be the concatenation of 2 separate thoughts. It's not clear how the two points connect and why they are in the same sentence.
 
-Re word: so that issue about pure strategies is clearer.*
+Have clarified pure strategies (#e616939).
 
 >
 > 5.      On page 9, line 34 the authors state that if one CCU sets a threshold at 0, both units are closed.  I don't understand why this is the case. Shouldn't only 1 be closed? The other will be overloaded more often, but due to stochastic fluctuations, there must be some times when it is open.
