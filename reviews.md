@@ -203,4 +203,4 @@ No.*
 >
 > 6.      Figure 7. Why don't you combine these two figures onto the same axis and demonstrate the equilibrium as done in Figure 9?
 
-Ok.*
+Have a single figure now (#7e3b31d).
