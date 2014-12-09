@@ -531,14 +531,14 @@ The stochastic transition rate matrix $Q=Q(c_{NH},c_{RG})$ of the continuous-tim
 \begin{equation}
 q_{ij}=\begin{cases} u\mu_{\NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
  v\mu_{\RG} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,1),\\
- \lambda_{NH}^{(a)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0)  \text{ and  } u_i < K_{\NH}  \text{ and  } v_i < K_{\RG},\\
- \lambda_{RG}^{(a)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1)  \text{ and  } u_i < K_{\NH}  \text{ and  } v_i < K_{\RG},\\
-\lambda_{NH}^{(b)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0) \text{ and  } u_i < K_{\NH}  \text{ and  } v_i \geq K_{\RG},\\
-\lambda_{RG}^{(b)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1) \text{ and  } u_i < K_{\NH}  \text{ and  } v_i \geq K_{\RG},\\
-\lambda_{NH}^{(c)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0) \text{ and  } u_i \geq K_{\NH}  \text{ and  } v_i < K_{\RG},\\
-\lambda_{RG}^{(c)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1) \text{ and  } u_i \geq K_{\NH}  \text{ and  } v_i < K_{\RG},\\
-\lambda_{NH}^{(d)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0) \text{ and  } u_i \geq K_{\NH}  \text{ and  } v_i \geq K_{\RG},\\
-\lambda_{RG}^{(d)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1) \text{ and  } u_i \geq K_{\NH}  \text{ and  } v_i \geq K_{\RG},\\
+ \lambda_{NH}^{(l,l)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0)  \text{ and  } u_i < K_{\NH}  \text{ and  } v_i < K_{\RG},\\
+ \lambda_{RG}^{(l,l)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1)  \text{ and  } u_i < K_{\NH}  \text{ and  } v_i < K_{\RG},\\
+\lambda_{NH}^{(l,h)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0) \text{ and  } u_i < K_{\NH}  \text{ and  } v_i \geq K_{\RG},\\
+\lambda_{RG}^{(l,h)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1) \text{ and  } u_i < K_{\NH}  \text{ and  } v_i \geq K_{\RG},\\
+\lambda_{NH}^{(h,l)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0) \text{ and  } u_i \geq K_{\NH}  \text{ and  } v_i < K_{\RG},\\
+\lambda_{RG}^{(h,l)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1) \text{ and  } u_i \geq K_{\NH}  \text{ and  } v_i < K_{\RG},\\
+\lambda_{NH}^{(h,h)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0) \text{ and  } u_i \geq K_{\NH}  \text{ and  } v_i \geq K_{\RG},\\
+\lambda_{RG}^{(h,h)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1) \text{ and  } u_i \geq K_{\NH}  \text{ and  } v_i \geq K_{\RG},\\
 0 & \text{ otherwise}.
 \end{cases}
 \end{equation}
@@ -552,7 +552,7 @@ $$T_{h}=\mu_h \sum _{n=0}^{c_h} nP^{(h)}(n)$$
 
 where $P^{(h)}=P^{(h)}(K_{\NH},K_{\RG})$ is the steady state probability distribution function (obtained from the corresponding transition matrix $Q=Q(K_{\NH},K_{\RG})$) for $h\in\{\text{NH},\text{RG}\}$.
 
-For $c_{\NH}=8$, $c_{\RG}=16$, $\lambda_{\NH}=(\lambda_{\NH}^{(a)},\lambda_{\NH}^{(b)},\lambda_{\NH}^{(c)},\lambda_{\NH}^{(d)})=(1.5,3.74,0,0)$, $\lambda_{\RG}=(\lambda_{\RG}^{(a)},\lambda_{\RG}^{(b)},\lambda_{\RG}^{(c)},\lambda_{\RG}^{(d)})=(2.24,0,3.74,0)$ and $(K_{\NH},K_{\RG})=(6,12)$, the steady state probabilities for each CCU are given in Figure \ref{steady_state_probs}.
+For $c_{\NH}=8$, $c_{\RG}=16$, $\lambda_{\NH}=(\lambda_{\NH}^{(l,l)},\lambda_{\NH}^{(l,h)},\lambda_{\NH}^{(h,l)},\lambda_{\NH}^{(h,h)})=(1.5,3.74,0,0)$, $\lambda_{\RG}=(\lambda_{\RG}^{(l,l)},\lambda_{\RG}^{(l,h)},\lambda_{\RG}^{(h,l)},\lambda_{\RG}^{(h,h)})=(2.24,0,3.74,0)$ and $(K_{\NH},K_{\RG})=(6,12)$, the steady state probabilities for each CCU are given in Figure \ref{steady_state_probs}.
 
 \begin{figure}[!htbp]
 $$
@@ -638,8 +638,8 @@ Using the convention of Figure \ref{arrivalrateregions}:
 
 \begin{itemize}
 
-\item If $\lambda_{\NH}^{(a)}\leq \lambda_{\NH}^{(b)}$ and $\lambda_{\NH}^{(c)}\leq \lambda_{\NH}^{(d)}$ then $f_{\NH}(k)$ is a non-decreasing function in $k$.
-\item If $\lambda_{\RG}^{(a)}\leq \lambda_{\RG}^{(c)}$ and $\lambda_{\RG}^{(b)}\leq \lambda_{\RG}^{(d)}$ then $f_{\RG}(k)$ is a non-decreasing function in $k$.
+\item If $\lambda_{\NH}^{(l,l)}\leq \lambda_{\NH}^{(l,h)}$ and $\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)}$ then $f_{\NH}(k)$ is a non-decreasing function in $k$.
+\item If $\lambda_{\RG}^{(l,l)}\leq \lambda_{\RG}^{(h,l)}$ and $\lambda_{\RG}^{(l,h)}\leq \lambda_{\RG}^{(h,h)}$ then $f_{\RG}(k)$ is a non-decreasing function in $k$.
 
 \end{itemize}
 
@@ -658,7 +658,7 @@ As the traffic intensity at $h$ increases: $h$ gets busier.
 
 A proof for the first part of the Lemma is given (the proof for the second part is analogous).
 
-If $\lambda_{\NH}^{(a)}\leq \lambda_{\NH}^{(b)}$ and $\lambda_{\NH}^{(c)}\leq \lambda_{\NH}^{(d)}$, for given $K_{\NH}$: then as $K_{\RG}$ increases, the arrival rate at NH is non-increasing,
+If $\lambda_{\NH}^{(l,l)}\leq \lambda_{\NH}^{(l,h)}$ and $\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)}$, for given $K_{\NH}$: then as $K_{\RG}$ increases, the arrival rate at NH is non-increasing,
 Similarly, for given $K_{{\RG}}$, as $K_{\NH}$ increases the arrival rate at RG is non-decreasing.
 
 Using the above and the previous observation this implies:
