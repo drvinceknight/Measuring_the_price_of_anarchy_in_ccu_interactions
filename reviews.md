@@ -178,7 +178,7 @@ Maybe find what observed is but also discuss where targets comes from better.*
 >
 > 1.      The last two sentences of the abstract are incredibly confusing.  What are the interests of individual hospitals? What is the goal from a social welfare perspective?  You have never defined what a utilization target is, yet you refer to it without any explanation.
 
-Put last paragraph of abstract in to context of UK.*
+Have changed wording of the last two sentences of abstracts (#6e1a5a4).
 
 >
 > 2.      In the introduction, you may want to consider removing the paragraph that starts on line 21 on page 2 as this is not really related to the presented work.
