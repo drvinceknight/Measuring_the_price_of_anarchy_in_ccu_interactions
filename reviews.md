@@ -55,7 +55,7 @@ See if this can be made better.*
 >
 > P14line51 has the word "environmenta", and the sentence seems to be missing some portion.
 
-Fix this (woops).*
+Have fixed this error (#03b6056).
 
 >
 > Acronyms and notation - Table 1 is useful, but a similar overview for acronyms would be equally helpful. One question about Table 1: the numbers do not appear to be state-dependent, even though that is stated in the text. They may be derived from the data, but they may also be simple averages, in which case the arrival rates are not conditioned on the other hospital not being on diversion. A brief explanation would be welcome.
