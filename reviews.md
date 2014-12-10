@@ -77,7 +77,7 @@ Not actually sure what is meant here.*
 >
 > It is not clear the states can be indexed lexicographically, as suggested on page 3 line 43. Yes, they can be listed such that a larger population of patients is greater than a smaller one, but each "state" with a given number of patients can have many different values for the number of patients in each hospital. This is reflected in the conditions for equation 2, but since these are clearly necessary, what is gained by suggesting the system goes from i to j? I would argue the model would be more clear if (i,j),(k,l) were used to index the states.
 
-I agree with the reviewer: there is nothing that contradicts this but can we get rid of $s$ all together?*
+I agree and have removed the s, although the rest of the comment doesn't make sense (this ordering is standard). (#063fa75)
 
 >
 > If the hospitals minimize the problem on page 6, then they are simply aiming for the "bed utilization target" of 0.8, explicitly not trying to maximize throughput. This seems to be a direct internal contradiction. Second, the value for "t" is claimed to come from the data , although this does not seem possible; how was the value for t selected?
