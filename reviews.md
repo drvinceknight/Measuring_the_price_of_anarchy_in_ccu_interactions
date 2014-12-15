@@ -178,12 +178,12 @@ Have changed wording of the last two sentences of abstracts (#6e1a5a4).
 >
 > 2.      In the introduction, you may want to consider removing the paragraph that starts on line 21 on page 2 as this is not really related to the presented work.
 
-I disagree.*
+I disagree.
 
 >
 > 3.      Figure 3 is not useful.
 
-I disagree.*
+I disagree.
 
 >
 > 4.      Page 5, line 53. The sentence that begins with "As such a Nash Equilibrium…" seems to be the concatenation of 2 separate thoughts. It's not clear how the two points connect and why they are in the same sentence.
@@ -193,7 +193,7 @@ Have clarified pure strategies (#e616939).
 >
 > 5.      On page 9, line 34 the authors state that if one CCU sets a threshold at 0, both units are closed.  I don't understand why this is the case. Shouldn't only 1 be closed? The other will be overloaded more often, but due to stochastic fluctuations, there must be some times when it is open.
 
-No.*
+No.
 
 >
 > 6.      Figure 7. Why don't you combine these two figures onto the same axis and demonstrate the equilibrium as done in Figure 9?
