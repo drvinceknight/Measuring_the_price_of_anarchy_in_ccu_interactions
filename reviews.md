@@ -117,7 +117,7 @@ Have reworded this (#68afa4f).
 >
 > 3 Results - this section appears to be two numerical examples, solved using SAGE software. As such it is not clear how much the results generalize. However, the split into soft and hard diversion is interesting. Further, the PoA is interesting in providing a scope for the cost of a lack of coordination, but it is not clear that this is truly representative of real-world losses.
 
-Discuss this better*
+Have added a sentence to the conclusion justifying this (#3245a8a).
 
 >
 >
