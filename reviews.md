@@ -88,9 +88,7 @@ Describe where $t$ comes from better.*
 > For the theorem on page 7, the best response function is such that the squared difference between utilization rate and target bed utilization rate is minimized. But in order for this to work, the entire model must be known and estimated by each hospital. Further, the best response function is based on the diversion threshold for the other, which is not explicitly assumed to be known. However, even if these assumptions are stipulated, there seems to be a gap in the proof (or perhaps it just needs to be explained more clearly): "in case of the multiple values that minimize Uh, it is assumed that fh returns the lowest such value". If so, how is that consistent with maximizing the number of served patients? Further, the original NE paper dealt with the situation where only a mixed equilibrium guaranteed that any NE existed. In this scenario, we could have a situation where 50% probability of using e.g. 10 beds and 11 beds for each hospital is a Nash equilibrium. But if we insist
 > that one uses 10, then the other may well use 11, rather than the 10 that is indicated in the proof. Further, because the functions have a discrete range, it is not "obvious" that the functions must intersect, nor is there any "point of intersection" illustrated in Figure 7.
 
-There are two points here:
-- Better describe what is PoA (a lower band on how bad things can be)*
-- See if point of intersection does indeed not exist?*
+Have added a better justification as to why the worst case is used. (#fbec792)
 
 >
 > Moving on to the Lemma, p8l6 seems to be stating that for the reasonable assumption of arrival rates (going up if the other hospital diverts), then if we fix the threshold for NH, an increase in the threshold for RG will lead to the arrival rate to NH to at the least not increase. I.e. as RG takes more patients, no more patients arrive at NH, which is reasonable. But the next sentence states the reverse for RG, i.e. that if RG has a fixed threshold, then increasing the threshold to NH makes the arrival rate to RG at the very least not go down. This second statement does not seem reasonable.
