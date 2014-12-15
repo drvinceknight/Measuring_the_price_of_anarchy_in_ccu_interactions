@@ -50,7 +50,7 @@ Have addressed this in all the arrows (#d3f772b).
 >
 > Equation 2, the definition of qij on page 5 lines 6-18, could be improved with a bit more explanation.
 
-This has been slightly changed.
+This has been slightly changed (#f8d4cc6).
 
 >
 > P14line51 has the word "environmenta", and the sentence seems to be missing some portion.
