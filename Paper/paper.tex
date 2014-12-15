@@ -527,10 +527,10 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
 
 In total there are $(c_{\NH}+1)\times(c_{\RG}+1)$ states and they are indexed lexicographically: $(0,0), (0,1), (0,2), \dots$.
 
-The stochastic transition rate matrix $Q=Q(c_{NH},c_{RG})$ of the continuous-time Markov chain \cite{Stewart2009} has entries $q_{ij}$ which is the rate at which a transition from state $i$ to state $j$ occurs. The transition rates are given by:
+The stochastic transition rate matrix $Q=Q(c_{NH},c_{RG})$ of the continuous-time Markov chain \cite{Stewart2009} has entries $q_{ij}=q_{(u_i,v_i),(u_j,v_j)}$ which is the rate at which a transition from state $i$ to state $j$ occurs. The transition rates are given by:
 
 \begin{equation}
-q_{ij}=\begin{cases} u\mu_{\NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
+q_{(u_i,v_i),(u_j,v_j)}=\begin{cases} u\mu_{\NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
  v\mu_{\RG} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,1),\\
  \lambda_{NH}^{(l,l)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0)  \text{ and  } u_i < K_{\NH}  \text{ and  } v_i < K_{\RG},\\
  \lambda_{RG}^{(l,l)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1)  \text{ and  } u_i < K_{\NH}  \text{ and  } v_i < K_{\RG},\\
@@ -729,7 +729,7 @@ If either CCU chooses their threshold at zero, patients are not admitted at all,
 
 Therefore, the matrix $Q$ has entries $q_{ij}$ as follows:
 \begin{equation}
-q_{ij}=\begin{cases} u_i\mu_{NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
+q_{(u_i,v_i),(u_j,v_j)}=\begin{cases} u_i\mu_{NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
  v_i\mu_{RG} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,1),\\
  \lambda_{\NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0)\text{ and } u_i<K_{\NH} \text{ and } v_i<K_{\RG},\\
  \lambda_{\RG} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1) \text{ and } u_i<K_{\NH} \text{ and } v_i < K_{\RG},\\
@@ -775,17 +775,17 @@ We modify the demand rate from Table \ref{parameter_values_model_1} by taking $\
 \toprule
 $x$&$t=0.15$&$t=0.27$&$t=0.4$&$t=0.52$&$t=0.64$&$t=0.76$&$t=0.88$&$t=1$\\
 \midrule
--0.9&1.0&1.0&1.0&1.0&1.0&1.0&1.0&1.0\\
--0.61&1.64&1.04&1.0&1.0&1.0&1.0&1.0&1.0\\
--0.33&3.27&1.66&1.22&1.0&1.0&1.0&1.0&1.0\\
--0.03&4.43&2.55&1.64&1.34&1.06&1.0&1.0&1.0\\
-0.26&5.23&2.99&2.1&1.51&1.28&1.09&1.0&1.0\\
-0.55&7.34&3.21&2.25&1.74&1.34&1.16&1.0&1.0\\
-0.84&7.6&3.81&2.32&1.79&1.46&1.17&1.03&1.0\\
-1.13&7.73&3.88&2.36&1.82&1.48&1.25&1.04&1.0\\
-1.41&7.81&3.91&2.61&1.97&1.58&1.26&1.09&1.0\\
-1.7&7.86&3.94&2.63&1.98&1.58&1.32&1.14&1.0\\
-1.99&7.89&3.95&2.64&1.98&1.59&1.33&1.14&1.0\\
+-0.9  & 1.0  & 1.0  & 1.0  & 1.0  & 1.0  & 1.0  & 1.0  & 1.0\\
+-0.61 & 1.64 & 1.04 & 1.0  & 1.0  & 1.0  & 1.0  & 1.0  & 1.0\\
+-0.33 & 3.27 & 1.66 & 1.22 & 1.0  & 1.0  & 1.0  & 1.0  & 1.0\\
+-0.03 & 4.43 & 2.55 & 1.64 & 1.34 & 1.06 & 1.0  & 1.0  & 1.0\\
+0.26  & 5.23 & 2.99 & 2.1  & 1.51 & 1.28 & 1.09 & 1.0  & 1.0\\
+0.55  & 7.34 & 3.21 & 2.25 & 1.74 & 1.34 & 1.16 & 1.0  & 1.0\\
+0.84  & 7.6  & 3.81 & 2.32 & 1.79 & 1.46 & 1.17 & 1.03 & 1.0\\
+1.13  & 7.73 & 3.88 & 2.36 & 1.82 & 1.48 & 1.25 & 1.04 & 1.0\\
+1.41  & 7.81 & 3.91 & 2.61 & 1.97 & 1.58 & 1.26 & 1.09 & 1.0\\
+1.7   & 7.86 & 3.94 & 2.63 & 1.98 & 1.58 & 1.32 & 1.14 & 1.0\\
+1.99  & 7.89 & 3.95 & 2.64 & 1.98 & 1.59 & 1.33 & 1.14 & 1.0\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -836,7 +836,7 @@ In effect we are modelling a certain level of cooperation in this case where CCU
 Therefore, the transition matrix $Q$ is obtained from the following transition rates $q_{ij}$:
 
 \begin{equation}
-q_{ij}=\begin{cases} u_i\mu_{NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
+q_{(u_i,v_i), (u_j, v_j)}=\begin{cases} u_i\mu_{NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
  v_i\mu_{RG} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,1),\\
  \lambda_{NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(-1,0) \text{ and }\left\{\begin{array}{l} u_i<K_{NH} \text{ and } v_i<K_{RG}  \text{ or } \\        u_i  \geq K_{NH} \text{ and } v_i  \geq K_{RG},\end{array}\right.\\
  \lambda_{RG} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1) \text{ and }\left\{\begin{array}{l}u_i< K_{NH}\text{ and }v_i<K_{RG}\text{ or }\\u_i\geq K_{NH}\text{ and }v_i\geq K_{RG}, \\\end{array}\right.\\\\
