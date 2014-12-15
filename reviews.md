@@ -100,7 +100,7 @@ Write down more formal approach for these theorems (transform what I have said v
 >
 > Finally (for the lemma), there is a "graphical proof" supplied in Figure 8, which is not convincing. It does seem reasonable that the shape of the best response functions follow the graphs indicated by the symbols, but this is not demonstrated. Stipulating that this is the case, it seems reasonable that as K(RG) increases, K(NH) is non-decreasing. As a matter of presentation, it would be helpful if the little box with the notation had the thresholds (from m-1 through m+2) listed in the order the graphs show up. Also, the caption states "Let k* = fNH(KRG) for a given KRG." It ends with "Thus, fNH(KRG) ≥ k* as required." Or in other words, k* ≥ k*or , fNH(KRG) ≥ fNH(KRG). Also, there is no reason there will be a U = t, since the threshold is a natural number, and t is not.
 
-Clarify that U = t is indeed not right: should be argmin of distance...*
+Have clarified that U!=t (#40555ae).
 
 >
 > To sum up, the conjecture seems reasonable, but the support was either incorrect or needs work to be convincing.
