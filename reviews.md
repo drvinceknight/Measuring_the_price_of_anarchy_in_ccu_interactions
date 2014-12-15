@@ -92,9 +92,6 @@ Have added a better justification as to why the worst case is used. (#fbec792)
 
 >
 > Moving on to the Lemma, p8l6 seems to be stating that for the reasonable assumption of arrival rates (going up if the other hospital diverts), then if we fix the threshold for NH, an increase in the threshold for RG will lead to the arrival rate to NH to at the least not increase. I.e. as RG takes more patients, no more patients arrive at NH, which is reasonable. But the next sentence states the reverse for RG, i.e. that if RG has a fixed threshold, then increasing the threshold to NH makes the arrival rate to RG at the very least not go down. This second statement does not seem reasonable.
-
-Clarify proof.*
-
 >
 > P8lines 10-12 are very reasonable, as they seem to be saying that if the other hospital increases its threshold, the utilization rate of the first cannot increase. And the second statement is that if the first hospital increases its threshold, it cannot have a decrease in utilization rate. However, the statements do not appear to rely on the previous observation, although that is claimed. It is not clear how the verbal statements imply the next; a more formal approach would be welcome.
 
