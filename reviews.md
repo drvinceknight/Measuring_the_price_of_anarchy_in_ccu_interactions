@@ -112,7 +112,7 @@ Clarify that U = t is indeed not right: should be argmin of distance...*
 >
 > Moving on to the price of anarchy, or PoA, it is not clear to me why the definition has been "modified to allow for a maximization problem", as the inverse would have been simpler to interpret. It is further not clear why running "at 100% utilization which would not make for a robust system" is an argument against using t=100%. Let's say this causes the system to break down, but it takes seconds to reboot, in which case a fragile system may well have a greater throughput than a robust system. In fact, set the threshold to zero and the system is remarkably robust. The last sentence (p9line8-9) is not convincing since a "low PoA" is not defined, even though on the face of it, the statement seems reasonable. A more convincing argument would be that t should be the value that provides the highest throughput for a fixed level of resources, in the long run.
 
-Change wording of robust.*
+Have reworded this (#68afa4f).
 
 >
 > 3 Results - this section appears to be two numerical examples, solved using SAGE software. As such it is not clear how much the results generalize. However, the split into soft and hard diversion is interesting. Further, the PoA is interesting in providing a scope for the cost of a lack of coordination, but it is not clear that this is truly representative of real-world losses.
