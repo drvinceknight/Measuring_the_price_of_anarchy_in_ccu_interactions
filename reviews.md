@@ -30,7 +30,7 @@ Have re worded this (#3fd71a0).
 >
 > Editorial comments - the paper needs to be tightened up. The intro repeats itself (e.g. "shortage of beds" in paragraph one, then "beds are very expensive and a limited resource" in paragraph two).  However, a single good effort in cleaning up the prose should suffice. Some of the paragraphs are so high-level they can safely be excised; e.g. the 5th paragraph of the introduction on game theory.
 
-Have addressed this (I decided to keep the intro to Game Theory and other high level paragraphs).
+Have addressed this (I decided to keep the intro to Game Theory and other high level paragraphs). (#7a5e922)
 
 >
 > It is not necessary to use the word "selfish" to describe hospitals behavior, as "rational" is a more precise descriptor that does not carry as much negative baggage (p3line6). Further, if the goal is "throughput", as listed on p5line21, then one could make the argument that the hospital is merely striving to serve the greatest number of patients.
