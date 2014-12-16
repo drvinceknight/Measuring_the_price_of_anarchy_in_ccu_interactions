@@ -60,7 +60,8 @@ Have fixed this error (#03b6056).
 >
 > Acronyms and notation - Table 1 is useful, but a similar overview for acronyms would be equally helpful. One question about Table 1: the numbers do not appear to be state-dependent, even though that is stated in the text. They may be derived from the data, but they may also be simple averages, in which case the arrival rates are not conditioned on the other hospital not being on diversion. A brief explanation would be welcome.
 
-Explain where this come from.*
+Not sure what is meant by table for acronyms.
+Have added a brief explanation about where the service and arrival rates come from.
 
 >
 > The use of a, b, c, and d in Figure 2 is not intuitive; using e.g. (l,l) or (h,h) for "low and low" or "high and high" utilizations would be much more clear.
