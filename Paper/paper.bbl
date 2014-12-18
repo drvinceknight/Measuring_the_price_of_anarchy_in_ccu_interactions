@@ -11,6 +11,12 @@ G.~Allon and A.~Federgruen.
   the acute hospital}.
 \newblock Technical report, 1999.
 
+\bibitem{batt2012doctors}
+Robert~J Batt and Christian Terwiesch.
+\newblock Doctors under load: An empirical study of state-dependent service
+  times in emergency care.
+\newblock Technical report, Working paper, 2012.
+
 \bibitem{Bevan2006}
 G.~Bevan and C.~Hood.
 \newblock {Have targets improved performance in the English NHS?}
@@ -31,6 +37,11 @@ G.~P. Cachon and F.~Zhang.
 W.~Cahill and M.~Render.
 \newblock {Dynamic simulation modeling of ICU bed availability}.
 \newblock {\em Simulation Conference Proceedings,}, pages 1573--1576, 1999.
+
+\bibitem{chan2014use}
+Carri~W Chan, Galit Yom-Tov, and Gabriel Escobar.
+\newblock When to use speedup: An examination of service systems with returns.
+\newblock {\em Operations Research}, 62(2):462--482, 2014.
 
 \bibitem{Cooper1974}
 J.~K. Cooper and T.~M. Corcoran.
@@ -117,11 +128,30 @@ E.~Kalai, M.~I. Kamien, and M.~Rubinovitch.
 \newblock {Optimal Service Speeds in a Competitive Environment}.
 \newblock {\em Management Science}, 38(8):1154--1163, August 1992.
 
+\bibitem{kc2012econometric}
+Diwas~Singh Kc and Christian Terwiesch.
+\newblock An econometric analysis of patient flows in the cardiac intensive
+  care unit.
+\newblock {\em Manufacturing \& Service Operations Management}, 14(1):50--65,
+  2012.
+
+\bibitem{NHS2013}
+Kesavan.
+\newblock {\em {Is there an optimal elective operating theatre utilisation
+  target?}}
+\newblock Health Services and Outcomes Research, 2013.
+
 \bibitem{Kim1999}
 S.~C. Kim, I.~Horowitz, and K.~K. Young.
 \newblock {Analysis of capacity management of the intensive care unit in a
   hospital}.
 \newblock {\em European Journal of Operational Research}, 115:36--46, 1999.
+
+\bibitem{kim2013icu}
+Song-Hee Kim, Carri Chan, Marcelo Olivares, and Gabriel~J Escobar.
+\newblock Icu admission control: An empirical study of capacity allocation and
+  its implication on patient outcomes.
+\newblock {\em Columbia Business School research paper}, (12/34), 2013.
 
 \bibitem{Knight2013}
 V.~A. Knight and P.~R. Harper.
@@ -200,6 +230,11 @@ A.~K. Shahani, S.~A. Ridley, and M.~S. Nielsen.
 \newblock {Modelling patient flows as an aid to decision making for critical
   care capacities and organisation.}
 \newblock {\em Anaesthesia}, 63(10):1074--80, October 2008.
+
+\bibitem{shmueli2003optimizing}
+Amir Shmueli, Charles~L Sprung, and Edward~H Kaplan.
+\newblock Optimizing admissions to an intensive care unit.
+\newblock {\em Health Care Management Science}, 6(3):131--136, 2003.
 
 \bibitem{shone2013comparisons}
 R.~Shone, V.~A. Knight, and J.~E. Williams.
