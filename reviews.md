@@ -135,7 +135,7 @@ Have added a sentence to the conclusion justifying this (#3245a8a).
 >
 > In particular, the Shmueli et al 2003 and Kim et al 2014 papers demonstrate exactly the diversion/rerouting discussed in this paper.
 
-Include all of above using the literature to justify use of targets.*
+Have added all of above and justified/explained use of targets a bit better (#29a826f).
 
 >
 > 2.      Issues with the service time model: I have substantial issues with the assumption that diverted patients adopt the length of stay profile of the CCUs at which they are treated.  LOS should depend more on clinical factors rather than the particular CCU of treatment.  The difference in average LOS across the hospitals is likely due to different patient mix.  The demographics and types of illnesses of the patients treated at each CCU are likely the cause of the differences.  As such, diverting one patient to another CCU will not change their profile, just the CCU of treatment. I understand that this creates more technical challenges, but this assumption seems completely unreasonable from an application stand point.
