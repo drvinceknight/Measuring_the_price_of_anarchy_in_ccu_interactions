@@ -701,7 +701,7 @@ Based on the previous observation this in turn implies:
     \label{equ:UNH_as_a_function_of_KRG}
 \end{equation}
 
-In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}), we have:
+In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}), this gives:
 
 \begin{equation}
     U_{\NH}(K_{\NH}) = U_{\NH}(\bar \lambda_{\NH}(K_{\NH}) \leq U_{\NH}(\bar \lambda_{\NH}(K_{\NH}+1)) = U_{\NH}(K_{\NH}+1)
@@ -711,7 +711,7 @@ In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}),
 \begin{figure}[!hbtp]
     \begin{center}
         \begin{tikzpicture}[scale=.8, every node/.style={scale=0.8}]
-            \foreach \x in {0,8}
+            \foreach \x in {0,9}
             {\coordinate (origin) at (\x,0);
                 % Coordinate system
                 \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\(\bar\lambda_{K_{\NH}}\)};
@@ -732,6 +732,54 @@ In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}),
     \end{center}
     \caption{The effect of \(K_{\NH}\) on \(\bar \lambda\).}\label{fig:effect_of_KNH_on_arrival_rate}
 \end{figure}
+
+Using (\ref{equ:UNH_as_a_function_of_KRG}) and (\ref{equ:UNH_as_a_function_of_KNH}) the general inequalities associated with \(U_{\NH}(K_{\NH}, K_{\RG})\) are summarised in Figure \ref{fig:variation_of_UNH}.
+
+\begin{figure}[!hbtp]
+    \begin{center}
+        \begin{tikzpicture}[scale=.8, every node/.style={scale=0.8}]
+            % Coordinate system
+            \draw [very thick, ->] (0,0) -- (0,6) node[anchor=south east] {\(K_{\RG}\)};
+            \draw [very thick, ->] (0,0) -- (7,0) node[anchor=north west] {\(K_{\NH}\)};
+
+            % Points
+            \foreach \x in {1,2,3,4,5,6}
+                {
+                \foreach \y in {1,2,3,4,5}
+                    {
+                        \node at (\x, \y) {\textbullet};
+                    };
+                };
+
+            % Negative region
+            \draw[rounded corners, dashed, thick] (.5,5.5) --
+              ++(5, 0) -- ++(0,-1) -- ++(-1, 0)  -- ++(0,-1) -- ++(-1,0) --
+              ++(0, -2) -- ++(-2,0) -- ++(-1, 0) -- cycle;
+            \draw [<-, thick] (3.25,4.75) -- (4.75,6) node[anchor= south west] {\(U_{\NH}\leq t\)};
+
+            % Vertical inequalities
+            \foreach \x in {1,2,3,4,5,6}
+                {
+                \foreach \y in {1.5,2.5,3.5,4.5}
+                    {
+                        \node at (\x, \y) [blue!100, rotate=90] {\textbf{\(\geq\)}};
+                    };
+                };
+
+            % Horizontal inequalities
+            \foreach \x in {1.5,2.5,3.5,4.5,5.5}
+                {
+                \foreach \y in {1,2,3,4,5}
+                    {
+                        \node at (\x, \y) [red!100] {\textbf{\(\leq\)}};
+                    };
+                };
+        \end{tikzpicture}
+    \end{center}
+    \caption{Values \(U_{\NH}\).}\label{fig:variation_of_UNH}
+\end{figure}
+
+As \(\U_{\NH}\) increases from the lowest value (top left in Figure  \ref{fig:variation_of_UNH}) to the highest (bottom right in Figure \ref{fig:variation_of_UNH}) the value of \(U_{\NH}-t\) will change sign (from negative to positive).
 
 %If $\lambda_{\NH}^{(l,l)}\leq \lambda_{\NH}^{(l,h)}$ and $\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)}$, for given $K_{\NH}$: then as $K_{\RG}$ increases, the arrival rate at NH is non-increasing,
 %Similarly, for given $K_{{\RG}}$, as $K_{\NH}$ increases the arrival rate at RG is non-decreasing.
