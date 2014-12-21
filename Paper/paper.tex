@@ -26,6 +26,8 @@
 % New commands------------------------
 \newcommand{\NH}{\text{NH}}
 \newcommand{\RG}{\text{RG}}
+\DeclareMathOperator*{\argmin}{arg\!min}
+\DeclareMathOperator*{\argmax}{arg\!max}
 
 \title{Measuring the Price of Anarchy in Critical Care Unit Interactions}
 \author{Vincent Knight*
@@ -779,31 +781,98 @@ Using (\ref{equ:UNH_as_a_function_of_KRG}) and (\ref{equ:UNH_as_a_function_of_KN
     \caption{Values \(U_{\NH}\).}\label{fig:variation_of_UNH}
 \end{figure}
 
-As \(\U_{\NH}\) increases from the lowest value (top left in Figure  \ref{fig:variation_of_UNH}) to the highest (bottom right in Figure \ref{fig:variation_of_UNH}) the value of \(U_{\NH}-t\) will change sign (from negative to positive).
+As \(U_{\NH}\) increases from the lowest value (top left in Figure  \ref{fig:variation_of_UNH}) to the highest (bottom right in Figure \ref{fig:variation_of_UNH}) the value of \(U_{\NH}-t\) will change sign (from negative to positive).
+Let \(f^+(K_{\RG})=\argmin_{\{0\leq k \leq C_{\NH}|U_{\NH}(k, K_{\RG})\geq t\}}(U_{\NH}(k, K_{\RG}))\) and \(f^-(K_{\RG})=\argmax_{\{0\leq k \leq C_{\NH}|U_{\NH}(k, K_{\RG})\leq t\}}(U_{\NH}(k, K_{\RG}))\).
+So that \(f^{\pm}({K_{\RG}})\) is the value of \(K_{\NH}\) that gives the value of \(U_{\NH}(K_{\NH}, K_{\RG})\) that is closest to \(t\) such that:
 
-%If $\lambda_{\NH}^{(l,l)}\leq \lambda_{\NH}^{(l,h)}$ and $\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)}$, for given $K_{\NH}$: then as $K_{\RG}$ increases, the arrival rate at NH is non-increasing,
-%Similarly, for given $K_{{\RG}}$, as $K_{\NH}$ increases the arrival rate at RG is non-decreasing.
+\begin{equation}
+U_{\NH}(f^-(K_{\RG}),K_{\RG})\leq t \leq U_{\NH}(f^+(K_{\RG}),K_{\RG})
+\end{equation}
 
-%Using the above and the previous observation this implies:
+This immediately (from Figure \ref{fig:variation_of_UNH}) gives:
 
-%\begin{itemize}
-    %\item The function $U_{\NH}=U_{\NH}(K_{\RG})$ is non-increasing;
-    %\item The function $U_{\NH}=U_{\NH}(K_{\NH})$ is non-decreasing.
-%\end{itemize}
+\begin{equation}
+f^{\pm}(K_{\RG}) \leq f^{\pm}(K_{\RG} + 1)
+\end{equation}
 
-%A graphical proof of the lemma is then shown in Figure \ref{proof}.
+Let:
 
-%\begin{figure}[!hbtp]
-%\begin{center}
-%\includegraphics[width=.7\textwidth]{./Images/proof.pdf}
-%\end{center}
-%\caption{Graphical proof of the fact that $f_{\NH}(K_{\RG})<f_{\NH}(K_{\RG}+1)$}\label{proof}
-%\end{figure}
+\begin{equation}
+S(K_{\RG}) = \{f^{+}(K_{\RG})\}\cup\{f^{-}(K_{\RG})\}
+\end{equation}
 
-%Let $k^*=f_{NH}(K_{\RG})$ for a given $K_{\RG}$.
-%As $K_{\RG}$ increases, the utilisation $U_{\NH}(k^*)$ will be non-increasing, but it will also be non-increasing for all $k<k^*$.
-%As $K_{RG}$ increases $\left(U_{NH}(k^*)-t\right)^2$ decreases until $\left(U_{NH}(k^*)-t\right)^2$ is minimized and then increases, however $\left(U_{NH}(k^*+1)-t\right)^2$ will continue to decrease.
-%Thus, $f_{\NH}(K_{\RG})\geq k^*$ as required.
+Thus, \(f(K_{\RG})\in S(K_{\RG})\).
+Note that from (\ref{equ:UNH_as_a_function_of_KNH}) have \(\max S(K_{\RG})=f^{+}(K_{\RG})\) and \(\min S(K_{\RG})=f^{+}(K_{\RG})\).
+In essence \(S(K_{\RG})\) corresponds to the set of two values of \(K_{\NH}\) that give a utilisation just below and just above \(t\).
+
+There are two possibilities that will now be considered:
+
+\begin{enumerate}
+    \item \(S(K_{\RG})\ne S(K_{\RG})\)
+    \item \(S(K_{\RG})= S(K_{\RG})\)
+\end{enumerate}
+
+If \(S(K_{\RG})\ne S(K_{\RG})\) this implies that \(f^{+}(K_{\RG})\leq f^{-}(K_{\RG})\) which gives:
+
+\begin{equation}
+    f(K_{\RG}) \leq f^{+}(K_{\RG}) \leq f^{-}(K_{\RG}+1) \leq f(K_{\RG}+1)
+\end{equation}
+
+which is the required result.
+
+To finish the proof consider \(S(K_{\RG})= S(K_{\RG})\) and assume:
+
+\begin{equation}
+    f(K_{RG})=f^{+}(K_{\RG}) \text{ but } f(K_{RG}+1)=f^{-}(K_{\RG}+1)
+\end{equation}
+
+which contradicts the required result.
+
+For simplicity of notation let:
+
+\[a^{\pm}=(f^{\pm}(K_{\RG}), K{\RG})\text{ and }b^{\pm}=(f^{\pm}(K_{\RG}+1), K{\RG}+1)\]
+
+Recalling equations (\ref{equ:UNH_as_a_function_of_KRG}-\ref{equ:UNH_as_a_function_of_KNH}) and Figure \ref{fig:variation_of_UNH} have:
+
+\begin{align}
+U_{\NH}(b^-)&\leq U_{\NH}(a^-)\\
+U_{\NH}(b^+)&\leq U_{\NH}(a^+)
+\end{align}
+
+which implies:
+
+\begin{equation}
+U_{\NH}(b^-) +  U_{\NH}(b^+) \leq U_{\NH}(a^-) + U_{\NH}(a^-)
+\label{equ:true_inequality_for_a_and_b}
+\end{equation}
+
+As \(f(K_{\RG})=f^{+}(K_{\RG})\) (this is the assumption made):
+
+\begin{equation}
+|U_{\NH}(a^+)-t|<|U_{\NH}(a^-)-t|
+\end{equation}
+
+this implies:
+
+\begin{equation}
+U_{\NH}(a^+)+U_{\NH}(a^-)<2t
+\label{equ:contradiction_part_1}
+\end{equation}
+
+Similarly as \(f(K_{\RG}+1)=f^{-}(K_{\RG}+1)\) (this is the assumption made):
+
+\begin{equation}
+|U_{\NH}(b^+)-t|>|U_{\NH}(b^-)-t|
+\end{equation}
+
+this implies:
+
+\begin{equation}
+U_{\NH}(b^+)+U_{\NH}(b^-)>2t
+\label{equ:contradiction_part_2}
+\end{equation}
+
+Combining (\ref{equ:contradiction_part_1}) and (\ref{equ:contradiction_part_2}) contradicts (\ref{equ:true_inequality_for_a_and_b}) implying that the original assumption was incorrect thus proving the required result.
 \end{proof}
 
 The aim of the work presented is to measure the inefficiency created by the removal of central control between CCUs.
