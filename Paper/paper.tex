@@ -666,29 +666,96 @@ As the traffic intensity at $h$ increases: $h$ gets busier.
 
 A proof for the first part of the Lemma is given (the proof for the second part is analogous).
 
-If $\lambda_{\NH}^{(l,l)}\leq \lambda_{\NH}^{(l,h)}$ and $\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)}$, for given $K_{\NH}$: then as $K_{\RG}$ increases, the arrival rate at NH is non-increasing,
-Similarly, for given $K_{{\RG}}$, as $K_{\NH}$ increases the arrival rate at RG is non-decreasing.
-
-Using the above and the previous observation this implies:
-
-\begin{itemize}
-    \item The function $U_{\NH}=U_{\NH}(K_{\RG})$ is non-increasing;
-    \item The function $U_{\NH}=U_{\NH}(K_{\NH})$ is non-decreasing.
-\end{itemize}
-
-A graphical proof of the lemma is then shown in Figure \ref{proof}.
+Let \(\bar \lambda_{\NH} = \bar \lambda_{\NH}(K_{\RG})\) be the effective arrival rate at NH.
+If \(\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)},\lambda_{\NH}^{(l,l)}\leq \lambda_{\NH}^{(l,h)}\) then this implies that \(\bar \lambda_{\NH}(K_{\RG}) \geq \bar \lambda_{\NH}(K_{\RG} + 1)\) as shown in Figure \ref{fig:effect_of_KRG_on_arrival_rate}.
 
 \begin{figure}[!hbtp]
-\begin{center}
-\includegraphics[width=.7\textwidth]{./Images/proof.pdf}
-\end{center}
-\caption{Graphical proof of the fact that $f_{\NH}(K_{\RG})<f_{\NH}(K_{\RG}+1)$}\label{proof}
+    \begin{center}
+        \begin{tikzpicture}[scale=.8, every node/.style={scale=0.8}]
+            \foreach \x in {0,8}
+            {\coordinate (origin) at (\x,0);
+                % Coordinate system
+                \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\(\bar\lambda_{K_{\RG}}\)};
+                \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {Occupancy at RG};
+                % lambda
+                \draw ($(origin) + (0,2)$) -- ($(origin) + (2,2)$) -- ($(origin) + (2,4)$) -- ($(origin) + (5,4)$);
+                \node at ($(origin) + (1,2.5)$) {\(\lambda_{\NH}^{(l,l)}\)};
+                \node at ($(origin) + (3.5,4.5)$) {\(\lambda_{\NH}^{(l,h)}\)};
+                % Effect of KRG
+                \draw [dashed] ($(origin) + (0,2)$) -- ($(origin) + (4,2)$) -- ($(origin) + (4,4)$);
+                \draw [dashed] ($(origin) + (2,0)$) -- ($(origin) + (2,2)$);
+                \draw [dashed] ($(origin) + (4,0)$) -- ($(origin) + (4,2)$);
+                \draw [very thick, ->] ($(origin) + (2.5,3)$) -- ($(origin) + (3.5,3)$);
+                \node at ($(origin) + (2,0)$) [below] {\(K_{\RG}\)};
+                \node at ($(origin) + (4,0)$) [below] {\(K_{\RG}+1\)};
+            };
+        \end{tikzpicture}
+    \end{center}
+    \caption{The effect of \(K_{\RG}\) on \(\bar \lambda\).}\label{fig:effect_of_KRG_on_arrival_rate}
 \end{figure}
 
-Let $k^*=f_{NH}(K_{\RG})$ for a given $K_{\RG}$.
-As $K_{\RG}$ increases, the utilisation $U_{\NH}(k^*)$ will be non-increasing, but it will also be non-increasing for all $k<k^*$.
-As $K_{RG}$ increases $\left(U_{NH}(k^*)-t\right)^2$ decreases until $\left(U_{NH}(k^*)-t\right)^2$ is minimized and then increases, however $\left(U_{NH}(k^*+1)-t\right)^2$ will continue to decrease.
-Thus, $f_{\NH}(K_{\RG})\geq k^*$ as required.
+Based on the previous observation this in turn implies:
+
+\begin{equation}
+    U_{\NH}(K_{\RG}) = U_{\NH}(\bar \lambda_{\RG}(K_{\RG}) \geq U_{\NH}(\bar \lambda_{\RG}(K_{\RG}+1)) = U_{\NH}(K_{\RG}+1)
+    \label{equ:UNH_as_a_function_of_KRG}
+\end{equation}
+
+In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}), we have:
+
+\begin{equation}
+    U_{\NH}(K_{\NH}) = U_{\NH}(\bar \lambda_{\NH}(K_{\NH}) \leq U_{\NH}(\bar \lambda_{\NH}(K_{\NH}+1)) = U_{\NH}(K_{\NH}+1)
+    \label{equ:UNH_as_a_function_of_KNH}
+\end{equation}
+
+\begin{figure}[!hbtp]
+    \begin{center}
+        \begin{tikzpicture}[scale=.8, every node/.style={scale=0.8}]
+            \foreach \x in {0,8}
+            {\coordinate (origin) at (\x,0);
+                % Coordinate system
+                \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\(\bar\lambda_{K_{\NH}}\)};
+                \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {Occupancy at NH};
+                % lambda
+                \draw ($(origin) + (0,4)$) -- ($(origin) + (2,4)$) -- ($(origin) + (2,2)$) -- ($(origin) + (5,2)$);
+                \node at ($(origin) + (1,3.5)$) {\(\lambda_{\NH}^{(l,l)}\)};
+                \node at ($(origin) + (3.5,1.5)$) {\(\lambda_{\NH}^{(l,h)}\)};
+                % Effect of KNH
+                \draw [dashed] ($(origin) + (0,4)$) -- ($(origin) + (4,4)$) -- ($(origin) + (4,2)$);
+                \draw [dashed] ($(origin) + (2,0)$) -- ($(origin) + (2,4)$);
+                \draw [dashed] ($(origin) + (4,0)$) -- ($(origin) + (4,4)$);
+                \draw [very thick, ->] ($(origin) + (2.5,3)$) -- ($(origin) + (3.5,3)$);
+                \node at ($(origin) + (2,0)$) [below] {\(K_{\NH}\)};
+                \node at ($(origin) + (4,0)$) [below] {\(K_{\NH}+1\)};
+            };
+        \end{tikzpicture}
+    \end{center}
+    \caption{The effect of \(K_{\NH}\) on \(\bar \lambda\).}\label{fig:effect_of_KNH_on_arrival_rate}
+\end{figure}
+
+%If $\lambda_{\NH}^{(l,l)}\leq \lambda_{\NH}^{(l,h)}$ and $\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)}$, for given $K_{\NH}$: then as $K_{\RG}$ increases, the arrival rate at NH is non-increasing,
+%Similarly, for given $K_{{\RG}}$, as $K_{\NH}$ increases the arrival rate at RG is non-decreasing.
+
+%Using the above and the previous observation this implies:
+
+%\begin{itemize}
+    %\item The function $U_{\NH}=U_{\NH}(K_{\RG})$ is non-increasing;
+    %\item The function $U_{\NH}=U_{\NH}(K_{\NH})$ is non-decreasing.
+%\end{itemize}
+
+%A graphical proof of the lemma is then shown in Figure \ref{proof}.
+
+%\begin{figure}[!hbtp]
+%\begin{center}
+%\includegraphics[width=.7\textwidth]{./Images/proof.pdf}
+%\end{center}
+%\caption{Graphical proof of the fact that $f_{\NH}(K_{\RG})<f_{\NH}(K_{\RG}+1)$}\label{proof}
+%\end{figure}
+
+%Let $k^*=f_{NH}(K_{\RG})$ for a given $K_{\RG}$.
+%As $K_{\RG}$ increases, the utilisation $U_{\NH}(k^*)$ will be non-increasing, but it will also be non-increasing for all $k<k^*$.
+%As $K_{RG}$ increases $\left(U_{NH}(k^*)-t\right)^2$ decreases until $\left(U_{NH}(k^*)-t\right)^2$ is minimized and then increases, however $\left(U_{NH}(k^*+1)-t\right)^2$ will continue to decrease.
+%Thus, $f_{\NH}(K_{\RG})\geq k^*$ as required.
 \end{proof}
 
 The aim of the work presented is to measure the inefficiency created by the removal of central control between CCUs.
