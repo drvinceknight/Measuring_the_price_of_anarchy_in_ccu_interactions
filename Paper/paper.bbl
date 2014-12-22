@@ -165,12 +165,6 @@ V.~A. Knight, P.~R. Harper, and L.~Smith.
   measures.
 \newblock {\em Omega}, 40(6):918--926, 2012.
 
-\bibitem{Komenda2013}
-I.~Komenda.
-\newblock {\em {Modelling Critical Care Unit Activities Through Queueing
-  Theory}}.
-\newblock PhD thesis, 2013.
-
 \bibitem{Koutsoupias1999}
 E.~Koutsoupias and C.~Papadimitriou.
 \newblock {Worst-Case Equilibria}.
@@ -259,6 +253,13 @@ W.\thinspace{}A. Stein et~al.
 W.~J. Stewart.
 \newblock {\em {Probability, Markov Chains, Queues, and Simulation}}.
 \newblock Priceton University Press, 1st edition, 2009.
+
+\bibitem{williams2015mathematical}
+J~Williams, S~Dumont, J~Parry-Jones, I~Komenda, J~Griffiths, and V~Knight.
+\newblock Mathematical modelling of patient flows to predict critical care
+  capacity required following the merger of two district general hospitals into
+  one.
+\newblock {\em Anaesthesia}, 70(1):32--40, 2015.
 
 \bibitem{xie2006note}
 Jinxing Xie and Song Ai.

@@ -52,12 +52,22 @@ In particular, we identify the lowest value of a utilisation target that aligns 
 
 \section{Introduction}
 
+The effect of state dependent service rates in healthcare has been well studied in isolated hospitals.
+In \cite{batt2012doctors} an empirical study is undertaken and service rate slow down is identified.
+Furthermore, it is shown that modelling whilst ignoring these state dependent rates leads to errors.
+This effect is further identified in \cite{chan2014use, kc2012econometric} where for example the negative effect on patient outcome is revealed.
+In \cite{kim2013icu, shmueli2003optimizing} this is expanded to consider a variety of admission policies in two CCUs, in particular the effect of rejection (due to too high occupancy) is measured.
+These policies are studied in the setting of a single hospital, and thus, from a game theoretic \cite{Maschler2013} point of view correspond to rational behaviour.
+In practice a simplification of rational strategies is managed by policy makers by setting utilisation targets that ensure that hospitals do not run at a level likely to have a high rejection rate (example of these can be seen in \cite{Bevan2006, NHS2013}).
+
+The aim of this paper is to further investigate the effect of rational policies employed by Hospitals.
+In particular, the goal is to place this in a game theoretic setting so as to identify whether or not target policies result in uncoordinated behaviour that is damaging for patients.
+
 A Critical Care Unit (CCU), also sometimes referred to as an Intensive Therapy Unit or Intensive Therapy Department, is a special ward that is found in most acute hospitals.
 It provides intensive care (treatment and monitoring) for people who are critically ill or are in an unstable condition.
 CCUs face major challenges, on average, 8\% of patients are refused admission to a CCU because the Unit is full \cite{Report}.
 The CCU occupancy rates for some hospitals are reportedly very high \cite{Mitchell1995,Smith1995} and a shortage of beds has been identified throughout the UK.
 
-Patients in CCUs need constant medical support to keep their body functioning.
 Many previous researchers have developed queueing models to help manage bed capacities in hospitals \cite{Cooper1974,Dumas1984,Gallivan2011,Gorunescu2002a,Griffiths2012,Harper2002a}.
 Also, a vast amount of literature has been devoted to the simulation of CCUs;  \cite{Cahill1999a,Costa2003,Griffiths2004a,Kim1999,Litvak2008,Shahani2008}.
 
@@ -67,7 +77,7 @@ For the remainder of this paper, the Nevill Hall hospital will be referred to as
 
 The main proposition of the work requested by the ABUHB was to develop a mathematical model of bed occupancies at the CCUs at RG and NH.
 After an initial analysis of the data, behavioural aspects became apparent; for example, delaying patients discharge if there was no pressure on CCU beds, or admitting fewer patients if bed occupancy levels were high.
-As a result of this, a state-dependent queueing model has been developed, which includes the dependency of admission rate on actual occupancy \cite{Komenda2013}.
+As a result of this, a state-dependent queueing model has been developed, which includes the dependency of admission rate on actual occupancy \cite{williams2015mathematical}.
 This state dependent model was applied to both NH and RG separately.
 It is however obvious that the actions of one CCU impact on the other CCU, as diversion of patients from one CCU to the other sometimes occurs.
 A pictorial representation of the situation is given in Figure \ref{diagramofdiversion}.
@@ -90,17 +100,6 @@ A pictorial representation of the situation is given in Figure \ref{diagramofdiv
 \caption{Diagrammatic representation of CCU interaction through patient diversion.}\label{diagramofdiversion}
 \end{center}
 \end{figure}
-
-The effect of state dependent service rates in healthcare has been well studied in isolated hospitals.
-In \cite{batt2012doctors} an empirical study is undertaken and service rate slow down is identified.
-Furthermore, it is shown that modelling whilst ignoring these state dependent rates leads to errors.
-This effect is further identified in \cite{chan2014use, kc2012econometric} where for example the negative effect on patient outcome is revealed.
-In \cite{kim2013icu, shmueli2003optimizing} this is expanded to consider a variety of admission policies in two CCUs, in particular the effect of rejection (due to too high occupancy) is measured.
-These policies are studied in the setting of a single hospital, and thus, from a game theoretic \cite{Maschler2013} point of view correspond to rational behaviour.
-In practice a simplification of rational strategies is managed by policy makers by setting utilisation targets that ensure that hospitals do not run at a level likely to have a high rejection rate (example of these can be seen in \cite{Bevan2006, NHS2013}).
-
-The aim of this paper is to further investigate the effect of rational policies employed by Hospitals.
-In particular, the aim is to place this in a game theoretic setting so as to identify whether or not target policies result in uncoordinated behaviour that is damaging for patients.
 
 Most research where game theory is applied in healthcare has mainly concentrated on Emergency Departments (EDs) and how to deal with diversions of patients and ambulances.
 In \cite{Hagtvedt2009} cooperative strategies for hospitals are considered, in order to reduce occurrences when ambulances are turned away due to the ED being full.
@@ -674,7 +673,7 @@ If \(\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)},\lambda_{\NH}^{(l,l)}\leq \
 \begin{figure}[!hbtp]
     \begin{center}
         \begin{tikzpicture}[scale=.8, every node/.style={scale=0.8}]
-            \foreach \x in {0,8}
+            \foreach \x in {0,9}
             {\coordinate (origin) at (\x,0);
                 % Coordinate system
                 \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\(\bar\lambda_{K_{\RG}}\)};
@@ -696,17 +695,17 @@ If \(\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)},\lambda_{\NH}^{(l,l)}\leq \
     \caption{The effect of \(K_{\RG}\) on \(\bar \lambda\).}\label{fig:effect_of_KRG_on_arrival_rate}
 \end{figure}
 
-Based on the previous observation this in turn implies:
+Based on the previous observation this in turn implies: \(U_{\NH}(K_{\RG}) = U_{\NH}(\bar \lambda_{\RG}(K_{\RG}) \geq U_{\NH}(\bar \lambda_{\RG}(K_{\RG}+1)) = U_{\NH}(K_{\RG}+1)\) giving:
 
 \begin{equation}
-    U_{\NH}(K_{\RG}) = U_{\NH}(\bar \lambda_{\RG}(K_{\RG}) \geq U_{\NH}(\bar \lambda_{\RG}(K_{\RG}+1)) = U_{\NH}(K_{\RG}+1)
+    U_{\NH}(K_{\RG}) \geq U_{\NH}(K_{\RG}+1)
     \label{equ:UNH_as_a_function_of_KRG}
 \end{equation}
 
-In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}), this gives:
+In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}), this gives: \(U_{\NH}(K_{\NH}) = U_{\NH}(\bar \lambda_{\NH}(K_{\NH}) \leq U_{\NH}(\bar \lambda_{\NH}(K_{\NH}+1)) = U_{\NH}(K_{\NH}+1)\) giving:
 
 \begin{equation}
-    U_{\NH}(K_{\NH}) = U_{\NH}(\bar \lambda_{\NH}(K_{\NH}) \leq U_{\NH}(\bar \lambda_{\NH}(K_{\NH}+1)) = U_{\NH}(K_{\NH}+1)
+    U_{\NH}(K_{\NH}) \leq U_{\NH}(K_{\NH}+1)
     \label{equ:UNH_as_a_function_of_KNH}
 \end{equation}
 
@@ -778,12 +777,22 @@ Using (\ref{equ:UNH_as_a_function_of_KRG}) and (\ref{equ:UNH_as_a_function_of_KN
                 };
         \end{tikzpicture}
     \end{center}
-    \caption{Values \(U_{\NH}\).}\label{fig:variation_of_UNH}
+    \caption{Values of \(U_{\NH}\) and the corresponding inequalities for varying cutoff thresholds.}\label{fig:variation_of_UNH}
 \end{figure}
 
 As \(U_{\NH}\) increases from the lowest value (top left in Figure  \ref{fig:variation_of_UNH}) to the highest (bottom right in Figure \ref{fig:variation_of_UNH}) the value of \(U_{\NH}-t\) will change sign (from negative to positive).
-Let \(f^+(K_{\RG})=\argmin_{\{0\leq k \leq C_{\NH}|U_{\NH}(k, K_{\RG})\geq t\}}(U_{\NH}(k, K_{\RG}))\) and \(f^-(K_{\RG})=\argmax_{\{0\leq k \leq C_{\NH}|U_{\NH}(k, K_{\RG})\leq t\}}(U_{\NH}(k, K_{\RG}))\).
-So that \(f^{\pm}({K_{\RG}})\) is the value of \(K_{\NH}\) that gives the value of \(U_{\NH}(K_{\NH}, K_{\RG})\) that is closest to \(t\) such that:
+Let:
+
+\begin{equation}
+f^+(K_{\RG})=\argmin_{\{0\leq k \leq C_{\NH}|U_{\NH}(k, K_{\RG})\geq t\}}(U_{\NH}(k, K_{\RG}))
+\end{equation}
+ and
+
+\begin{equation}
+f^-(K_{\RG})=\argmax_{\{0\leq k \leq C_{\NH}|U_{\NH}(k, K_{\RG})\leq t\}}(U_{\NH}(k, K_{\RG}))
+\end{equation}
+
+Thus, \(f^{\pm}({K_{\RG}})\) is the value of \(K_{\NH}\) that gives the value of \(U_{\NH}(K_{\NH}, K_{\RG})\) that is closest to \(t\) such that:
 
 \begin{equation}
 U_{\NH}(f^-(K_{\RG}),K_{\RG})\leq t \leq U_{\NH}(f^+(K_{\RG}),K_{\RG})
@@ -798,21 +807,21 @@ f^{\pm}(K_{\RG}) \leq f^{\pm}(K_{\RG} + 1)
 Let:
 
 \begin{equation}
-S(K_{\RG}) = \{f^{+}(K_{\RG})\}\cup\{f^{-}(K_{\RG})\}
+S(K_{\RG}) = \{f^{-}(K_{\RG})\}\cup\{f^{+}(K_{\RG})\}
 \end{equation}
 
 Thus, \(f(K_{\RG})\in S(K_{\RG})\).
-Note that from (\ref{equ:UNH_as_a_function_of_KNH}) have \(\max S(K_{\RG})=f^{+}(K_{\RG})\) and \(\min S(K_{\RG})=f^{+}(K_{\RG})\).
+Note that from (\ref{equ:UNH_as_a_function_of_KNH}) \(\max (S(K_{\RG}))=f^{+}(K_{\RG})\) and \(\min S(K_{\RG})=f^{+}(K_{\RG})\).
 In essence \(S(K_{\RG})\) corresponds to the set of two values of \(K_{\NH}\) that give a utilisation just below and just above \(t\).
 
 There are two possibilities that will now be considered:
 
 \begin{enumerate}
-    \item \(S(K_{\RG})\ne S(K_{\RG})\)
-    \item \(S(K_{\RG})= S(K_{\RG})\)
+    \item \(S(K_{\RG})\ne S(K_{\RG}+1)\)
+    \item \(S(K_{\RG})= S(K_{\RG}+1)\)
 \end{enumerate}
 
-If \(S(K_{\RG})\ne S(K_{\RG})\) this implies that \(f^{+}(K_{\RG})\leq f^{-}(K_{\RG})\) which gives:
+If \(S(K_{\RG})\ne S(K_{\RG})\) this implies that \(f^{+}(K_{\RG})\leq f^{-}(K_{\RG}+1)\) which gives:
 
 \begin{equation}
     f(K_{\RG}) \leq f^{+}(K_{\RG}) \leq f^{-}(K_{\RG}+1) \leq f(K_{\RG}+1)
@@ -820,17 +829,17 @@ If \(S(K_{\RG})\ne S(K_{\RG})\) this implies that \(f^{+}(K_{\RG})\leq f^{-}(K_{
 
 which is the required result.
 
-To finish the proof consider \(S(K_{\RG})= S(K_{\RG})\) and assume:
+To finish the proof consider \(S(K_{\RG})=S(K_{\RG})\) which is equivalent to \(f^{\pm}(K_{\RG})=f^{\pm}(K_{\RG}+1)\) and assume:
 
 \begin{equation}
-    f(K_{RG})=f^{+}(K_{\RG}) \text{ but } f(K_{RG}+1)=f^{-}(K_{\RG}+1)
+    f(K_{\RG})=f^{+}(K_{\RG}) \text{ but } f(K_{\RG}+1)=f^{-}(K_{\RG}+1)
 \end{equation}
 
-which contradicts the required result.
+which, because it has been assumed that \(f^{-}(K_{\RG}+1)=f^{-}(K_{\RG})\), contradicts the required result (as this would imply that \(f(K_{\RG})< f(K_{\RG}+1)\).
 
 For simplicity of notation let:
 
-\[a^{\pm}=(f^{\pm}(K_{\RG}), K{\RG})\text{ and }b^{\pm}=(f^{\pm}(K_{\RG}+1), K{\RG}+1)\]
+\[a^{\pm}=(f^{\pm}(K_{\RG}), K_{\RG})\text{ and }b^{\pm}=(f^{\pm}(K_{\RG}+1), K_{\RG}+1))=(f^{\pm}(K_{\RG}), K_{\RG}+1))\]
 
 Recalling equations (\ref{equ:UNH_as_a_function_of_KRG}-\ref{equ:UNH_as_a_function_of_KNH}) and Figure \ref{fig:variation_of_UNH} have:
 
@@ -852,7 +861,7 @@ As \(f(K_{\RG})=f^{+}(K_{\RG})\) (this is the assumption made):
 |U_{\NH}(a^+)-t|<|U_{\NH}(a^-)-t|
 \end{equation}
 
-this implies:
+which implies:
 
 \begin{equation}
 U_{\NH}(a^+)+U_{\NH}(a^-)<2t
@@ -865,7 +874,7 @@ Similarly as \(f(K_{\RG}+1)=f^{-}(K_{\RG}+1)\) (this is the assumption made):
 |U_{\NH}(b^+)-t|>|U_{\NH}(b^-)-t|
 \end{equation}
 
-this implies:
+which implies:
 
 \begin{equation}
 U_{\NH}(b^+)+U_{\NH}(b^-)>2t
