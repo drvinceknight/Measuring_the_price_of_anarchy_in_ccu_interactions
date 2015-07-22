@@ -83,3 +83,4 @@ docs/_build/
 
 # Apple stuff
 *.DS_Store
+*zip
