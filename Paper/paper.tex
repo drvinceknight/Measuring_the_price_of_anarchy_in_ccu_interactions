@@ -152,10 +152,10 @@ The paper is organised as follows:
 Throughout this paper it is assumed that both CCUs (NH and RG) act selfishly and rationally.
 The strategies of each CCU are capacity thresholds at which they declare being in ``diversion''. When in ``diversion'' the arrival rates of patients are modified.
 Given the proximity of the two CCUs, one CCU could for example divert their patients to the other.
-Figure \ref{arrivalrateregions} shows a diagrammatic representation of this where $\lambda_h^{r}$ for $h\in\{\NH, \RG\}$ and $r\in\{(l,l), (l,h), (h,l), (h,h)\}$ simply denote arrival rates that will be defined for both models considered in Section \ref{results}, where $r$ denotes regions with boundaries defined by the capacity thresholds.
+Figure \ref{arrivalrateregions} shows a diagrammatic representation of this where $\lambda_H^{r}$ for $H\in\{\NH, \RG\}$ and $r\in\{(l,l), (l,h), (h,l), (h,h)\}$ simply denote arrival rates that will be defined for both models considered in Section \ref{results}, where $r$ denotes regions with boundaries defined by the capacity thresholds.
 For example $(l,h)$ denotes a region for which $\NH$ experiences \textit{low} demand and $\RG$ experiences \textit{high} demand.
 It is also assumed that diverted patients will be treated under the length of stay profile of the CCU they are admitted to.
-The capacity thresholds are denoted as $K_{h}\in\mathbb{Z}$ for $h\in\{\NH,\RG\}$. Note that $0\leq K_h\leq c_h$.
+The capacity thresholds are denoted as $K_{H}\in\mathbb{Z}$ for $H\in\{\NH,\RG\}$. Note that $0\leq K_N\leq c_H$.
 
 \begin{figure}[!htbp]
 \begin{center}
@@ -165,12 +165,12 @@ The capacity thresholds are denoted as $K_{h}\in\mathbb{Z}$ for $h\in\{\NH,\RG\}
         \draw [dashed, red, thick] (3,0) -- (3,3);
         \node at (-.5,1) {$K_{\NH}$};
         \node at (3,3.25) {$K_{\RG}$};
-        \node at (1.5,2) {$\lambda_{h}^{(l,l)}$};
-        \node at (3.5,2) {$\lambda_{h}^{(l,h)}$};
-        \node at (1.5,.5) {$\lambda_{h}^{(h,l)}$};
-        \node at (3.5,.5) {$\lambda_{h}^{(h,h)}$};
+        \node at (1.5,2) {$\lambda_{H}^{(l,l)}$};
+        \node at (3.5,2) {$\lambda_{H}^{(l,h)}$};
+        \node at (1.5,.5) {$\lambda_{H}^{(h,l)}$};
+        \node at (3.5,.5) {$\lambda_{H}^{(h,h)}$};
     \end{tikzpicture}
-\caption{General arrival rates for each CCU at each region, where $h\in\{\NH, \RG\}$} \label{arrivalrateregions}
+\caption{General arrival rates for each CCU at each region, where $H\in\{\NH, \RG\}$} \label{arrivalrateregions}
 \end{center}
 \end{figure}
 
@@ -553,12 +553,12 @@ q_{(u_i,v_i),(u_j,v_j)}=\begin{cases} u\mu_{\NH} & \text{ if  } (u_i,v_i)-(u_j,v
 
 Utilities will be of interest when this queueing theoretical model will be inserted in the game theoretical model.
 Throughput of patients is a natural choice of utility given that most hospitals are financially rewarded per served patient \cite{Pate2009}.
-For each threshold pair $(K_{\NH},K_{\RG})$, the utilisation rate $U_h$ and throughput $T_h$ can easily be obtained for each CCU: $h\in\{\text{NH},\text{RG}\}$, using the following formulas:
+For each threshold pair $(K_{\NH},K_{\RG})$, the utilisation rate $U_H$ and throughput $T_H$ can easily be obtained for each CCU: $H\in\{\text{NH},\text{RG}\}$, using the following formulas:
 
-$$U_{h}={{\sum_{n=0}^{c_h} nP^{(h)}(n)}\over{c_{h}}}$$
-$$T_{h}=\mu_h \sum _{n=0}^{c_h} nP^{(h)}(n)$$
+$$U_{H}={{\sum_{n=0}^{c_H} nP^{(H)}(n)}\over{c_{H}}}$$
+$$T_{H}=\mu_H \sum _{n=0}^{c_H} nP^{(H)}(n)$$
 
-where $P^{(h)}=P^{(h)}(K_{\NH},K_{\RG})$ is the steady state probability distribution function (obtained from the corresponding transition matrix $Q=Q(K_{\NH},K_{\RG})$) for $h\in\{\text{NH},\text{RG}\}$.
+where $P^{(H)}=P^{(H)}(K_{\NH},K_{\RG})$ is the steady state probability distribution function (obtained from the corresponding transition matrix $Q=Q(K_{\NH},K_{\RG})$) for $H\in\{\text{NH},\text{RG}\}$.
 
 For $c_{\NH}=8$, $c_{\RG}=16$, $\lambda_{\NH}=(\lambda_{\NH}^{(l,l)},\lambda_{\NH}^{(l,h)},\lambda_{\NH}^{(h,l)},\lambda_{\NH}^{(h,h)})=(1.5,3.74,0,0)$, $\lambda_{\RG}=(\lambda_{\RG}^{(l,l)},\lambda_{\RG}^{(l,h)},\lambda_{\RG}^{(h,l)},\lambda_{\RG}^{(h,h)})=(2.24,0,3.74,0)$ and $(K_{\NH},K_{\RG})=(6,12)$, the steady state probabilities for each CCU are given in Figure \ref{steady_state_probs}.
 
@@ -566,10 +566,10 @@ For $c_{\NH}=8$, $c_{\RG}=16$, $\lambda_{\NH}=(\lambda_{\NH}^{(l,l)},\lambda_{\N
 $$
 \begin{array}{cc}
 \includegraphics[width=.5\textwidth]{./Images/NH.pdf}&\includegraphics[width=.5\textwidth]{./Images/RG.pdf}\\
-h=NH&h=RG
+H=\NH&H=\RG
 \end{array}
 $$
-\caption{Steady state probabilities for $h\in\{\NH,\RG\}$ with $(K_{\NH}, K_{\RG})=(6,12)$} \label{steady_state_probs}
+\caption{Steady state probabilities for $H\in\{\NH,\RG\}$ with $(K_{\NH}, K_{\RG})=(6,12)$} \label{steady_state_probs}
 \end{figure}
 
 For the parameters of Figure \ref{steady_state_probs} the utilisation rates are: 59\% at NH and 62\% at RG and a throughput of 1.23 at NH and 1.98 at RG (patients per day).\\
@@ -582,10 +582,10 @@ We see that the RG is now busier as a result of NH having a lower diversion thre
 $$
 \begin{array}{cc}
 \includegraphics[width=.5\textwidth]{./Images/NH_1_12.pdf}&\includegraphics[width=.5\textwidth]{./Images/RG_1_12.pdf}\\
-h=\NH&h=\RG
+H=\NH&H=\RG
 \end{array}
 $$
-\caption{Steady state probabilities for $h\in\{\NH,\RG\}$ with $(K_{\NH}, K_{\RG})=(1,12)$} \label{steady_state_probs_1_12}
+\caption{Steady state probabilities for $H\in\{\NH,\RG\}$ with $(K_{\NH}, K_{\RG})=(1,12)$} \label{steady_state_probs_1_12}
 \end{figure}
 
 
@@ -596,12 +596,12 @@ synchronous optimisation problem shown in the following optimisation problem.
 
 \textbf{Optimisation problem.}
 
-\hspace{2cm}For all $h\in\{\text{NH}, \text{RG}\}$ minimise:
-$$\left(U_{h}-t\right)^2$$
+\hspace{2cm}For all $H\in\{\text{NH}, \text{RG}\}$ minimise:
+$$\left(U_{H}-t\right)^2$$
 \hspace{2cm}Subject to:
 \begin{align}
-0\leq & K_h \leq c_{h}\label{model1}\\
-&K_h \in  \mathbb{Z}\nonumber
+0\leq & K_H \leq c_{H}\label{model1}\\
+&K_H \in  \mathbb{Z}\nonumber
 \end{align}
 
 This game is equivalent to a bi matrix game with restriction to pure strategies where both players aim to get their utilisation as close as possible to a certain target.
@@ -613,18 +613,18 @@ The following result is a sufficient condition for the existence of an equilibri
 
 \textbf{Theorem.}
 
-Let $f_{h}(k):[1,c_{\bar h}]\to[1,c_h]$ be the best response of player $h\in\{\NH, \RG\}$ to the diversion threshold of $\bar h\ne h$ ($\bar h\in\{\NH, \RG\}$).
+Let $f_{H}(k):[1,c_{\bar H}]\to[1,c_H]$ be the best response of player $H\in\{\NH, \RG\}$ to the diversion threshold of $\bar h\ne h$ ($\bar H\in\{\NH, \RG\}$).
 
-If $f_{h}(k)$ is a non-decreasing function in $k$ then the game of
+If $f_{H}(k)$ is a non-decreasing function in $k$ then the game of
 (\ref{model1}) has at least one Nash Equilibrium.
 
 
 \begin{proof}
 
-The function $f_h$ is well defined as it maximises a continuous function over a finite discrete set.
-In case of multiple values that minimize $U_h$, it is assumed that $f_h$ returns the lowest such value, this is consistent with the PoA being a theoretical upper bound of the effect of uncoordinated behaviour \cite{TimRoughgarden}.
+The function $f_H$ is well defined as it maximises a continuous function over a finite discrete set.
+In case of multiple values that minimize $U_H$, it is assumed that $f_H$ returns the lowest such value, this is consistent with the PoA being a theoretical upper bound of the effect of uncoordinated behaviour \cite{TimRoughgarden}.
 
-As such if $f_h$ is non-decreasing then it is in fact a stepwise non-decreasing function.
+As such if $f_H$ is non-decreasing then it is in fact a stepwise non-decreasing function.
 If we consider $f_{\NH}$ and $f_{\RG}$ plotted on the same axis (so that the domain of $f_{\NH}$ is the $x$-axis and the domain of $f_{\RG}$ is the y-axis) it is obvious to see that the functions must intersect at some point as shown in Figure \ref{exampleforproof}.
 
 \begin{figure}[!htbp]
@@ -638,7 +638,7 @@ This point of intersection corresponds to a Nash Equilibrium of (\ref{model1}).
 
 \end{proof}
 
-This Theorem is in itself not that useful as the properties of $f_{h}$ are difficult to ascertain.
+This Theorem is in itself not that useful as the properties of $f_{H}$ are difficult to ascertain.
 Although the methodology alluded to is how the equilibria are found for the work presented here (exhaustive investigation of best response functions).
 The following Lemma will however be of more use in Section \ref{results}.
 
@@ -657,10 +657,10 @@ Before proving the Lemma the following observation is given:
 
 \textbf{Observation.}
 
-The utilisation $U_h=U_h(\lambda)$ is an increasing function in $\lambda$.
+The utilisation $U_H=U_H(\lambda)$ is an increasing function in $\lambda$.
 
 \begin{center}
-As the traffic intensity at $h$ increases: $h$ gets busier.
+As the traffic intensity at $H$ increases: $H$ gets busier.
 \end{center}
 
 
@@ -895,7 +895,7 @@ independent of \(t\).
 
 Note that intuitively it could be thought that \(T^*\) is obtained when
 \(K_{\NH}=c_{\NH}\) and \(K_{\RG}=c_{\RG}\) however this is not always the case
-(very numerical experiments have been carried out to verify this).
+(numerical experiments have been carried out to verify this).
 
 The measure used to quantify inefficiency is the Price of Anarchy (PoA) \cite{Koutsoupias1999,TimRoughgarden}, which is the ratio of the social optimum welfare to the welfare of the worst Nash Equilibrium.
 That is, the ratio of the largest social welfare, $T^*$ to the smallest social welfare, $\widetilde{T}$, achieved at any Nash Equilibrium. Thus:
@@ -969,7 +969,7 @@ For example in Figure \ref{Fig:best_responses_model1}b similar best response beh
 
 Whilst removing central control, a certain influence can be exerted by a choice of $t$.
 Figure \ref{Fig:target_demand_model1} (note: the non linear scale) and Table \ref{tabletargetdemandm1} show the effect of $t$ and overall demand.
-We modify the demand rate from Table \ref{parameter_values_model_1} by taking $\lambda_h \leftarrow \lambda_h(1+x)$ for $-0.9\leq x\leq2$.
+We modify the demand rate from Table \ref{parameter_values_model_1} by taking $\lambda_H \leftarrow \lambda_H(1+x)$ for $-0.9\leq x\leq2$.
 
 \begin{figure}[!htbp]
 \begin{center}
