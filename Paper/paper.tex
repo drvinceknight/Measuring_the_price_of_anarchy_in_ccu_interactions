@@ -676,8 +676,8 @@ If \(\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)},\lambda_{\NH}^{(l,l)}\leq \
             \foreach \x in {0,9}
             {\coordinate (origin) at (\x,0);
                 % Coordinate system
-                \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\(\bar\lambda_{K_{\RG}}\)};
-                \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {Occupancy at RG};
+                \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\Large \(\bar\lambda_{K_{\RG}}\)};
+                \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {\Large Occupancy at RG};
                 % lambda
                 \draw ($(origin) + (0,2)$) -- ($(origin) + (2,2)$) -- ($(origin) + (2,4)$) -- ($(origin) + (5,4)$);
                 \node at ($(origin) + (1,2.5)$) {\(\lambda_{\NH}^{(l,l)}\)};
@@ -715,8 +715,8 @@ In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}),
             \foreach \x in {0,9}
             {\coordinate (origin) at (\x,0);
                 % Coordinate system
-                \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\(\bar\lambda_{K_{\NH}}\)};
-                \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {Occupancy at NH};
+                \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\Large \(\bar\lambda_{K_{\NH}}\)};
+                \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {\Large Occupancy at NH};
                 % lambda
                 \draw ($(origin) + (0,4)$) -- ($(origin) + (2,4)$) -- ($(origin) + (2,2)$) -- ($(origin) + (5,2)$);
                 \node at ($(origin) + (1,3.5)$) {\(\lambda_{\NH}^{(l,l)}\)};
@@ -740,8 +740,8 @@ Using (\ref{equ:UNH_as_a_function_of_KRG}) and (\ref{equ:UNH_as_a_function_of_KN
     \begin{center}
         \begin{tikzpicture}[scale=.8, every node/.style={scale=0.8}]
             % Coordinate system
-            \draw [very thick, ->] (0,0) -- (0,6) node[anchor=south east] {\(K_{\RG}\)};
-            \draw [very thick, ->] (0,0) -- (7,0) node[anchor=north west] {\(K_{\NH}\)};
+            \draw [very thick, ->] (0,0) -- (0,6) node[anchor=south east] {\Large\(K_{\RG}\)};
+            \draw [very thick, ->] (0,0) -- (7,0) node[anchor=north west] {\Large\(K_{\NH}\)};
 
             % Points
             \foreach \x in {1,2,3,4,5,6}
