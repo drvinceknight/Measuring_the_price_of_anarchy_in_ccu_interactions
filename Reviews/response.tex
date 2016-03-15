@@ -31,7 +31,7 @@ Write the clarifications of notations \(\lambda_{h}^{(l,h)},\lambda_{h}^{(l,l)}\
 \end{quote}
 
 Thank you to the reviewer for noticing this detail.
-We have changed all occurrences of \(h\) denoting an element of \(\HN, \RG\) to
+We have changed all occurrences of \(h\) denoting an element of \(\NH, \RG\) to
 be \(H\). This clarifies the paper.
 
 \begin{quote}
@@ -40,9 +40,7 @@ Give explanation for figure 3.
     }\end{textit}
 \end{quote}
 
-\begin{itemize}
-    \item Add a sentence.
-\end{itemize}
+Another pointer in the text to the Figure has been added (``The transition rates are given by (2) and are illustrated diagrammatically in Figure 3"). This Figure is meant to illustrate diagrammatically the state space and transitions.
 
 \begin{quote}
     \begin{textit}{
@@ -51,20 +49,19 @@ Give explanation for figure 3.
     }\end{textit}
 \end{quote}
 
-\begin{itemize}
-    \item Point out that this is there. Ask if there would be a better way of doing it?
-\end{itemize}
-
 \begin{quote}
     \begin{textit}{
     State clearly the objectives of the model.
     }\end{textit}
 \end{quote}
 
+The following paragraph is in the introduction of the paper: if the reviewer does not find it sufficient we would gladly clarify it further. At present we feel that it very clearly places the contribution of the paper (as highlighted by the 3rd reviewer) and also highlights what the main finding/objective of the model is.
 
-\begin{itemize}
-    \item Not sure I understand, mention that have clarified the model for each player.
-\end{itemize}
+``
+The work presented in this paper contributes to the growing body of literature by applying state dependent queueing models in a game theoretical context to CCU interaction.
+In particular this consideration allows for the investigation of targets imposed by central control [4].
+The findings of this work justify and identify a choice of targets that align the interests of the individual hospitals with social welfare.
+''
 
 \subsection{Reviewer 2}
 
@@ -74,9 +71,10 @@ Give explanation for figure 3.
     }\end{textit}
 \end{quote}
 
-\begin{itemize}
-    \item Mention that this has changed.
-\end{itemize}
+This has now been fixed: the optimisation problem that defines the game is now
+in a section with title: `Optimisation problem' and is referred to by a
+labelling equation number. This was suggested by another reviewer and we feel
+improves the paper.
 
 \begin{quote}
     \begin{textit}{
@@ -84,9 +82,14 @@ The paper is unreadable. The unknowns used, some, are undefined, for example on 
     }\end{textit}
 \end{quote}
 
-\begin{itemize}
-    \item Highlight that this is all in the paper.
-\end{itemize}
+We were disappointed by this comment. To suggest that the paper is unreadable
+is an exaggeration. Perhaps the reviewer did not have time to read page
+2 which contained a table that clearly listed the variables they mention?
+
+If we have misunderstood and that table is not sufficient we would gladly list
+the variables with their definitions in a format more pleasing to the referee.
+Although we note that the other two reviewers, one of which has clearly read
+the paper carefully did not find the paper unreadable.
 
 \begin{quote}
     \begin{textit}{
@@ -94,9 +97,11 @@ The paper is unreadable. The unknowns used, some, are undefined, for example on 
     }\end{textit}
 \end{quote}
 
-\begin{itemize}
-    \item Suggest some explanations.
-\end{itemize}
+At present it is merely an observation from the emergent behaviour of the model however a sentence has been added:
+
+``
+It is also noted that as demand increases the effect of uncoordinated behaviour increases (and the recommended target also increases) as shown in Figure 12. This is potentially due to the fact that as demand increases there is the scope for larger discrepancy between optimal and sub optimal behaviours.
+''
 
 \begin{quote}
     \begin{textit}{
@@ -104,19 +109,21 @@ The paper is unreadable. The unknowns used, some, are undefined, for example on 
     }\end{textit}
 \end{quote}
 
-\begin{itemize}
-    \item This is in the paper.
-\end{itemize}
-
 \begin{quote}
     \begin{textit}{
 The authors need to give a justification on the reason why they are implementing the models.
     }\end{textit}
 \end{quote}
 
-\begin{itemize}
-    \item Point to wider discussion invited by reviewer 3.
-\end{itemize}
+It seems that the reviewer did indeed not read page 2 of the manuscript. As highlighted by the 3rd reviewer a literature review is present. This literature review highlights that there is not much work at the intersection of game theory, queueing theory and healthcare.
+
+Furthermore the contributions and goals of the model are very clearly stated on page 2 and again highlighted in the conclusion section. If the reviewer could clarify there expectations if this is not sufficient we would gladly highlight the contributions of the paper (as recognized by the referees that have read it) further.
+
+``
+The work presented in this paper contributes to the growing body of literature by applying state dependent queueing models in a game theoretical context to CCU interaction.
+In particular this consideration allows for the investigation of targets imposed by central control [4].
+The findings of this work justify and identify a choice of targets that align the interests of the individual hospitals with social welfare.
+''
 
 \subsection{Reviewer 3}
 
@@ -201,8 +208,8 @@ This has been changed:
 \begin{quote}
     \begin{textit}
         {
-        In Figure 7, the caption should state which points are \(f_NH\) and
-        which are \(F_RG\).
+            In Figure 7, the caption should state which points are \(f_{NH}\) and
+            which are \(F_{RG}\).
         }
     \end{textit}
 \end{quote}
@@ -282,12 +289,14 @@ for tp in sorted(tps.keys()):
 
 A brief discussion of this has been added to the paper which now reads:
 
+``
 ... This optimal throughput \(T^*\) is
 independent of \(t\).
 
 Note that intuitively it could be thought that \(T^*\) is obtained when
 \(K_{\NH}=c_{\NH}\) and \(K_{\RG}=c_{\RG}\) however this is not always the case
 (numerical experiments have been carried out to verify this).
+''
 
 
 \begin{quote}
@@ -301,7 +310,7 @@ the clarity of the exposition.
     \end{textit}
 \end{quote}
 
-\begin{itemize}
-    \item Remove bullet points.
-\end{itemize}
+3 of the 5 bullet point lists have been changed to be paragraphs. We felt that
+this left a nice balance but if the reviewer feels strongly about this, we
+would be happy to change the remaining bullet point lists.
 \end{document}

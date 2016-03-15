@@ -140,12 +140,11 @@ $t$& bed utilisation target & 0.8\\
 Note that the inter-arrival and service rates are not state dependent.
 These will serve as a base level for the state dependent rates used throughout the game theoretic models.
 
-The paper is organised as follows:
-\begin{itemize}
-    \item Section \ref{queueingandgamemodels} presents the general methodology as well as a theoretical existence condition for Nash Equilibrium;
-    \item Section \ref{results} presents the findings from two models;
-    \item Conclusions and further ideas for progression are given in Section \ref{conclusions}.
-\end{itemize}
+The paper is organised as follows: Section \ref{queueingandgamemodels} presents
+the general methodology as well as a theoretical existence condition for Nash
+Equilibrium. Section \ref{results} presents the findings from two models.
+Finally, conclusions and further ideas for progression are given in Section
+\ref{conclusions}.
 
 \section{Queueing and Game Theoretic Models} \label{queueingandgamemodels}
 
@@ -179,7 +178,7 @@ The interaction will be modelled through a two dimensional continuous Markov cha
 
 \subsection{Queueing Model}
 
-The state space for the Markov chain is given by:
+The state space for the Markov chain is given by (\ref{statespace}).
 
 \begin{equation}
 S=S(c_{\NH}, c_{\RG})= \{(u,v)\in \mathbb{Z}^2\ |\ 0\leq u\leq c_{\NH},\ 0\leq v\leq c_{\RG}\} \label{statespace}
@@ -534,7 +533,7 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
 
 In total there are $(c_{\NH}+1)\times(c_{\RG}+1)$ states and they are indexed lexicographically: $(0,0), (0,1), (0,2), \dots$.
 
-The stochastic transition rate matrix $Q=Q(c_{NH},c_{RG})$ of the continuous-time Markov chain \cite{Stewart2009} has entries $q_{ij}=q_{(u_i,v_i),(u_j,v_j)}$ which is the rate at which a transition from state $i$ to state $j$ occurs. The transition rates are given by:
+The stochastic transition rate matrix $Q=Q(c_{NH},c_{RG})$ of the continuous-time Markov chain \cite{Stewart2009} has entries $q_{ij}=q_{(u_i,v_i),(u_j,v_j)}$ which is the rate at which a transition from state $i$ to state $j$ occurs. The transition rates are given by (\ref{transitions}) and are illustrated diagrammatically in Figure \ref{mc}.
 
 \begin{equation}
 q_{(u_i,v_i),(u_j,v_j)}=\begin{cases} u\mu_{\NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
@@ -549,6 +548,7 @@ q_{(u_i,v_i),(u_j,v_j)}=\begin{cases} u\mu_{\NH} & \text{ if  } (u_i,v_i)-(u_j,v
 \lambda_{RG}^{(h,h)} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(0,-1) \text{ and  } u_i \geq K_{\NH}  \text{ and  } v_i \geq K_{\RG},\\
 0 & \text{ otherwise}.
 \end{cases}
+\label{transitions}
 \end{equation}
 
 Utilities will be of interest when this queueing theoretical model will be inserted in the game theoretical model.
@@ -1006,8 +1006,8 @@ For values of $t>0.5$ the PoA is still high: a PoA of 2 corresponds to 100\% les
 These findings seem to give some backing to the targets implemented throughout the NHS \cite{Bevan2006}.
 
 In particular it can be seen that a value of $t>0.8$ becomes imperative for high demand.
-The lowest value of $t$ for which gives PoA$=1$ for the actual demand levels ($x=0$) is in fact $t=0.72$.
-It is also noted that as demand increases the effect of uncoordinated behaviour increases (and the recommended target also increases) as shown in Figure \ref{mintargetvdemand}.
+The lowest value of $t$ which gives PoA$=1$ for the actual demand levels ($x=0$) is in fact $t=0.72$.
+It is also noted that as demand increases the effect of uncoordinated behaviour increases (and the recommended target also increases) as shown in Figure \ref{mintargetvdemand}. This is potentially due to the fact that as demand increases there is the scope for larger discrepancy between optimal and sub optimal behaviours.
 
 \begin{figure}[!htbp]
 \begin{center}
@@ -1092,12 +1092,11 @@ We immediately note that the underlying cooperation that is now being forced on 
 Note that PoA$=1.02$ still implies a reduced throughput of 2\% which has very large cost implications for a national health service.
 A tipping point is now visible as demand increases, this is similar to the profiles shown in \cite{Knight2013} and can be explained as follows:
 
-Also, for very low values of demand, cooperation can be obtained with no target.
-\begin{itemize}
-    \item When the demand is low, there is no scope for uncoordinated behaviour to be damaging.
-    \item When the demand is very high, the system is saturated and once again uncoordinated behaviour has no negative effect in comparison to optimal behaviour.
-    \item There is however a region of demand for which there is a high PoA.
-\end{itemize}
+Also, for very low values of demand, cooperation can be obtained with no
+target.  When the demand is low, there is no scope for uncoordinated behaviour
+to be damaging.  When the demand is very high, the system is saturated and once
+again uncoordinated behaviour has no negative effect in comparison to optimal
+behaviour.  There is however a region of demand for which there is a high PoA.
 
 For example, for $t=0.8$ the PoA starts to rapidly increase for demand changes higher than 0.1, and starts to decrease for a demand change of 0.6; this region will be investigated closely.
 Table \ref{table_model2_target_demand} presents results for $t=0.8$ and a demand change from 0.1 to 0.6. For a 50\% increase in demand, without a matching increase in capacity, rational behaviour of CCUs would incur 6\% less patient throughput.
@@ -1147,12 +1146,12 @@ In this work a generic game theoretical model has been presented that accounts f
 This game theoretic model is underpinned by a queueing model that takes into account the stochastic nature of queueing systems.
 This work extends the application of game theoretic models already present in the literature to healthcare \cite{li2002cooperative, xie2006note}.
 
-A result is proved that allows for the assertion of existence of a Nash Equilibrium. This result is then applied to two particular models that are influenced by discussions with a local health board:
-
-\begin{itemize}
-\item Strict diversion: patients can be lost to the system if both CCUs declare being in diversion.
-\item Soft diversion: if both CCUs are in diversion then they cannot divert their own patients.
-\end{itemize}
+A result is proved that allows for the assertion of existence of a Nash
+Equilibrium. This result is then applied to two particular models that are
+influenced by discussions with a local health board. \textbf{Strict diversion}:
+patients can be lost to the system if both CCUs declare being in diversion.
+\textbf{Soft diversion}: if both CCUs are in diversion then they cannot divert
+their own patients.
 
 An analysis of the effect of rational behaviour is given for both of these models in the form of PoA calculations.
 The PoA is calculated so as to measure the effect of rational behaviour on overall patient throughput.
