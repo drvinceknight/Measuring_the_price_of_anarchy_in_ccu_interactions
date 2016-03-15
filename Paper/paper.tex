@@ -591,18 +591,18 @@ $$
 
 \subsection{Game Theoretic Model}
 
-Based on the discussion above, the game theoretic model is presented as a synchronous optimisation problem shown in Figure \ref{model1}.
+Based on the discussion above, the game theoretic model is presented as a
+synchronous optimisation problem shown in the following optimisation problem.
 
-\begin{figure}[!htbp]
+\textbf{Optimisation problem.}
+
 \hspace{2cm}For all $h\in\{\text{NH}, \text{RG}\}$ minimise:
 $$\left(U_{h}-t\right)^2$$
 \hspace{2cm}Subject to:
 \begin{align}
-0\leq & K_h \leq c_{h}\nonumber\\
+0\leq & K_h \leq c_{h}\label{model1}\\
 &K_h \in  \mathbb{Z}\nonumber
 \end{align}
-\caption{The optimisation problem underlying the game}\label{model1}
-\end{figure}
 
 This game is equivalent to a bi matrix game with restriction to pure strategies where both players aim to get their utilisation as close as possible to a certain target.
 As such a Nash Equilibrium is not guaranteed by traditional game theoretical results \cite{Nash1950}, which guarantee the existence of equilibria in mixed strategies.
@@ -615,7 +615,8 @@ The following result is a sufficient condition for the existence of an equilibri
 
 Let $f_{h}(k):[1,c_{\bar h}]\to[1,c_h]$ be the best response of player $h\in\{\NH, \RG\}$ to the diversion threshold of $\bar h\ne h$ ($\bar h\in\{\NH, \RG\}$).
 
-If $f_{h}(k)$ is a non-decreasing function in $k$ then the game of Figure \ref{model1} has at least one Nash Equilibrium.
+If $f_{h}(k)$ is a non-decreasing function in $k$ then the game of
+(\ref{model1}) has at least one Nash Equilibrium.
 
 
 \begin{proof}
@@ -630,10 +631,10 @@ If we consider $f_{\NH}$ and $f_{\RG}$ plotted on the same axis (so that the dom
     \begin{center}
         \includegraphics[width=.7\textwidth]{./Images/best_responses_ex_for_proof.pdf}
     \end{center}
-    \caption{Plots of $f_{\NH}(K_{\RG})$ and $f_{\RG}(K_{\NH})$}\label{exampleforproof}
+    \caption{Plots of $f_{\NH}(K_{\RG})$ (crosses) and $f_{\RG}(K_{\NH})$ (diamonds)}\label{exampleforproof}
 \end{figure}
 
-This point of intersection corresponds to a Nash Equilibrium of Figure \ref{model1}.
+This point of intersection corresponds to a Nash Equilibrium of (\ref{model1}).
 
 \end{proof}
 
@@ -886,7 +887,7 @@ Combining (\ref{equ:contradiction_part_1}) and (\ref{equ:contradiction_part_2}) 
 
 The aim of the work presented is to measure the inefficiency created by the removal of central control between CCUs.
 
-We let $\widetilde T$ denote the sum of throughputs at the Nash Equilibrium obtained by solving the game of Figure \ref{model1} (in case of multiple equilibria we take $\widetilde T$ to be the lowest throughput) and let $T^*=\max_{K_{NH}, K_{RG}}\left(T_{NH}+T_{RG}\right)$.
+We let $\widetilde T$ denote the sum of throughputs at the Nash Equilibrium obtained by solving the game of (\ref{model1}) (in case of multiple equilibria we take $\widetilde T$ to be the lowest throughput) and let $T^*=\max_{K_{NH}, K_{RG}}\left(T_{NH}+T_{RG}\right)$.
 
 The measure used to quantify inefficiency is the Price of Anarchy (PoA) \cite{Koutsoupias1999,TimRoughgarden}, which is the ratio of the social optimum welfare to the welfare of the worst Nash Equilibrium.
 That is, the ratio of the largest social welfare, $T^*$ to the smallest social welfare, $\widetilde{T}$, achieved at any Nash Equilibrium. Thus:
@@ -901,7 +902,7 @@ This however would not be in the interest of the hospital (nor necessarily in th
 
 \section{Results}\label{results}
 
-The game theoretic model of Figure \ref{model1} is solved using exhaustive consideration of best responses whilst taking advantage of the structure identified by the Lemma of Section \ref{queueingandgamemodels}. For any given pair of threshold strategies the matrix equation $\pi Q=0$ is solved by obtaining a basis for the Kernel of $Q$. For the purpose of this paper this is implemented in \cite{sage}.
+The game theoretic model of (\ref{model1}) is solved using exhaustive consideration of best responses whilst taking advantage of the structure identified by the Lemma of Section \ref{queueingandgamemodels}. For any given pair of threshold strategies the matrix equation $\pi Q=0$ is solved by obtaining a basis for the Kernel of $Q$. For the purpose of this paper this is implemented in \cite{sage}.
 
 \subsection{Model 1: Strict diversion}
 
