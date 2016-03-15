@@ -84,3 +84,6 @@ docs/_build/
 # Apple stuff
 *.DS_Store
 *zip
+
+*/.ipynb_checkpoints/*
+*/_minted-response/*

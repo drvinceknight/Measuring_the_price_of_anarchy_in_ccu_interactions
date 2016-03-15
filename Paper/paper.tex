@@ -887,7 +887,15 @@ Combining (\ref{equ:contradiction_part_1}) and (\ref{equ:contradiction_part_2}) 
 
 The aim of the work presented is to measure the inefficiency created by the removal of central control between CCUs.
 
-We let $\widetilde T$ denote the sum of throughputs at the Nash Equilibrium obtained by solving the game of (\ref{model1}) (in case of multiple equilibria we take $\widetilde T$ to be the lowest throughput) and let $T^*=\max_{K_{NH}, K_{RG}}\left(T_{NH}+T_{RG}\right)$.
+We let $\widetilde T$ denote the sum of throughputs at the Nash Equilibrium
+obtained by solving the game of (\ref{model1}) (in case of multiple equilibria
+we take $\widetilde T$ to be the lowest throughput) and let $T^*=\max_{K_{\NH},
+K_{\RG}}\left(T_{\NH}+T_{\RG}\right)$. This optimal throughput \(T^*\) is
+independent of \(t\).
+
+Note that intuitively it could be thought that \(T^*\) is obtained when
+\(K_{\NH}=c_{\NH}\) and \(K_{\RG}=c_{\RG}\) however this is not always the case
+(very numerical experiments have been carried out to verify this).
 
 The measure used to quantify inefficiency is the Price of Anarchy (PoA) \cite{Koutsoupias1999,TimRoughgarden}, which is the ratio of the social optimum welfare to the welfare of the worst Nash Equilibrium.
 That is, the ratio of the largest social welfare, $T^*$ to the smallest social welfare, $\widetilde{T}$, achieved at any Nash Equilibrium. Thus:
