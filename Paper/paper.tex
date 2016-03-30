@@ -914,7 +914,14 @@ The game theoretic model of (\ref{model1}) is solved using exhaustive considerat
 
 \subsection{Model 1: Strict diversion}
 
-This model assumes that if the bed occupancy level at both Units exceeds a predetermined threshold, then the admission to the CCU is cancelled (in reality this implies that patients will be admitted to a general ward within the hospital).
+This model assumes that if the bed occupancy level at both Units exceeds a
+predetermined threshold, then the admission to the CCU is cancelled. This
+cancellation could correspond, to sending the patient to a completely different
+CCU (outside of the model), moving one of the current patients (ready to be
+dismieed) in the CCU to another ward and/or using the post-anethesisa care unit
+as a temporary overflow measure. This models corresponds to the first of those
+possibilities: the patient is lost (from the point of view of this model).
+
 Recalling Figure \ref{arrivalrateregions} this implies:
 
 \begin{minipage}[t]{0.5\textwidth}
@@ -1176,15 +1183,48 @@ $$\begin{array}{cc}
 It is vital to acknowledge the limitations of the work presented:
 
 \begin{itemize}
-    \item The assumptions as to the strategy space of our players is restrictive: a single threshold policy might not be optimal (although it is present in various pieces of literature on optimal control of queueing systems: \cite{naor1969regulation, shone2013comparisons});
-    \item This model only assumes the presence of two players however in reality the system has a variety of stakeholders. Multi player systems could be worth considering;
-    \item The restriction to pure strategies is influenced by discussions with ABUHB and also does not detract from the results presented thanks to the Theorem and Lemma of Section \ref{queueingandgamemodels}.  However, allowing for mixed strategies could also be of interest.
-    \item Patient length of stay is assumed to be dependent on the CCU at which they receive service. A further extension of the work would be to use the service rate from original CCU (prior to diversion). This would require a Markov chain with a higher dimensional state space.
+    \item The assumptions as to the strategy space of our players is
+        restrictive: a single threshold policy might not be optimal (although it
+        is present in various pieces of literature on optimal control of
+        queueing systems: \cite{naor1969regulation, shone2013comparisons}).
+        Indeed, in reality critical care managers could have far more complex
+        boundaries for their heuristic decision making;
+    \item This model only assumes the presence of two players however in reality
+        the system has a variety of stakeholders. Multi player systems could be
+        worth considering. This would reflect health boards/hospitals in a
+        concentrated area so that interactions are not just between two
+        hospitals but between many.
+    \item The restriction to pure strategies is influenced by discussions with
+        ABUHB and also does not detract from the results presented thanks to the
+        Theorem and Lemma of Section \ref{queueingandgamemodels}.  However,
+        allowing for mixed strategies could also be of interest, corresponding
+        to decision making that is not constant over time. Managers could
+        alternate between a variety of behaviours: at time accepting patient
+        despite being busy and at other times not;
+    \item Patient length of stay is assumed to be dependent on the CCU at which
+        they receive service. A further extension of the work would be to use
+        the service rate from original CCU (prior to diversion). This would
+        require a Markov chain with a higher dimensional state space. In
+        practice this corresponds to patient morbidity corresponding to the
+        original CCU.
 \end{itemize}
 
-Despite these limitations the work presented here gives a strong analytical evidence as to the use of policies in a decentralised healthcare environment.
-Further work could involve the investigation of patient survival instead of throughput as utility.
-This would be similar to work such as \cite{erkut2008ambulance, knight2012ambulance}.
+Despite these mathematical limitations the work presented here gives a strong
+analytical evidence as to the use of policies in a decentralised healthcare
+environment.
+
+As discussed above, reducing the decision making of critical care managers to
+rational reactions to capacity targets is not without limitations. However, this
+quantitative model of behaviour was described as insightful and informative by
+ABUHB. In practice, stakeholders describe a rule of 80\% capacity. Whilst this
+is not only at times impossible it is also not evidence based and in particular
+does not take in to account interactions between CCUs. This is a common theme in
+practice and the literature which this manuscript aims to address.
+
+Finally, congestion and throughput is not the only concern of a healthcare
+system. Further work could involve the investigation of patient survival instead
+of throughput as utility.  This would be similar to work such as
+\cite{erkut2008ambulance, knight2012ambulance}.
 
 The code used in this work can be found here: \url{https://gist.github.com/anonymous/81effc06eea70a9e4e2f}.
 The graphics for this paper were obtained using \cite{Hunter:2007, sage} a worksheet with the data and code used for the plots can be found here: \url{https://cloud.sagemath.com/projects/c293aefd-1fdf-4b9c-95f4-75bb77035e42/files/MeasuringThePriceOfAnarchyInCCUInteractions.sagews}.
