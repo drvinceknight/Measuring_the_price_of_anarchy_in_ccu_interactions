@@ -40,14 +40,18 @@
 \maketitle
 
 \begin{abstract}
-Hospital throughput is often studied and optimised in isolation, ignoring the interactions between hospitals.
-In this paper Critical Care Unit (CCU) interaction is placed within a game theoretic framework.
-The methodology involves the use of a normal form game underpinned by a two dimensional continuous Markov chain.
-A theorem is given that proves that a Nash Equilibrium exists in pure strategies for the games considered.
+Hospital throughput is often studied and optimised in isolation, ignoring the
+interactions between hospitals.  In this paper Critical Care Unit (CCU)
+interaction is placed within a game theoretic framework.  The methodology
+involves the use of a normal form game underpinned by a two dimensional
+continuous Markov chain.  A theorem is given that proves that a Nash Equilibrium
+exists in pure strategies for the games considered.
 
-In the UK a variety of utilisation targets are often discussed: aiming to ensure that wards/hospitals operate at a given utilisation value.
-The effect of these target policies is investigated justifying their use to align the interests of individual hospitals and social welfare.
-In particular, we identify the lowest value of a utilisation target that aligns these.
+In the United Kingdom a variety of utilisation targets are often discussed:
+aiming to ensure that wards/hospitals operate at a given utilisation value.  The
+effect of these target policies is investigated justifying their use to align
+the interests of individual hospitals and social welfare.  In particular, we
+identify the lowest value of a utilisation target that aligns these.
 \end{abstract}
 
 \section{Introduction}
@@ -66,7 +70,9 @@ In particular, the goal is to place this in a game theoretic setting so as to id
 A Critical Care Unit (CCU), also sometimes referred to as an Intensive Therapy Unit or Intensive Therapy Department, is a special ward that is found in most acute hospitals.
 It provides intensive care (treatment and monitoring) for people who are critically ill or are in an unstable condition.
 CCUs face major challenges, on average, 8\% of patients are refused admission to a CCU because the Unit is full \cite{Report}.
-The CCU occupancy rates for some hospitals are reportedly very high \cite{Mitchell1995,Smith1995} and a shortage of beds has been identified throughout the UK.
+The CCU occupancy rates for some hospitals are reportedly very high
+\cite{Mitchell1995,Smith1995} and a shortage of beds has been identified
+throughout the United Kingdom.
 
 Many previous researchers have developed queueing models to help manage bed capacities in hospitals \cite{Cooper1974,Dumas1984,Gallivan2011,Gorunescu2002a,Griffiths2012,Harper2002a}.
 Also, a vast amount of literature has been devoted to the simulation of CCUs;  \cite{Cahill1999a,Costa2003,Griffiths2004a,Kim1999,Litvak2008,Shahani2008}.
@@ -154,7 +160,8 @@ Given the proximity of the two CCUs, one CCU could for example divert their pati
 Figure \ref{arrivalrateregions} shows a diagrammatic representation of this where $\lambda_H^{r}$ for $H\in\{\NH, \RG\}$ and $r\in\{(l,l), (l,h), (h,l), (h,h)\}$ simply denote arrival rates that will be defined for both models considered in Section \ref{results}, where $r$ denotes regions with boundaries defined by the capacity thresholds.
 For example $(l,h)$ denotes a region for which $\NH$ experiences \textit{low} demand and $\RG$ experiences \textit{high} demand.
 It is also assumed that diverted patients will be treated under the length of stay profile of the CCU they are admitted to.
-The capacity thresholds are denoted as $K_{H}\in\mathbb{Z}$ for $H\in\{\NH,\RG\}$. Note that $0\leq K_N\leq c_H$.
+The capacity thresholds are denoted as $K_{H}\in\mathbb{Z}$ for
+$H\in\{\NH,\RG\}$. Note that $0\leq K_H\leq c_H$.
 
 \begin{figure}[!htbp]
 \begin{center}
@@ -192,8 +199,8 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         % -----------------------------------------------
         % Boundaries ------------------------------------
         % -----------------------------------------------
-        \draw [dashed, line width=1mm, red, opacity=.3] (12,2) -- (12,-20);
-        \draw [dashed, line width=1mm, red, opacity=.3] (-2,-12) -- (20,-12);
+        \draw [dashed, red, line width=1mm, opacity=.3] (12,2) -- (12,-20);
+        \draw [dashed, red, line width=1mm, opacity=.3] (-2,-12) -- (20,-12);
         %\tikzstyle{state}=[ellipse, draw, fill=blue!10, minimum width=2cm];
         %\tikzstyle{state}=[rectangle, draw, fill=blue!10, minimum width=2cm];
         \tikzstyle{state}=[minimum width=2cm, font=\boldmath];
@@ -248,7 +255,7 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \draw (bb) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (bc);
 
         \draw (bc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ellipsisb1);
-        \draw (bc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsisb1);
+        \draw (bc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$3\mu_{\RG}$} (ellipsisb1);
 
         \draw (ellipsisb1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (bk);
         \draw (ellipsisb1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (bk);
@@ -298,7 +305,7 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \draw (cb) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (cc);
 
         \draw (cc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ellipsisc1);
-        \draw (cc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsisc1);
+        \draw (cc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$3\mu_{\RG}$} (ellipsisc1);
 
         \draw (ellipsisc1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ck);
         \draw (ellipsisc1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (ck);
@@ -348,7 +355,7 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \draw (db) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (dc);
 
         \draw (dc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (ellipsisd1);
-        \draw (dc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsisd1);
+        \draw (dc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$3\mu_{\RG}$} (ellipsisd1);
 
         \draw (ellipsisd1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(l,l)}$} (dk);
         \draw (ellipsisd1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (dk);
@@ -398,7 +405,7 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \draw (eb) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (ec);
 
         \draw (ec) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (ellipsise1);
-        \draw (ec) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsise1);
+        \draw (ec) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$3\mu_{\RG}$} (ellipsise1);
 
         \draw (ellipsise1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (ek);
         \draw (ellipsise1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (ek);
@@ -446,7 +453,7 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \draw (fb) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (fc);
 
         \draw (fc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (ellipsisf1);
-        \draw (fc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsisf1);
+        \draw (fc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$3\mu_{\RG}$} (ellipsisf1);
 
         \draw (ellipsisf1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,l)}$} (fk);
         \draw (ellipsisf1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (fk);
@@ -494,7 +501,7 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
         \draw (zb) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$2\mu_{\RG}$} (zc);
 
         \draw (zc) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (ellipsisz1);
-        \draw (zc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$333\mu_{\RG}$} (ellipsisz1);
+        \draw (zc) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$3\mu_{\RG}$} (ellipsisz1);
 
         \draw (ellipsisz1) edge[out=45,in=135,->,thick] node [above] {\tiny$\lambda_{\RG}^{(h,h)}$} (zk);
         \draw (ellipsisz1) edge[out=-45,in=-135,<-,thick] node [below] {\tiny$K_{\RG}\mu_{\RG}$} (zk);
@@ -600,7 +607,7 @@ synchronous optimisation problem shown in the following optimisation problem.
 $$\left(U_{H}-t\right)^2$$
 \hspace{2cm}Subject to:
 \begin{align}
-0\leq & K_H \leq c_{H}\label{model1}\\
+0\leq &\; K_H \leq c_{H}\label{model1}\\
 &K_H \in  \mathbb{Z}\nonumber
 \end{align}
 
@@ -613,7 +620,7 @@ The following result is a sufficient condition for the existence of an equilibri
 
 \textbf{Theorem.}
 
-Let $f_{H}(k):[1,c_{\bar H}]\to[1,c_H]$ be the best response of player $H\in\{\NH, \RG\}$ to the diversion threshold of $\bar h\ne h$ ($\bar H\in\{\NH, \RG\}$).
+Let $f_{H}(k):[1,c_{\bar H}]\to[1,c_H]$ be the best response of player $H\in\{\NH, \RG\}$ to the diversion threshold of $\bar H\ne H$ ($\bar H\in\{\NH, \RG\}$).
 
 If $f_{H}(k)$ is a non-decreasing function in $k$ then the game of
 (\ref{model1}) has at least one Nash Equilibrium.
@@ -621,11 +628,17 @@ If $f_{H}(k)$ is a non-decreasing function in $k$ then the game of
 
 \begin{proof}
 
-The function $f_H$ is well defined as it maximises a continuous function over a finite discrete set.
-In case of multiple values that minimize $U_H$, it is assumed that $f_H$ returns the lowest such value, this is consistent with the PoA being a theoretical upper bound of the effect of uncoordinated behaviour \cite{TimRoughgarden}.
+The function $f_H$ is well defined as it maximises a continuous function over a
+finite discrete set.  In case of multiple values that minimize $U_H$, it is
+assumed that $f_H$ returns the lowest such value, this is consistent with the
+Price of Anarchy (PoA) being a theoretical upper bound of the effect of
+uncoordinated behaviour \cite{TimRoughgarden}.
 
-As such if $f_H$ is non-decreasing then it is in fact a stepwise non-decreasing function.
-If we consider $f_{\NH}$ and $f_{\RG}$ plotted on the same axis (so that the domain of $f_{\NH}$ is the $x$-axis and the domain of $f_{\RG}$ is the y-axis) it is obvious to see that the functions must intersect at some point as shown in Figure \ref{exampleforproof}.
+As such if $f_H$ is non-decreasing then it is in fact a stepwise non-decreasing
+function.  If we consider $f_{\NH}$ and $f_{\RG}$ plotted on the same axis (so
+that the domain of $f_{\NH}$ is the $x$-axis and the domain of $f_{\RG}$ is the
+y-axis) it is obvious to see that the functions must intersect at some point as
+shown in Figure \ref{exampleforproof}.
 
 \begin{figure}[!htbp]
     \begin{center}
@@ -674,8 +687,23 @@ If \(\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)},\lambda_{\NH}^{(l,l)}\leq \
 \begin{figure}[!hbtp]
     \begin{center}
         \begin{tikzpicture}[scale=.8, every node/.style={scale=0.8}]
-            \foreach \x in {0,9}
-            {\coordinate (origin) at (\x,0);
+            \coordinate (origin) at (0,0);
+                % Coordinate system
+                \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\Large \(\bar\lambda_{K_{\RG}}\)};
+                \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {\Large Occupancy at RG};
+                % lambda
+                \draw ($(origin) + (0,2)$) -- ($(origin) + (2,2)$) -- ($(origin) + (2,4)$) -- ($(origin) + (5,4)$);
+                \node at ($(origin) + (1,2.5)$) {\(\lambda_{\NH}^{(h,l)}\)};
+                \node at ($(origin) + (3.5,4.5)$) {\(\lambda_{\NH}^{(h,h)}\)};
+                % Effect of KRG
+                \draw [dashed] ($(origin) + (0,2)$) -- ($(origin) + (4,2)$) -- ($(origin) + (4,4)$);
+                \draw [dashed] ($(origin) + (2,0)$) -- ($(origin) + (2,2)$);
+                \draw [dashed] ($(origin) + (4,0)$) -- ($(origin) + (4,2)$);
+                \draw [very thick, ->] ($(origin) + (2.5,3)$) -- ($(origin) + (3.5,3)$);
+                \node at ($(origin) + (2,0)$) [below] {\(K_{\RG}\)};
+                \node at ($(origin) + (4,0)$) [below] {\(K_{\RG}+1\)};
+
+            \coordinate (origin) at (9,0);
                 % Coordinate system
                 \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\Large \(\bar\lambda_{K_{\RG}}\)};
                 \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {\Large Occupancy at RG};
@@ -690,7 +718,6 @@ If \(\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)},\lambda_{\NH}^{(l,l)}\leq \
                 \draw [very thick, ->] ($(origin) + (2.5,3)$) -- ($(origin) + (3.5,3)$);
                 \node at ($(origin) + (2,0)$) [below] {\(K_{\RG}\)};
                 \node at ($(origin) + (4,0)$) [below] {\(K_{\RG}+1\)};
-            };
         \end{tikzpicture}
     \end{center}
     \caption{The effect of \(K_{\RG}\) on \(\bar \lambda\).}\label{fig:effect_of_KRG_on_arrival_rate}
@@ -703,7 +730,9 @@ Based on the previous observation this in turn implies: \(U_{\NH}(K_{\RG}) = U_{
     \label{equ:UNH_as_a_function_of_KRG}
 \end{equation}
 
-In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}), this gives: \(U_{\NH}(K_{\NH}) = U_{\NH}(\bar \lambda_{\NH}(K_{\NH}) \leq U_{\NH}(\bar \lambda_{\NH}(K_{\NH}+1)) = U_{\NH}(K_{\NH}+1)\) giving:
+In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}),
+this gives: \(U_{\NH}(K_{\NH}) = U_{\NH}(\bar \lambda_{\NH}(K_{\NH})) \leq
+U_{\NH}(\bar \lambda_{\NH}(K_{\NH}+1)) = U_{\NH}(K_{\NH}+1)\) giving:
 
 \begin{equation}
     U_{\NH}(K_{\NH}) \leq U_{\NH}(K_{\NH}+1)
@@ -713,8 +742,23 @@ In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}),
 \begin{figure}[!hbtp]
     \begin{center}
         \begin{tikzpicture}[scale=.8, every node/.style={scale=0.8}]
-            \foreach \x in {0,9}
-            {\coordinate (origin) at (\x,0);
+            \coordinate (origin) at (0,0);
+                % Coordinate system
+                \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\Large \(\bar\lambda_{K_{\NH}}\)};
+                \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {\Large Occupancy at NH};
+                % lambda
+                \draw ($(origin) + (0,4)$) -- ($(origin) + (2,4)$) -- ($(origin) + (2,2)$) -- ($(origin) + (5,2)$);
+                \node at ($(origin) + (1,3.5)$) {\(\lambda_{\NH}^{(h,l)}\)};
+                \node at ($(origin) + (3.5,1.5)$) {\(\lambda_{\NH}^{(h,h)}\)};
+                % Effect of KNH
+                \draw [dashed] ($(origin) + (0,4)$) -- ($(origin) + (4,4)$) -- ($(origin) + (4,2)$);
+                \draw [dashed] ($(origin) + (2,0)$) -- ($(origin) + (2,4)$);
+                \draw [dashed] ($(origin) + (4,0)$) -- ($(origin) + (4,4)$);
+                \draw [very thick, ->] ($(origin) + (2.5,3)$) -- ($(origin) + (3.5,3)$);
+                \node at ($(origin) + (2,0)$) [below] {\(K_{\NH}\)};
+                \node at ($(origin) + (4,0)$) [below] {\(K_{\NH}+1\)};
+
+            \coordinate (origin) at (9,0);
                 % Coordinate system
                 \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\Large \(\bar\lambda_{K_{\NH}}\)};
                 \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {\Large Occupancy at NH};
@@ -729,7 +773,6 @@ In the same way (illustrated by Figure \ref{fig:effect_of_KNH_on_arrival_rate}),
                 \draw [very thick, ->] ($(origin) + (2.5,3)$) -- ($(origin) + (3.5,3)$);
                 \node at ($(origin) + (2,0)$) [below] {\(K_{\NH}\)};
                 \node at ($(origin) + (4,0)$) [below] {\(K_{\NH}+1\)};
-            };
         \end{tikzpicture}
     \end{center}
     \caption{The effect of \(K_{\NH}\) on \(\bar \lambda\).}\label{fig:effect_of_KNH_on_arrival_rate}
@@ -926,16 +969,16 @@ Recalling Figure \ref{arrivalrateregions} this implies:
 
 \begin{minipage}[t]{0.5\textwidth}
 \small{$$\lambda_{\NH}^{(r)}=\begin{cases}
-\lambda_{\NH}, &\text{if }r=a\\
-\lambda_{\NH}+\lambda_{\RG},  &\text{if }r=b\\
-0, &\text{if }r\in\{c,d\}\\
+\lambda_{\NH}, &\text{if }r=(l,l)\\
+\lambda_{\NH}+\lambda_{\RG},  &\text{if }r=(l,h)\\
+0, &\text{if }r\in\{(h,l),(h,h)\}\\
 \end{cases}$$}
 \end{minipage}
 \begin{minipage}[t]{0.5\textwidth}
 \small{$$\lambda_{\RG}^{(r)}=\begin{cases}
-\lambda_{\RG}, &\text{if }r=a\\
-\lambda_{\NH}+\lambda_{\RG},  &\text{if }r=c\\
-0, &\text{if }r\in\{b,d\}\\
+\lambda_{\RG}, &\text{if }r=(l,l)\\
+\lambda_{\NH}+\lambda_{\RG},  &\text{if }r=(h,l)\\
+0, &\text{if }r\in\{(l,h),(h,h)\}\\
 \end{cases}$$}
 \end{minipage}
 
@@ -1031,16 +1074,16 @@ Recalling Figure \ref{arrivalrateregions}, this model assumes:
 
 \begin{minipage}[t]{0.5\textwidth}
 \small{$$\lambda_{NH}^{(r)}=\begin{cases}
-\lambda_{NH}, &\text{if }r\in\{a,d\}\\
-\lambda_{NH}+\lambda_{RG},  &\text{if }r=b\\
-0, &\text{if }r=c\\
+\lambda_{NH}, &\text{if }r\in\{(l,l),(h,h)\}\\
+\lambda_{NH}+\lambda_{RG},  &\text{if }r=(l,h)\\
+0, &\text{if }r=(h,l)\\
 \end{cases}$$}
 \end{minipage}
 \begin{minipage}[t]{0.5\textwidth}
 \small{$$\lambda_{RG}^{(r)}=\begin{cases}
-\lambda_{RG}, &\text{if }r\in\{a,d\}\\
-\lambda_{NH}+\lambda_{RG},  &\text{if }r=c\\
-0, &\text{if }r=b\\
+\lambda_{RG}, &\text{if }r\in\{(l,l), (h,h)\}\\
+\lambda_{NH}+\lambda_{RG},  &\text{if }r=(h,l)\\
+0, &\text{if }r=(l,h)\\
 \end{cases}$$}
 \end{minipage}
 
