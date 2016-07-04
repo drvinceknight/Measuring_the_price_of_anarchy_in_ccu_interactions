@@ -23,6 +23,9 @@
 \usepackage{setspace}
 \usepackage{color}
 
+\usepackage{natbib}
+\bibliographystyle{agsm}
+
 % New commands------------------------
 \newcommand{\NH}{\text{NH}}
 \newcommand{\RG}{\text{RG}}
@@ -61,7 +64,7 @@ In \cite{batt2012doctors} an empirical study is undertaken and service rate slow
 Furthermore, it is shown that modelling whilst ignoring these state dependent rates leads to errors.
 This effect is further identified in \cite{chan2014use, kc2012econometric} where for example the negative effect on patient outcome is revealed.
 In \cite{kim2013icu, shmueli2003optimizing} this is expanded to consider a variety of admission policies in two CCUs, in particular the effect of rejection (due to too high occupancy) is measured.
-These policies are studied in the setting of a single hospital, and thus, from a game theoretic \cite{Maschler2013} point of view correspond to rational behaviour.
+These policies are studied in the setting of a single hospital, and thus, from a game theoretic point of view correspond to rational behaviour (a good game theory reference text is \cite{Maschler2013}).
 In practice a simplification of rational strategies is managed by policy makers by setting utilisation targets that ensure that hospitals do not run at a level likely to have a high rejection rate (example of these can be seen in \cite{Bevan2006, NHS2013}).
 
 The aim of this paper is to further investigate the effect of rational policies employed by Hospitals.
@@ -69,21 +72,21 @@ In particular, the goal is to place this in a game theoretic setting so as to id
 
 A Critical Care Unit (CCU), also sometimes referred to as an Intensive Therapy Unit or Intensive Therapy Department, is a special ward that is found in most acute hospitals.
 It provides intensive care (treatment and monitoring) for people who are critically ill or are in an unstable condition.
-CCUs face major challenges, on average, 8\% of patients are refused admission to a CCU because the Unit is full \cite{Report}.
+CCUs face major challenges, on average, 8\% of patients are refused admission to a CCU because the Unit is full (\cite{Report}).
 The CCU occupancy rates for some hospitals are reportedly very high
-\cite{Mitchell1995,Smith1995} and a shortage of beds has been identified
+(\cite{Mitchell1995,Smith1995}) and a shortage of beds has been identified
 throughout the United Kingdom.
 
-Many previous researchers have developed queueing models to help manage bed capacities in hospitals \cite{Cooper1974,Dumas1984,Gallivan2011,Gorunescu2002a,Griffiths2012,Harper2002a}.
+Many previous researchers have developed queueing models to help manage bed capacities in hospitals: \cite{Cooper1974,Dumas1984,Gallivan2011,Gorunescu2002a,Griffiths2012,Harper2002a}.
 Also, a vast amount of literature has been devoted to the simulation of CCUs;  \cite{Cahill1999a,Costa2003,Griffiths2004a,Kim1999,Litvak2008,Shahani2008}.
 
-This paper describes part of a project undertaken with managers from the Aneurin Bevan University Health Board (ABUHB), which is an NHS Wales organization in South Wales, that serves 21\% of the total population of Wales \cite{Board}.
+This paper describes part of a project undertaken with managers from the Aneurin Bevan University Health Board (ABUHB), which is an NHS Wales organization in South Wales, that serves 21\% of the total population of Wales (\cite{Boarda}).
 Critical care is delivered on two sites, at the Nevill Hall hospital in Abergavenny and at the Royal Gwent hospital in Newport.
 For the remainder of this paper, the Nevill Hall hospital will be referred to as NH and the Royal Gwent hospital as RG.
 
 The main proposition of the work requested by the ABUHB was to develop a mathematical model of bed occupancies at the CCUs at RG and NH.
 After an initial analysis of the data, behavioural aspects became apparent; for example, delaying patients discharge if there was no pressure on CCU beds, or admitting fewer patients if bed occupancy levels were high.
-As a result of this, a state-dependent queueing model has been developed, which includes the dependency of admission rate on actual occupancy \cite{williams2015mathematical}.
+As a result of this, a state-dependent queueing model has been developed, which includes the dependency of admission rate on actual occupancy (\cite{williams2015mathematical}).
 This state dependent model was applied to both NH and RG separately.
 It is however obvious that the actions of one CCU impact on the other CCU, as diversion of patients from one CCU to the other sometimes occurs.
 A pictorial representation of the situation is given in Figure \ref{diagramofdiversion}.
@@ -117,7 +120,7 @@ Some other work that has not concentrated on EDs, but has been applied to health
 In the wider intersection of game theory and queueing theory (where this work lies) papers that consider price and/or capacity include: \cite{Allon2007, Cachon2002,  Cachon2007, Kalai1992, Levhari1978}. In these models, the choice of price/or capacity determines the arrival rate for each firm; this is similar to the approach taken in this paper.
 
 The work presented in this paper contributes to the growing body of literature by applying state dependent queueing models in a game theoretical context to CCU interaction.
-In particular this consideration allows for the investigation of targets imposed by central control \cite{Bevan2006}.
+In particular this consideration allows for the investigation of targets imposed by central control (\cite{Bevan2006}).
 The findings of this work justify and identify a choice of targets that align the interests of the individual hospitals with social welfare.
 
 The data used for the work presented in this paper was provided by the Intensive Care National Audit and Research Centre (ICNARC) and refers to patients admitted to CCUs in NH and RG, and covers a period of three years, from the 1$^{\text{st}}$ January 2009 till the 31$^{\text{st}}$ December 2011.
@@ -195,7 +198,7 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
 
 \begin{figure}[!htbp]
 \begin{center}
-    \begin{tikzpicture}[scale=.7, every node/.style={scale=0.7}]
+    \begin{tikzpicture}[scale=.8, every node/.style={scale=0.8}]
         % -----------------------------------------------
         % Boundaries ------------------------------------
         % -----------------------------------------------
@@ -540,7 +543,7 @@ For given $K_{\NH}, K_{\RG}$ and using the notation of Figure \ref{arrivalratere
 
 In total there are $(c_{\NH}+1)\times(c_{\RG}+1)$ states and they are indexed lexicographically: $(0,0), (0,1), (0,2), \dots$.
 
-The stochastic transition rate matrix $Q=Q(c_{NH},c_{RG})$ of the continuous-time Markov chain \cite{Stewart2009} has entries $q_{ij}=q_{(u_i,v_i),(u_j,v_j)}$ which is the rate at which a transition from state $i$ to state $j$ occurs. The transition rates are given by (\ref{transitions}) and are illustrated diagrammatically in Figure \ref{mc}.
+The stochastic transition rate matrix $Q=Q(c_{NH},c_{RG})$ of the continuous-time Markov chain (\cite{Stewart2009}) has entries $q_{ij}=q_{(u_i,v_i),(u_j,v_j)}$ which is the rate at which a transition from state $i$ to state $j$ occurs. The transition rates are given by (\ref{transitions}) and are illustrated diagrammatically in Figure \ref{mc}.
 
 \begin{equation}
 q_{(u_i,v_i),(u_j,v_j)}=\begin{cases} u\mu_{\NH} & \text{ if  } (u_i,v_i)-(u_j,v_j)=(1,0),\\
@@ -559,7 +562,7 @@ q_{(u_i,v_i),(u_j,v_j)}=\begin{cases} u\mu_{\NH} & \text{ if  } (u_i,v_i)-(u_j,v
 \end{equation}
 
 Utilities will be of interest when this queueing theoretical model will be inserted in the game theoretical model.
-Throughput of patients is a natural choice of utility given that most hospitals are financially rewarded per served patient \cite{Pate2009}.
+Throughput of patients is a natural choice of utility given that most hospitals are financially rewarded per served patient (\cite{Pate2009}).
 For each threshold pair $(K_{\NH},K_{\RG})$, the utilisation rate $U_H$ and throughput $T_H$ can easily be obtained for each CCU: $H\in\{\text{NH},\text{RG}\}$, using the following formulas:
 
 $$U_{H}={{\sum_{n=0}^{c_H} nP^{(H)}(n)}\over{c_{H}}}$$
@@ -576,7 +579,7 @@ $$
 H=\NH&H=\RG
 \end{array}
 $$
-\caption{Steady state probabilities for $H\in\{\NH,\RG\}$ with $(K_{\NH}, K_{\RG})=(6,12)$} \label{steady_state_probs}
+\caption{Steady state probabilities for each hospital ($H\in\{\NH,\RG\}$) with different threshold pairs ($(K_{\NH}, K_{\RG})=(6,12)$)} \label{steady_state_probs}
 \end{figure}
 
 For the parameters of Figure \ref{steady_state_probs} the utilisation rates are: 59\% at NH and 62\% at RG and a throughput of 1.23 at NH and 1.98 at RG (patients per day).\\
@@ -592,7 +595,7 @@ $$
 H=\NH&H=\RG
 \end{array}
 $$
-\caption{Steady state probabilities for $H\in\{\NH,\RG\}$ with $(K_{\NH}, K_{\RG})=(1,12)$} \label{steady_state_probs_1_12}
+\caption{Steady state probabilities for each hospital ($H\in\{\NH,\RG\}$) with different threshold pairs ($(K_{\NH}, K_{\RG})=(1,12)$)} \label{steady_state_probs_1_12}
 \end{figure}
 
 
@@ -612,7 +615,7 @@ $$\left(U_{H}-t\right)^2$$
 \end{align}
 
 This game is equivalent to a bi matrix game with restriction to pure strategies where both players aim to get their utilisation as close as possible to a certain target.
-As such a Nash Equilibrium is not guaranteed by traditional game theoretical results \cite{Nash1950}, which guarantee the existence of equilibria in mixed strategies.
+As such a Nash Equilibrium is not guaranteed by traditional game theoretical results (\cite{Nash1950}), which guarantee the existence of equilibria in mixed strategies.
 Based on discussions with ABUHB, long term threshold policies are a realistic consideration and so a pure strategy space is used.
 
 The following result is a sufficient condition for the existence of an equilibrium:\\
@@ -632,7 +635,7 @@ The function $f_H$ is well defined as it maximises a continuous function over a
 finite discrete set.  In case of multiple values that minimize $U_H$, it is
 assumed that $f_H$ returns the lowest such value, this is consistent with the
 Price of Anarchy (PoA) being a theoretical upper bound of the effect of
-uncoordinated behaviour \cite{TimRoughgarden}.
+uncoordinated behaviour (\cite{TimRoughgarden}).
 
 As such if $f_H$ is non-decreasing then it is in fact a stepwise non-decreasing
 function.  If we consider $f_{\NH}$ and $f_{\RG}$ plotted on the same axis (so
@@ -644,7 +647,7 @@ shown in Figure \ref{exampleforproof}.
     \begin{center}
         \includegraphics[width=.7\textwidth]{./Images/best_responses_ex_for_proof.pdf}
     \end{center}
-    \caption{Plots of $f_{\NH}(K_{\RG})$ (crosses) and $f_{\RG}(K_{\NH})$ (diamonds)}\label{exampleforproof}
+    \caption{Plots of best response functions: $f_{\NH}(K_{\RG})$ (crosses) and $f_{\RG}(K_{\NH})$ (diamonds)}\label{exampleforproof}
 \end{figure}
 
 This point of intersection corresponds to a Nash Equilibrium of (\ref{model1}).
@@ -702,25 +705,9 @@ If \(\lambda_{\NH}^{(h,l)}\leq \lambda_{\NH}^{(h,h)},\lambda_{\NH}^{(l,l)}\leq \
                 \draw [very thick, ->] ($(origin) + (2.5,3)$) -- ($(origin) + (3.5,3)$);
                 \node at ($(origin) + (2,0)$) [below] {\(K_{\RG}\)};
                 \node at ($(origin) + (4,0)$) [below] {\(K_{\RG}+1\)};
-
-            \coordinate (origin) at (9,0);
-                % Coordinate system
-                \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\Large \(\bar\lambda_{K_{\RG}}\)};
-                \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {\Large Occupancy at RG};
-                % lambda
-                \draw ($(origin) + (0,2)$) -- ($(origin) + (2,2)$) -- ($(origin) + (2,4)$) -- ($(origin) + (5,4)$);
-                \node at ($(origin) + (1,2.5)$) {\(\lambda_{\NH}^{(l,l)}\)};
-                \node at ($(origin) + (3.5,4.5)$) {\(\lambda_{\NH}^{(l,h)}\)};
-                % Effect of KRG
-                \draw [dashed] ($(origin) + (0,2)$) -- ($(origin) + (4,2)$) -- ($(origin) + (4,4)$);
-                \draw [dashed] ($(origin) + (2,0)$) -- ($(origin) + (2,2)$);
-                \draw [dashed] ($(origin) + (4,0)$) -- ($(origin) + (4,2)$);
-                \draw [very thick, ->] ($(origin) + (2.5,3)$) -- ($(origin) + (3.5,3)$);
-                \node at ($(origin) + (2,0)$) [below] {\(K_{\RG}\)};
-                \node at ($(origin) + (4,0)$) [below] {\(K_{\RG}+1\)};
         \end{tikzpicture}
     \end{center}
-    \caption{The effect of \(K_{\RG}\) on \(\bar \lambda\).}\label{fig:effect_of_KRG_on_arrival_rate}
+    \caption{The effect of the threshold (\(K_{\RG}\)) on the effective arrival rate (\(\bar \lambda\)). The same behaviour is exhibited for \(\lambda_{\NH}^{(l,l)}\) and \(\lambda_{\NH}^{(l, h)}\).}\label{fig:effect_of_KRG_on_arrival_rate}
 \end{figure}
 
 Based on the previous observation this in turn implies: \(U_{\NH}(K_{\RG}) = U_{\NH}(\bar \lambda_{\RG}(K_{\RG}) \geq U_{\NH}(\bar \lambda_{\RG}(K_{\RG}+1)) = U_{\NH}(K_{\RG}+1)\) giving:
@@ -757,25 +744,9 @@ U_{\NH}(\bar \lambda_{\NH}(K_{\NH}+1)) = U_{\NH}(K_{\NH}+1)\) giving:
                 \draw [very thick, ->] ($(origin) + (2.5,3)$) -- ($(origin) + (3.5,3)$);
                 \node at ($(origin) + (2,0)$) [below] {\(K_{\NH}\)};
                 \node at ($(origin) + (4,0)$) [below] {\(K_{\NH}+1\)};
-
-            \coordinate (origin) at (9,0);
-                % Coordinate system
-                \draw [very thick, ->] (origin) -- ($(origin) + (0,5)$) node[anchor=south east] {\Large \(\bar\lambda_{K_{\NH}}\)};
-                \draw [very thick, ->] (origin) -- ($(origin) + (5,0)$) node[anchor=west] {\Large Occupancy at NH};
-                % lambda
-                \draw ($(origin) + (0,4)$) -- ($(origin) + (2,4)$) -- ($(origin) + (2,2)$) -- ($(origin) + (5,2)$);
-                \node at ($(origin) + (1,3.5)$) {\(\lambda_{\NH}^{(l,l)}\)};
-                \node at ($(origin) + (3.5,1.5)$) {\(\lambda_{\NH}^{(l,h)}\)};
-                % Effect of KNH
-                \draw [dashed] ($(origin) + (0,4)$) -- ($(origin) + (4,4)$) -- ($(origin) + (4,2)$);
-                \draw [dashed] ($(origin) + (2,0)$) -- ($(origin) + (2,4)$);
-                \draw [dashed] ($(origin) + (4,0)$) -- ($(origin) + (4,4)$);
-                \draw [very thick, ->] ($(origin) + (2.5,3)$) -- ($(origin) + (3.5,3)$);
-                \node at ($(origin) + (2,0)$) [below] {\(K_{\NH}\)};
-                \node at ($(origin) + (4,0)$) [below] {\(K_{\NH}+1\)};
         \end{tikzpicture}
     \end{center}
-    \caption{The effect of \(K_{\NH}\) on \(\bar \lambda\).}\label{fig:effect_of_KNH_on_arrival_rate}
+    \caption{The effect of the threshold (\(K_{\NH}\)) on the effective arrival rate (\(\bar \lambda\)). The same behaviour is exhibited for \(\lambda_{\NH}^{(l,l)}\) and \(\lambda_{\NH}^{(l, h)}\).}\label{fig:effect_of_KNH_on_arrival_rate}
 \end{figure}
 
 Using (\ref{equ:UNH_as_a_function_of_KRG}) and (\ref{equ:UNH_as_a_function_of_KNH}) the general inequalities associated with \(U_{\NH}(K_{\NH}, K_{\RG})\) are summarised in Figure \ref{fig:variation_of_UNH}.
@@ -821,7 +792,7 @@ Using (\ref{equ:UNH_as_a_function_of_KRG}) and (\ref{equ:UNH_as_a_function_of_KN
                 };
         \end{tikzpicture}
     \end{center}
-    \caption{Values of \(U_{\NH}\) and the corresponding inequalities for varying cutoff thresholds.}\label{fig:variation_of_UNH}
+    \caption{Values of utilisation (\(U_{\NH}\)) and the corresponding inequalities for varying cutoff thresholds.}\label{fig:variation_of_UNH}
 \end{figure}
 
 As \(U_{\NH}\) increases from the lowest value (top left in Figure  \ref{fig:variation_of_UNH}) to the highest (bottom right in Figure \ref{fig:variation_of_UNH}) the value of \(U_{\NH}-t\) will change sign (from negative to positive).
@@ -885,7 +856,9 @@ For simplicity of notation let:
 
 \[a^{\pm}=(f^{\pm}(K_{\RG}), K_{\RG})\text{ and }b^{\pm}=(f^{\pm}(K_{\RG}+1), K_{\RG}+1))=(f^{\pm}(K_{\RG}), K_{\RG}+1))\]
 
-Recalling equations (\ref{equ:UNH_as_a_function_of_KRG}-\ref{equ:UNH_as_a_function_of_KNH}) and Figure \ref{fig:variation_of_UNH} have:
+Recalling equations
+(\ref{equ:UNH_as_a_function_of_KRG}-\ref{equ:UNH_as_a_function_of_KNH}) and
+Figure~\ref{fig:variation_of_UNH} gives:
 
 \begin{align}
 U_{\NH}(b^-)&\leq U_{\NH}(a^-)\\
@@ -940,7 +913,7 @@ Note that intuitively it could be thought that \(T^*\) is obtained when
 \(K_{\NH}=c_{\NH}\) and \(K_{\RG}=c_{\RG}\) however this is not always the case
 (numerical experiments have been carried out to verify this).
 
-The measure used to quantify inefficiency is the Price of Anarchy (PoA) \cite{Koutsoupias1999,TimRoughgarden}, which is the ratio of the social optimum welfare to the welfare of the worst Nash Equilibrium.
+The measure used to quantify inefficiency is the Price of Anarchy (PoA) (\cite{Koutsoupias1999,TimRoughgarden}), which is the ratio of the social optimum welfare to the welfare of the worst Nash Equilibrium.
 That is, the ratio of the largest social welfare, $T^*$ to the smallest social welfare, $\widetilde{T}$, achieved at any Nash Equilibrium. Thus:
 
 $$\text{PoA}={{T^*}\over{\widetilde{T}}}$$
@@ -953,7 +926,12 @@ This however would not be in the interest of the hospital (nor necessarily in th
 
 \section{Results}\label{results}
 
-The game theoretic model of (\ref{model1}) is solved using exhaustive consideration of best responses whilst taking advantage of the structure identified by the Lemma of Section \ref{queueingandgamemodels}. For any given pair of threshold strategies the matrix equation $\pi Q=0$ is solved by obtaining a basis for the Kernel of $Q$. For the purpose of this paper this is implemented in \cite{sage}.
+The game theoretic model of (\ref{model1}) is solved using exhaustive
+consideration of best responses whilst taking advantage of the structure
+identified by the Lemma of Section~\ref{queueingandgamemodels}. For any given
+pair of threshold strategies the matrix equation $\pi Q=0$ is solved by
+obtaining a basis for the kernel of $Q$. For the purpose of this paper this is
+implemented in Sagemath (\cite{sage}).
 
 \subsection{Model 1: Strict diversion}
 
@@ -962,8 +940,8 @@ predetermined threshold, then the admission to the CCU is cancelled. This
 cancellation could correspond to sending the patient to a completely different
 CCU (outside of the model), moving one of the current CCU patients (ready to be
 discharged) to another ward and/or using the post-anesthesia care unit
-as a temporary overflow measure. This models corresponds to the first of those
-possibilities: the patient is lost (from the point of view of this model).
+as a temporary overflow measure. This models corresponds to the first
+possibility: the patient is lost (from the point of view of this model).
 
 Recalling Figure \ref{arrivalrateregions} this implies:
 
@@ -1053,7 +1031,7 @@ $x$&$t=0.15$&$t=0.27$&$t=0.4$&$t=0.52$&$t=0.64$&$t=0.76$&$t=0.88$&$t=1$\\
 
 We see that an extremely large PoA is obtained for $t<0.2$.
 For values of $t>0.5$ the PoA is still high: a PoA of 2 corresponds to 100\% less throughput of patients.
-These findings seem to give some backing to the targets implemented throughout the NHS \cite{Bevan2006}.
+These findings seem to give some backing to the targets implemented throughout the NHS (\cite{Bevan2006}).
 
 In particular it can be seen that a value of $t>0.8$ becomes imperative for high demand.
 The lowest value of $t$ which gives PoA$=1$ for the actual demand levels ($x=0$) is in fact $t=0.72$.
@@ -1194,7 +1172,7 @@ For the actual demand ($x=0$) a target value of $t=0.72$ is once again recommend
 
 In this work a generic game theoretical model has been presented that accounts for the rational actions of two CCUs.
 This game theoretic model is underpinned by a queueing model that takes into account the stochastic nature of queueing systems.
-This work extends the application of game theoretic models already present in the literature to healthcare \cite{li2002cooperative, xie2006note}.
+This work extends the application of game theoretic models already present in the literature to healthcare (\cite{li2002cooperative, xie2006note}).
 
 A result is proved that allows for the assertion of existence of a Nash
 Equilibrium. This result is then applied to two particular models that are
@@ -1233,7 +1211,7 @@ It is vital to acknowledge the limitations of the work presented:
         Indeed, in reality critical care managers could have far more complex
         boundaries for their heuristic decision making;
     \item This model only assumes the presence of two players however in reality
-        the system has a variety of stakeholders. Multi player systems could be
+        the system has a variety of stakeholders. Multiplayer systems could be
         worth considering. This would reflect health boards/hospitals in a
         concentrated area so that interactions are not just between two
         hospitals but between many.
@@ -1270,10 +1248,9 @@ of throughput as utility.  This would be similar to work such as
 \cite{erkut2008ambulance, knight2012ambulance}.
 
 The code used in this work can be found here: \url{https://gist.github.com/anonymous/81effc06eea70a9e4e2f}.
-The graphics for this paper were obtained using \cite{Hunter:2007, sage} a worksheet with the data and code used for the plots can be found here: \url{https://cloud.sagemath.com/projects/c293aefd-1fdf-4b9c-95f4-75bb77035e42/files/MeasuringThePriceOfAnarchyInCCUInteractions.sagews}.
+The graphics for this paper were obtained using software described in \cite{Hunter:2007, sage} a worksheet with the data and code used for the plots can be found here: \url{https://cloud.sagemath.com/projects/c293aefd-1fdf-4b9c-95f4-75bb77035e42/files/MeasuringThePriceOfAnarchyInCCUInteractions.sagews}.
 
 \newpage
-\bibliographystyle{plain}
 \bibliography{library}
 
 \end{document}

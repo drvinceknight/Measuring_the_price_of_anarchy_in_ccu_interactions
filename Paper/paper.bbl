@@ -1,270 +1,289 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{xx}
 
-\bibitem{Allon2007}
-G.~Allon and A.~Federgruen.
-\newblock {Competition in service industries}.
-\newblock {\em Operations Research}, 55(1):37--55, 2007.
+\harvarditem{Allon \harvardand\ Federgruen}{2007}{Allon2007}
+Allon, G. \harvardand\ Federgruen, A.  \harvardyearleft 2007\harvardyearright ,
+  `{Competition in service industries}', {\em Operations Research} {\bf
+  55}(1),~37--55.
+\newline\harvardurl{http://or.journal.informs.org/content/55/1/37.short}
 
-\bibitem{Report}
-{Audit Commission}.
-\newblock {The place of efficient and effective critical care services within
-  the acute hospital}.
-\newblock Technical report, 1999.
+\harvarditem{{Audit Commission}}{1999}{Report}
+{Audit Commission}  \harvardyearleft 1999\harvardyearright , {The place of
+  efficient and effective critical care services within the acute hospital},
+  Technical report.
 
-\bibitem{batt2012doctors}
-Robert~J Batt and Christian Terwiesch.
-\newblock Doctors under load: An empirical study of state-dependent service
-  times in emergency care.
-\newblock Technical report, Working paper, 2012.
+\harvarditem{Batt \harvardand\ Terwiesch}{2012}{batt2012doctors}
+Batt, R.~J. \harvardand\ Terwiesch, C.  \harvardyearleft 2012\harvardyearright
+  , Doctors under load: An empirical study of state-dependent service times in
+  emergency care, Technical report, Working paper.
 
-\bibitem{Bevan2006}
-G.~Bevan and C.~Hood.
-\newblock {Have targets improved performance in the English NHS?}
-\newblock {\em BMJ (Clinical research ed.)}, 332(7538):419--22, February 2006.
+\harvarditem{Bevan \harvardand\ Hood}{2006}{Bevan2006}
+Bevan, G. \harvardand\ Hood, C.  \harvardyearleft 2006\harvardyearright ,
+  `{Have targets improved performance in the English NHS?}', {\em BMJ (Clinical
+  research ed.)} {\bf 332}(7538),~419--22.
+\newline\harvardurl{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1370980\&tool=pmcentrez\&rendertype=abstract}
 
-\bibitem{Cachon2002}
-G.~P. Cachon and P.~T. Harker.
-\newblock {Competition and outsourcing with scale economies}.
-\newblock {\em Management Science}, 48(10):1314--1333, 2002.
+\harvarditem{Board}{2014}{Boarda}
+Board, A. B.~H.  \harvardyearleft 2014\harvardyearright , `{Aneurin Bevan
+  Health Board - an Official NHS Wales website}'.
+\newline\harvardurl{http://www.wales.nhs.uk/sitesplus/866/home}
 
-\bibitem{Cachon2007}
-G.~P. Cachon and F.~Zhang.
-\newblock {Obtaining Fast Service in a Queueing System via Performance-Based
-  Allocation of Demand}.
-\newblock {\em Management Science}, 53(3):408--420, March 2007.
+\harvarditem{Cachon \harvardand\ Harker}{2002}{Cachon2002}
+Cachon, G.~P. \harvardand\ Harker, P.~T.  \harvardyearleft
+  2002\harvardyearright , `{Competition and outsourcing with scale economies}',
+  {\em Management Science} {\bf 48}(10),~1314--1333.
+\newline\harvardurl{http://mansci.journal.informs.org/content/48/10/1314.short}
 
-\bibitem{Cahill1999a}
-W.~Cahill and M.~Render.
-\newblock {Dynamic simulation modeling of ICU bed availability}.
-\newblock {\em Simulation Conference Proceedings,}, pages 1573--1576, 1999.
+\harvarditem{Cachon \harvardand\ Zhang}{2007}{Cachon2007}
+Cachon, G.~P. \harvardand\ Zhang, F.  \harvardyearleft 2007\harvardyearright ,
+  `{Obtaining Fast Service in a Queueing System via Performance-Based
+  Allocation of Demand}', {\em Management Science} {\bf 53}(3),~408--420.
+\newline\harvardurl{http://mansci.journal.informs.org/cgi/doi/10.1287/mnsc.1060.0636}
 
-\bibitem{chan2014use}
-Carri~W Chan, Galit Yom-Tov, and Gabriel Escobar.
-\newblock When to use speedup: An examination of service systems with returns.
-\newblock {\em Operations Research}, 62(2):462--482, 2014.
+\harvarditem{Cahill \harvardand\ Render}{1999}{Cahill1999a}
+Cahill, W. \harvardand\ Render, M.  \harvardyearleft 1999\harvardyearright ,
+  `{Dynamic simulation modeling of ICU bed availability}', {\em Simulation
+  Conference Proceedings,} pp.~1573--1576.
+\newline\harvardurl{http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=816895}
 
-\bibitem{Cooper1974}
-J.~K. Cooper and T.~M. Corcoran.
-\newblock {Estimating bed needs by means of queuing theory}.
-\newblock {\em New England Journal of Medicine}, 291(8):404--405, 1974.
+\harvarditem[Chan et~al.]{Chan, Yom-Tov \harvardand\
+  Escobar}{2014}{chan2014use}
+Chan, C.~W., Yom-Tov, G. \harvardand\ Escobar, G.  \harvardyearleft
+  2014\harvardyearright , `When to use speedup: An examination of service
+  systems with returns', {\em Operations Research} {\bf 62}(2),~462--482.
 
-\bibitem{Costa2003}
-A.~X. Costa, S.~A. Ridley, A.~K. Shahani, P.~R. Harper, V.~{De Senna}, and
-  M.~S. Nielsen.
-\newblock {Mathematical modelling and simulation for planning critical care
-  capacity.}
-\newblock {\em Anaesthesia}, 58(4):320--7, April 2003.
+\harvarditem{Cooper \harvardand\ Corcoran}{1974}{Cooper1974}
+Cooper, J.~K. \harvardand\ Corcoran, T.~M.  \harvardyearleft
+  1974\harvardyearright , `{Estimating bed needs by means of queuing theory}',
+  {\em New England Journal of Medicine} {\bf 291}(8),~404--405.
+\newline\harvardurl{http://www.nejm.org/doi/full/10.1056/NEJM197408222910807}
 
-\bibitem{Deo2011}
-S.~Deo and I.~Gurvich.
-\newblock {Centralized vs. Decentralized Ambulance Diversion: A Network
-  Perspective}.
-\newblock {\em Management Science}, 57(7):1300--1319, May 2011.
+\harvarditem[Costa et~al.]{Costa, Ridley, Shahani, Harper, {De Senna}
+  \harvardand\ Nielsen}{2003}{Costa2003}
+Costa, A.~X., Ridley, S.~A., Shahani, A.~K., Harper, P.~R., {De Senna}, V.
+  \harvardand\ Nielsen, M.~S.  \harvardyearleft 2003\harvardyearright ,
+  `{Mathematical modelling and simulation for planning critical care
+  capacity.}', {\em Anaesthesia} {\bf 58}(4),~320--7.
+\newline\harvardurl{http://www.ncbi.nlm.nih.gov/pubmed/12648112}
 
-\bibitem{Dumas1984}
-M.~B. Dumas.
-\newblock {Simulation modeling for hospital bed planning}.
-\newblock {\em Simulation}, 43:69--78, 1984.
+\harvarditem{Deo \harvardand\ Gurvich}{2011}{Deo2011}
+Deo, S. \harvardand\ Gurvich, I.  \harvardyearleft 2011\harvardyearright ,
+  `{Centralized vs. Decentralized Ambulance Diversion: A Network Perspective}',
+  {\em Management Science} {\bf 57}(7),~1300--1319.
+\newline\harvardurl{http://mansci.journal.informs.org/cgi/doi/10.1287/mnsc.1110.1342}
 
-\bibitem{erkut2008ambulance}
-Erhan Erkut, Armann Ingolfsson, and G{\"u}ne{\c{s}} Erdo{\u{g}}an.
-\newblock Ambulance location for maximum survival.
-\newblock {\em Naval Research Logistics (NRL)}, 55(1):42--58, 2008.
+\harvarditem{Dumas}{1984}{Dumas1984}
+Dumas, M.~B.  \harvardyearleft 1984\harvardyearright , `{Simulation modeling
+  for hospital bed planning}', {\em Simulation} {\bf 43},~69--78.
 
-\bibitem{Gallivan2011}
-S.~Gallivan and M.~Utley.
-\newblock {A technical note concerning emergency bed demand.}
-\newblock {\em Health care management science}, 14(3):250--2, September 2011.
+\harvarditem[Erkut et~al.]{Erkut, Ingolfsson \harvardand\
+  Erdo{\u{g}}an}{2008}{erkut2008ambulance}
+Erkut, E., Ingolfsson, A. \harvardand\ Erdo{\u{g}}an, G.  \harvardyearleft
+  2008\harvardyearright , `Ambulance location for maximum survival', {\em Naval
+  Research Logistics (NRL)} {\bf 55}(1),~42--58.
 
-\bibitem{Gorunescu2002a}
-F.~Gorunescu, S.~I. McClean, and P.~H. Millard.
-\newblock {Using a queueing model to help plan bed allocation in a department
-  of geriatric medicine.}
-\newblock {\em Health care management science}, 5(4):307--12, November 2002.
+\harvarditem{Gallivan \harvardand\ Utley}{2011}{Gallivan2011}
+Gallivan, S. \harvardand\ Utley, M.  \harvardyearleft 2011\harvardyearright ,
+  `{A technical note concerning emergency bed demand.}', {\em Health care
+  management science} {\bf 14}(3),~250--2.
+\newline\harvardurl{http://www.ncbi.nlm.nih.gov/pubmed/21559850}
 
-\bibitem{Griffiths2012}
-J.~D. Griffiths, V.~Knight, and I.~Komenda.
-\newblock {Bed management in a Critical Care Unit}.
-\newblock {\em IMA Journal of Management Mathematics}, 24(2):137--153, January
-  2013.
+\harvarditem[Gorunescu et~al.]{Gorunescu, McClean \harvardand\
+  Millard}{2002}{Gorunescu2002a}
+Gorunescu, F., McClean, S.~I. \harvardand\ Millard, P.~H.  \harvardyearleft
+  2002\harvardyearright , `{Using a queueing model to help plan bed allocation
+  in a department of geriatric medicine.}', {\em Health care management
+  science} {\bf 5}(4),~307--12.
+\newline\harvardurl{http://www.ncbi.nlm.nih.gov/pubmed/12437280}
 
-\bibitem{Griffiths2004a}
-J.~D. Griffiths, N.~Price-Lloyd, M.~Smithies, and J.~E. Williams.
-\newblock {Modelling the requirement for supplementary nurses in an intensive
-  care unit}.
-\newblock {\em Journal of the Operational Research Society}, 56(2):126--133,
-  November 2005.
+\harvarditem[Griffiths et~al.]{Griffiths, Knight \harvardand\
+  Komenda}{2013}{Griffiths2012}
+Griffiths, J.~D., Knight, V. \harvardand\ Komenda, I.  \harvardyearleft
+  2013\harvardyearright , `{Bed management in a Critical Care Unit}', {\em IMA
+  Journal of Management Mathematics} {\bf 24}(2),~137--153.
+\newline\harvardurl{http://imaman.oxfordjournals.org/cgi/doi/10.1093/imaman/dpr028}
 
-\bibitem{Hagtvedt2009}
-R.~Hagtvedt and M.~Ferguson.
-\newblock {Cooperative strategies to reduce ambulance diversion}.
-\newblock In {\em Winter Simulation Conference}, pages 1861--1874, 2009.
+\harvarditem[Griffiths et~al.]{Griffiths, Price-Lloyd, Smithies \harvardand\
+  Williams}{2005}{Griffiths2004a}
+Griffiths, J.~D., Price-Lloyd, N., Smithies, M. \harvardand\ Williams, J.~E.
+  \harvardyearleft 2005\harvardyearright , `{Modelling the requirement for
+  supplementary nurses in an intensive care unit}', {\em Journal of the
+  Operational Research Society} {\bf 56}(2),~126--133.
+\newline\harvardurl{http://www.palgrave-journals.com/doifinder/10.1057/palgrave.jors.2601882}
 
-\bibitem{Harper2002a}
-P.~R. Harper and A.~K. Shahani.
-\newblock {Modelling for the planning and management of bed capacities in
-  hospitals}.
-\newblock {\em Journal of the Operational Research Society}, 53(1):11--18,
-  January 2002.
+\harvarditem{Hagtvedt \harvardand\ Ferguson}{2009}{Hagtvedt2009}
+Hagtvedt, R. \harvardand\ Ferguson, M.  \harvardyearleft 2009\harvardyearright
+  , {Cooperative strategies to reduce ambulance diversion}, {\em in} `Winter
+  Simulation Conference', pp.~1861--1874.
+\newline\harvardurl{http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=5429194}
 
-\bibitem{Howard2002}
-D.~H. Howard.
-\newblock {Why do transplant surgeons turn down organs? A model of the
-  accept/reject decision.}
-\newblock {\em Journal of health economics}, 21(6):957--69, November 2002.
+\harvarditem{Harper \harvardand\ Shahani}{2002}{Harper2002a}
+Harper, P.~R. \harvardand\ Shahani, A.~K.  \harvardyearleft
+  2002\harvardyearright , `{Modelling for the planning and management of bed
+  capacities in hospitals}', {\em Journal of the Operational Research Society}
+  {\bf 53}(1),~11--18.
+\newline\harvardurl{http://www.jstor.org/stable/822874}
 
-\bibitem{Board}
-Aneurin Bevan Health~Board Http://www.wales.nhs.uk/sitesplus/866/home.
-\newblock {Aneurin Bevan Health Board - an Official NHS Wales website}.
-\newblock (Accessed on 09/01/2014).
+\harvarditem{Howard}{2002}{Howard2002}
+Howard, D.~H.  \harvardyearleft 2002\harvardyearright , `{Why do transplant
+  surgeons turn down organs? A model of the accept/reject decision.}', {\em
+  Journal of health economics} {\bf 21}(6),~957--69.
+\newline\harvardurl{http://www.ncbi.nlm.nih.gov/pubmed/12475120}
 
-\bibitem{Hunter:2007}
-J.~D. Hunter.
-\newblock Matplotlib: A 2d graphics environment.
-\newblock {\em Computing In Science \& Engineering}, 9(3):90--95, 2007.
+\harvarditem{Hunter}{2007}{Hunter:2007}
+Hunter, J.~D.  \harvardyearleft 2007\harvardyearright , `Matplotlib: A 2d
+  graphics environment', {\em Computing In Science \& Engineering} {\bf
+  9}(3),~90--95.
 
-\bibitem{Kalai1992}
-E.~Kalai, M.~I. Kamien, and M.~Rubinovitch.
-\newblock {Optimal Service Speeds in a Competitive Environment}.
-\newblock {\em Management Science}, 38(8):1154--1163, August 1992.
+\harvarditem[Kalai et~al.]{Kalai, Kamien \harvardand\
+  Rubinovitch}{1992}{Kalai1992}
+Kalai, E., Kamien, M.~I. \harvardand\ Rubinovitch, M.  \harvardyearleft
+  1992\harvardyearright , `{Optimal Service Speeds in a Competitive
+  Environment}', {\em Management Science} {\bf 38}(8),~1154--1163.
+\newline\harvardurl{http://mansci.journal.informs.org/cgi/doi/10.1287/mnsc.38.8.1154}
 
-\bibitem{kc2012econometric}
-Diwas~Singh Kc and Christian Terwiesch.
-\newblock An econometric analysis of patient flows in the cardiac intensive
-  care unit.
-\newblock {\em Manufacturing \& Service Operations Management}, 14(1):50--65,
-  2012.
+\harvarditem{Kc \harvardand\ Terwiesch}{2012}{kc2012econometric}
+Kc, D.~S. \harvardand\ Terwiesch, C.  \harvardyearleft 2012\harvardyearright ,
+  `An econometric analysis of patient flows in the cardiac intensive care
+  unit', {\em Manufacturing \& Service Operations Management} {\bf
+  14}(1),~50--65.
 
-\bibitem{NHS2013}
-Kesavan.
-\newblock {\em {Is there an optimal elective operating theatre utilisation
-  target?}}
-\newblock Health Services and Outcomes Research, 2013.
+\harvarditem{Kesavan}{2013}{NHS2013}
+Kesavan  \harvardyearleft 2013\harvardyearright , {\em {Is there an optimal
+  elective operating theatre utilisation target?}}, Health Services and
+  Outcomes Research.
+\newline\harvardurl{https://www.hsor.nhg.com.sg/Publications/Newsletter/Documents/2013-5.pdf}
 
-\bibitem{Kim1999}
-S.~C. Kim, I.~Horowitz, and K.~K. Young.
-\newblock {Analysis of capacity management of the intensive care unit in a
-  hospital}.
-\newblock {\em European Journal of Operational Research}, 115:36--46, 1999.
+\harvarditem[Kim et~al.]{Kim, Horowitz \harvardand\ Young}{1999}{Kim1999}
+Kim, S.~C., Horowitz, I. \harvardand\ Young, K.~K.  \harvardyearleft
+  1999\harvardyearright , `{Analysis of capacity management of the intensive
+  care unit in a hospital}', {\em European Journal of Operational Research}
+  {\bf 115},~36--46.
+\newline\harvardurl{http://linkinghub.elsevier.com/retrieve/pii/S0377221798001350}
 
-\bibitem{kim2013icu}
-Song-Hee Kim, Carri Chan, Marcelo Olivares, and Gabriel~J Escobar.
-\newblock Icu admission control: An empirical study of capacity allocation and
-  its implication on patient outcomes.
-\newblock {\em Columbia Business School research paper}, (12/34), 2013.
+\harvarditem[Kim et~al.]{Kim, Chan, Olivares \harvardand\
+  Escobar}{2013}{kim2013icu}
+Kim, S.-H., Chan, C., Olivares, M. \harvardand\ Escobar, G.~J.
+  \harvardyearleft 2013\harvardyearright , `Icu admission control: An empirical
+  study of capacity allocation and its implication on patient outcomes', {\em
+  Columbia Business School research paper} (12/34).
 
-\bibitem{Knight2013}
-V.~A. Knight and P.~R. Harper.
-\newblock {Selfish routing in public services}.
-\newblock {\em European Journal of Operational Research}, 230(1):122--132,
-  October 2013.
+\harvarditem{Knight \harvardand\ Harper}{2013}{Knight2013}
+Knight, V.~A. \harvardand\ Harper, P.~R.  \harvardyearleft
+  2013\harvardyearright , `{Selfish routing in public services}', {\em European
+  Journal of Operational Research} {\bf 230}(1),~122--132.
+\newline\harvardurl{http://linkinghub.elsevier.com/retrieve/pii/S0377221713003019}
 
-\bibitem{knight2012ambulance}
-V.~A. Knight, P.~R. Harper, and L.~Smith.
-\newblock Ambulance allocation for maximal survival with heterogeneous outcome
-  measures.
-\newblock {\em Omega}, 40(6):918--926, 2012.
+\harvarditem[Knight et~al.]{Knight, Harper \harvardand\
+  Smith}{2012}{knight2012ambulance}
+Knight, V.~A., Harper, P.~R. \harvardand\ Smith, L.  \harvardyearleft
+  2012\harvardyearright , `Ambulance allocation for maximal survival with
+  heterogeneous outcome measures', {\em Omega} {\bf 40}(6),~918--926.
 
-\bibitem{Koutsoupias1999}
-E.~Koutsoupias and C.~Papadimitriou.
-\newblock {Worst-Case Equilibria}.
-\newblock In {\em Proceedings of the 16th Annual Symposium on Theoretical
-  Aspects of Computer Science}, pages 404--413, 1999.
+\harvarditem{Koutsoupias \harvardand\ Papadimitriou}{1999}{Koutsoupias1999}
+Koutsoupias, E. \harvardand\ Papadimitriou, C.  \harvardyearleft
+  1999\harvardyearright , {Worst-Case Equilibria}, {\em in} `Proceedings of the
+  16th Annual Symposium on Theoretical Aspects of Computer Science',
+  pp.~404--413.
 
-\bibitem{Levhari1978}
-D.~Levhari and I.~Luski.
-\newblock {Duopoly pricing and waiting lines}.
-\newblock {\em European Economic Review}, 11:17--35, 1978.
+\harvarditem{Levhari \harvardand\ Luski}{1978}{Levhari1978}
+Levhari, D. \harvardand\ Luski, I.  \harvardyearleft 1978\harvardyearright ,
+  `{Duopoly pricing and waiting lines}', {\em European Economic Review} {\bf
+  11},~17--35.
+\newline\harvardurl{http://www.sciencedirect.com/science/article/pii/0014292178900247}
 
-\bibitem{li2002cooperative}
-Susan~X Li, Zhimin Huang, Joe Zhu, and Patrick~YK Chau.
-\newblock Cooperative advertising, game theory and manufacturer--retailer
-  supply chains.
-\newblock {\em Omega}, 30(5):347--357, 2002.
+\harvarditem[Li et~al.]{Li, Huang, Zhu \harvardand\
+  Chau}{2002}{li2002cooperative}
+Li, S.~X., Huang, Z., Zhu, J. \harvardand\ Chau, P.~Y.  \harvardyearleft
+  2002\harvardyearright , `Cooperative advertising, game theory and
+  manufacturer--retailer supply chains', {\em Omega} {\bf 30}(5),~347--357.
 
-\bibitem{Litvak2008}
-N.~Litvak, M.~Vanrijsbergen, R.~Boucherie, and M.~Vanhoudenhoven.
-\newblock {Managing the overflow of intensive care patients}.
-\newblock {\em European Journal of Operational Research}, 185(3):998--1010,
-  March 2008.
+\harvarditem[Litvak et~al.]{Litvak, Vanrijsbergen, Boucherie \harvardand\
+  Vanhoudenhoven}{2008}{Litvak2008}
+Litvak, N., Vanrijsbergen, M., Boucherie, R. \harvardand\ Vanhoudenhoven, M.
+  \harvardyearleft 2008\harvardyearright , `{Managing the overflow of intensive
+  care patients}', {\em European Journal of Operational Research} {\bf
+  185}(3),~998--1010.
+\newline\harvardurl{http://linkinghub.elsevier.com/retrieve/pii/S0377221706005819}
 
-\bibitem{Maschler2013}
-M.~Maschler, E.~Solan, and S.~Zamir.
-\newblock {\em {Game Theory}}.
-\newblock Cambridge University Press, 2013.
+\harvarditem[Maschler et~al.]{Maschler, Solan \harvardand\
+  Zamir}{2013}{Maschler2013}
+Maschler, M., Solan, E. \harvardand\ Zamir, S.  \harvardyearleft
+  2013\harvardyearright , {\em {Game Theory}}, Cambridge University Press.
+\newline\harvardurl{http://www.amazon.co.uk/Game-Theory-Michael-Maschler-ebook/dp/B00B4V6D2S}
 
-\bibitem{Mitchell1995}
-I.~Mitchell and M.~Grounds.
-\newblock {Intensive care in the ailing UK health care system.}
-\newblock {\em Lancet}, pages 1970--1970, 1995.
+\harvarditem{Mitchell \harvardand\ Grounds}{1995}{Mitchell1995}
+Mitchell, I. \harvardand\ Grounds, M.  \harvardyearleft 1995\harvardyearright ,
+  `{Intensive care in the ailing UK health care system.}', {\em Lancet}
+  pp.~1970--1970.
+\newline\harvardurl{http://www.ncbi.nlm.nih.gov/pubmed/7898203}
 
-\bibitem{naor1969regulation}
-P.~Naor.
-\newblock The regulation of queue size by levying tolls.
-\newblock {\em Econometrica}, 37(1):15--24, 1969.
+\harvarditem{Naor}{1969}{naor1969regulation}
+Naor, P.  \harvardyearleft 1969\harvardyearright , `The regulation of queue
+  size by levying tolls', {\em Econometrica} {\bf 37}(1),~15--24.
 
-\bibitem{Nash1950}
-J.~F. Nash.
-\newblock {Equilibrium Points in N-Person Games}.
-\newblock In {\em Proceedings of the National Academy of Sciences of the United
-  States of America}, pages 48--49, 1950.
+\harvarditem{Nash}{1950}{Nash1950}
+Nash, J.~F.  \harvardyearleft 1950\harvardyearright , {Equilibrium Points in
+  N-Person Games}, {\em in} `Proceedings of the National Academy of Sciences of
+  the United States of America', pp.~48--49.
 
-\bibitem{Pate2009}
-R.~Pate.
-\newblock {What is Payment by Results?}
-\newblock Technical Report May, 2009.
+\harvarditem{Pate}{2009}{Pate2009}
+Pate, R.  \harvardyearleft 2009\harvardyearright , {What is Payment by
+  Results?}, Technical Report May.
 
-\bibitem{TimRoughgarden}
-T.~Roughgarden.
-\newblock {\em {Selfish Routing and the Price of Anarchy}}.
-\newblock MIT Press, 2005.
+\harvarditem{Roughgarden}{2005}{TimRoughgarden}
+Roughgarden, T.  \harvardyearleft 2005\harvardyearright , {\em {Selfish Routing
+  and the Price of Anarchy}}, MIT Press.
+\newline\harvardurl{http://www.amazon.co.uk/Selfish-Routing-Price-Anarchy-Roughgarden/dp/0262182432/ref=sr\_1\_1?ie=UTF8\&qid=1366137022\&sr=8-1\&keywords=selfish+routing+and+the+price+of+anarchy}
 
-\bibitem{Shahani2008}
-A.~K. Shahani, S.~A. Ridley, and M.~S. Nielsen.
-\newblock {Modelling patient flows as an aid to decision making for critical
-  care capacities and organisation.}
-\newblock {\em Anaesthesia}, 63(10):1074--80, October 2008.
+\harvarditem[Shahani et~al.]{Shahani, Ridley \harvardand\
+  Nielsen}{2008}{Shahani2008}
+Shahani, A.~K., Ridley, S.~A. \harvardand\ Nielsen, M.~S.  \harvardyearleft
+  2008\harvardyearright , `{Modelling patient flows as an aid to decision
+  making for critical care capacities and organisation.}', {\em Anaesthesia}
+  {\bf 63}(10),~1074--80.
+\newline\harvardurl{http://www.ncbi.nlm.nih.gov/pubmed/18627366}
 
-\bibitem{shmueli2003optimizing}
-Amir Shmueli, Charles~L Sprung, and Edward~H Kaplan.
-\newblock Optimizing admissions to an intensive care unit.
-\newblock {\em Health Care Management Science}, 6(3):131--136, 2003.
+\harvarditem[Shmueli et~al.]{Shmueli, Sprung \harvardand\
+  Kaplan}{2003}{shmueli2003optimizing}
+Shmueli, A., Sprung, C.~L. \harvardand\ Kaplan, E.~H.  \harvardyearleft
+  2003\harvardyearright , `Optimizing admissions to an intensive care unit',
+  {\em Health Care Management Science} {\bf 6}(3),~131--136.
 
-\bibitem{shone2013comparisons}
-R.~Shone, V.~A. Knight, and J.~E. Williams.
-\newblock Comparisons between observable and unobservable ${M}/{M}/1$ queues
-  with respect to optimal customer behavior.
-\newblock {\em European Journal of Operational Research}, 227(1):133--141,
-  2013.
+\harvarditem[Shone et~al.]{Shone, Knight \harvardand\
+  Williams}{2013}{shone2013comparisons}
+Shone, R., Knight, V.~A. \harvardand\ Williams, J.~E.  \harvardyearleft
+  2013\harvardyearright , `Comparisons between observable and unobservable
+  ${M}/{M}/1$ queues with respect to optimal customer behavior', {\em European
+  Journal of Operational Research} {\bf 227}(1),~133--141.
 
-\bibitem{Smith1995}
-G.~B. Smith, B.~L. Taylor, P.~J. McQuillan, and E.~Nials.
-\newblock {Rationing intensive care. Intensive care provision varies widely in
-  Britain.}
-\newblock {\em British Medical Journal}, 310(5):1412--1413, 1995.
+\harvarditem[Smith et~al.]{Smith, Taylor, McQuillan \harvardand\
+  Nials}{1995}{Smith1995}
+Smith, G.~B., Taylor, B.~L., McQuillan, P.~J. \harvardand\ Nials, E.
+  \harvardyearleft 1995\harvardyearright , `{Rationing intensive care.
+  Intensive care provision varies widely in Britain.}', {\em British Medical
+  Journal} {\bf 310}(5),~1412--1413.
+\newline\harvardurl{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2549771/}
 
-\bibitem{sage}
-W.\thinspace{}A. Stein et~al.
-\newblock {\em {S}age {M}athematics {S}oftware ({V}ersion 6.0.0)}.
-\newblock The Sage Development Team, 2013.
+\harvarditem{Stein et~al.}{2013}{sage}
+Stein, W. et~al.  \harvardyearleft 2013\harvardyearright , {\em {S}age
+  {M}athematics {S}oftware ({V}ersion 6.0.0)}, The Sage Development Team.
 \newblock {\tt http://www.sagemath.org}.
 
-\bibitem{Stewart2009}
-W.~J. Stewart.
-\newblock {\em {Probability, Markov Chains, Queues, and Simulation}}.
-\newblock Priceton University Press, 1st edition, 2009.
+\harvarditem{Stewart}{2009}{Stewart2009}
+Stewart, W.~J.  \harvardyearleft 2009\harvardyearright , {\em {Probability,
+  Markov Chains, Queues, and Simulation}}, 1st edn, Priceton University Press.
 
-\bibitem{williams2015mathematical}
-J~Williams, S~Dumont, J~Parry-Jones, I~Komenda, J~Griffiths, and V~Knight.
-\newblock Mathematical modelling of patient flows to predict critical care
-  capacity required following the merger of two district general hospitals into
-  one.
-\newblock {\em Anaesthesia}, 70(1):32--40, 2015.
+\harvarditem[Williams et~al.]{Williams, Dumont, Parry-Jones, Komenda, Griffiths
+  \harvardand\ Knight}{2015}{williams2015mathematical}
+Williams, J., Dumont, S., Parry-Jones, J., Komenda, I., Griffiths, J.
+  \harvardand\ Knight, V.  \harvardyearleft 2015\harvardyearright ,
+  `Mathematical modelling of patient flows to predict critical care capacity
+  required following the merger of two district general hospitals into one',
+  {\em Anaesthesia} {\bf 70}(1),~32--40.
 
-\bibitem{xie2006note}
-Jinxing Xie and Song Ai.
-\newblock A note on “cooperative advertising, game theory and
-  manufacturer--retailer supply chains”.
-\newblock {\em Omega}, 34(5):501--504, 2006.
+\harvarditem{Xie \harvardand\ Ai}{2006}{xie2006note}
+Xie, J. \harvardand\ Ai, S.  \harvardyearleft 2006\harvardyearright , `A note
+  on “cooperative advertising, game theory and manufacturer--retailer supply
+  chains”', {\em Omega} {\bf 34}(5),~501--504.
 
 \end{thebibliography}
